@@ -19,6 +19,8 @@ Dieses Repository ist eine Sammlung von praxisorientierten Anleitungen und Übun
   - Container & PODs
   - Log Monitoring ELK etc
   - Cloud
+  - Netzwerk Automatisation
+  - SIEM
 
   ..... und noch vieles mehr einfach mal durchklicken !!!
 
