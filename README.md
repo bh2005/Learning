@@ -14,6 +14,11 @@ Dieses Repository ist eine Sammlung von praxisorientierten Anleitungen und Übun
   - [Check\_MK](https://github.com/bh2005/Learning/tree/main/Grundlagen_und_Uebungen/09_Check_MK)
   - [Ansible](https://github.com/bh2005/Learning/tree/main/Grundlagen_und_Uebungen/10_Ansible)
   - [Proxmox](https://github.com/bh2005/Learning/tree/main/Grundlagen_und_Uebungen/20_Proxmox)
+  - Terraform
+  - LLM & KI
+  - Container & PODs
+  - Log Monitoring ELK etc
+  - Cloud
 
   ..... und noch vieles mehr einfach mal durchklicken !!!
 
