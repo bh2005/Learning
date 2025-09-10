@@ -15,7 +15,7 @@ Dieses Repository ist eine Sammlung von praxisorientierten Anleitungen und Übun
   - [Ansible](https://github.com/bh2005/Learning/tree/main/Grundlagen_und_Uebungen/10_Ansible)
   - [Proxmox](https://github.com/bh2005/Learning/tree/main/Grundlagen_und_Uebungen/20_Proxmox)
 
-  ..... und noch vieles mehr !!!
+  ..... und noch vieles mehr einfach mal durchklicken !!!
 
 -----
 
@@ -85,6 +85,7 @@ Hier finden Sie eine Übersicht über die im Repository behandelten Themen. Klic
       * **[Homelab-SOHO](https://github.com/bh2005/Learning/tree/main/Grundlagen_und_Uebungen/20_Proxmox/Homelab-SOHO)**
       * **[SDN](https://github.com/bh2005/Learning/tree/main/Grundlagen_und_Uebungen/20_Proxmox/SDN)**
 
+ ..... und noch vieles mehr einfach mal durchklicken !!!
 -----
 
 ### Verwendung
