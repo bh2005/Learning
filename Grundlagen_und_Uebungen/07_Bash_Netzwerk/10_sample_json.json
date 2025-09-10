@@ -1,0 +1,42 @@
+{
+  "system": [
+    {
+      "oid": "SNMPv2-MIB::sysDescr.0",
+      "value": "Cisco IOS Software, C2960X Software (C2960X-UNIVERSALK9-M), Version 15.2(2)E6"
+    },
+    {
+      "oid": "SNMPv2-MIB::sysName.0",
+      "value": "Switch01"
+    },
+    {
+      "oid": "SNMPv2-MIB::sysUpTime.0",
+      "value": "1 day, 10:17:36.78"
+    }
+  ],
+  "interfaces": [
+    {
+      "oid": "IF-MIB::ifDescr.1",
+      "value": "GigabitEthernet0/1"
+    },
+    {
+      "oid": "IF-MIB::ifDescr.2",
+      "value": "GigabitEthernet0/2"
+    },
+    {
+      "oid": "IF-MIB::ifInOctets.1",
+      "value": "123456789"
+    },
+    {
+      "oid": "IF-MIB::ifOutOctets.1",
+      "value": "987654321"
+    },
+    {
+      "oid": "IF-MIB::ifInOctets.2",
+      "value": "456789123"
+    },
+    {
+      "oid": "IF-MIB::ifOutOctets.2",
+      "value": "321654987"
+    }
+  ]
+}
