@@ -14,13 +14,13 @@ Dieses Repository ist eine Sammlung von praxisorientierten Anleitungen und Übun
 - [Check_MK](https://github.com/bh2005/Learning/tree/main/01_Grundlagen_und_Uebungen/09_Check_MK)
 - [Ansible](https://github.com/bh2005/Learning/tree/main/01_Grundlagen_und_Uebungen/10_Ansible)
 - [Proxmox](https://github.com/bh2005/Learning/tree/main/01_Grundlagen_und_Uebungen/20_Proxmox)
-- [Terraform](https://github.com/bh2005/Learning/tree/main/01_Grundlagen_und_Uebungen/Terraform)
-- [LLM & KI](https://github.com/bh2005/Learning/tree/main/01_Grundlagen_und_Uebungen/LLM_&_KI)
-- [Container & PODs](https://github.com/bh2005/Learning/tree/main/01_Grundlagen_und_Uebungen/Container_&_PODs)
-- [Log Monitoring (ELK etc.)](https://github.com/bh2005/Learning/tree/main/01_Grundlagen_und_Uebungen/Log_Monitoring_ELK_etc)
-- [Cloud](https://github.com/bh2005/Learning/tree/main/01_Grundlagen_und_Uebungen/Cloud)
-- [Netzwerk Automatisierung](https://github.com/bh2005/Learning/tree/main/01_Grundlagen_und_Uebungen/Netzwerk_Automatisierung)
-- [SIEM](https://github.com/bh2005/Learning/tree/main/01_Grundlagen_und_Uebungen/SIEM)
+- [Terraform](https://github.com/bh2005/Learning/tree/main/01_Grundlagen_und_Uebungen/22_Terraform)
+- [LLM & KI](https://github.com/bh2005/Learning/tree/main/01_Grundlagen_und_Uebungen/25_LLM_&_KI)
+- [Container & PODs](https://github.com/bh2005/Learning/tree/main/01_Grundlagen_und_Uebungen/26_Container)
+- [Log Monitoring (ELK etc.)](https://github.com/bh2005/Learning/tree/main/01_Grundlagen_und_Uebungen/29_Logging_ELK_Prometheus_Grafana_CMK)
+- [Cloud](https://github.com/bh2005/Learning/tree/main/01_Grundlagen_und_Uebungen/30_Wolken)
+- [Netzwerk Automatisierung](https://github.com/bh2005/Learning/tree/main/01_Grundlagen_und_Uebungen/11_Netzwerk_Automatisation)
+- [SIEM](https://github.com/bh2005/Learning/tree/main/01_Grundlagen_und_Uebungen/31_SIEM)
 
 ..... und noch vieles mehr einfach mal durchklicken!
 
