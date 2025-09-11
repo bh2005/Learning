@@ -1,0 +1,123 @@
+
+% Setting up the document class and essential packages
+\documentclass[a4paper,12pt]{article}
+
+% Including standard LaTeX packages for encoding, fonts, and formatting
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage[ngerman,english]{babel}
+\usepackage{csquotes}
+\usepackage{tocloft}
+\usepackage{geometry}
+\geometry{a4paper, margin=2.5cm}
+\usepackage{setspace}
+\onehalfspacing
+\usepackage{graphicx}
+\usepackage{caption}
+\usepackage{acronym}
+\usepackage{bibentry}
+\nobibliography*
+
+% Configuring the table of contents
+\setlength{\cftsecindent}{0em}
+\setlength{\cftsubsecindent}{2em}
+
+% Setting reliable font (Latin Modern for Latin characters)
+\usepackage{lmodern}
+
+\begin{document}
+
+% Creating the title page
+\begin{titlepage}
+    \centering
+    \vspace*{1cm}
+    {\huge \textbf{[Titel der Arbeit]}}
+    \vspace{0.5cm}
+    \newline
+    {\Large Bachelorarbeit}
+    \vspace{1cm}
+    \newline
+    Hochschule: [Name der Hochschule]\\
+    Studiengang: [Name des Studiengangs]\\
+    Name: [Dein Name]\\
+    Matrikelnummer: [Deine Matrikelnummer]\\
+    Betreuer: [Name des Betreuers]\\
+    Datum: \today
+\end{titlepage}
+
+% Adding abstract
+\section*{Abstract}
+\selectlanguage{english}
+[Hier beschreibst du Thema, Untersuchung, Ergebnisse und Bedeutung in max. 1 Seite.]
+
+% Adding Vorwort
+\section*{Vorwort}
+\selectlanguage{ngerman}
+[Persönlicher Hintergrund der Arbeit.]
+
+% Adding Danksagung
+\section*{Danksagung}
+[Dank an Familie, Betreuer, Kollegen, etc.]
+
+% Generating table of contents
+\tableofcontents
+\clearpage
+
+% Generating list of figures
+\listoffigures
+\clearpage
+
+% Generating list of tables
+\listoftables
+\clearpage
+
+% Adding Abkürzungsverzeichnis
+\section*{Abkürzungsverzeichnis}
+\begin{acronym}[API]
+    \acro{API}{Application Programming Interface}
+    \acro{VIM}{Vi Improved}
+\end{acronym}
+\clearpage
+
+% Starting main content
+\section{Einleitung}
+[Vorstellung des Themas, Ziel, Relevanz.]
+
+\section{Theoretischer Teil}
+[Schlüsselbegriffe, Theorien, Literaturübersicht.]
+
+\section{Methodik}
+[Beschreibung der Forschungsmethoden, z. B. Literatur-Review.]
+
+\section{Ergebnisse}
+[Untersuchungsergebnisse, Zuordnung zu Hypothesen.]
+
+\section{Diskussion}
+[Analyse, Limitationen, Zukunftsempfehlungen.]
+
+\section{Fazit}
+[Zusammenfassung der Ergebnisse, Bezug zur Einleitung.]
+
+% Adding Nachwort
+\section*{Nachwort}
+[Reflexion über die Arbeit, optional.]
+
+% Adding Literaturverzeichnis
+\section*{Literaturverzeichnis}
+\begin{thebibliography}{9}
+    \bibentry{doe2023}
+    \bibitem{doe2023}
+        Doe, John (2023). \emph{Introduction to Vim}. Tech Press.
+\end{thebibliography}
+
+% Adding Anhang
+\appendix
+\section{Anhang}
+[Ergänzende Materialien, optional.]
+
+% Adding eidesstattliche Erklärung
+\section*{Eidesstattliche Erklärung}
+Hiermit erkläre ich, dass ich die vorliegende Arbeit selbstständig verfasst und keine anderen als die angegebenen Quellen verwendet habe.
+
+\end{document}
