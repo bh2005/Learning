@@ -15,7 +15,7 @@ Dieses Repository ist eine Sammlung von praxisorientierten Anleitungen und Übun
 - [Ansible](https://github.com/bh2005/Learning/tree/main/01_Grundlagen_und_Uebungen/10_Ansible)
 - [Proxmox](https://github.com/bh2005/Learning/tree/main/01_Grundlagen_und_Uebungen/20_Proxmox)
 - [Terraform](https://github.com/bh2005/Learning/tree/main/01_Grundlagen_und_Uebungen/22_Terraform)
-- [LLM & KI](https://github.com/bh2005/Learning/tree/main/01_Grundlagen_und_Uebungen/25_LLM_&_KI)
+- [LLM & KI](https://github.com/bh2005/Learning/tree/main/01_Grundlagen_und_Uebungen/25_LLM_KI)
 - [Container & PODs](https://github.com/bh2005/Learning/tree/main/01_Grundlagen_und_Uebungen/26_Container)
 - [Log Monitoring (ELK etc.)](https://github.com/bh2005/Learning/tree/main/01_Grundlagen_und_Uebungen/29_Logging_ELK_Prometheus_Grafana_CMK)
 - [Cloud](https://github.com/bh2005/Learning/tree/main/01_Grundlagen_und_Uebungen/30_Wolken)
@@ -101,5 +101,3 @@ Dieses Repository soll eine gemeinschaftliche Lernressource sein. Wenn Sie eine 
 ### Lizenz
 
 Dieses Projekt ist unter der MIT-Lizenz lizenziert. Weitere Informationen finden Sie in der [LICENSE](https://github.com/bh2005/Learning/tree/main/01_Grundlagen_und_Uebungen/LICENSE)-Datei.
-
-```
