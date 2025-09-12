@@ -66,10 +66,6 @@ Ah, Sie haben Recht. Es fehlen noch einige der wichtigsten Charaktere des IT-Uni
 
 ---
 
-Gerne, hier sind die fehlenden Typen von ITlern.
-
----
-
 ### Der SAPler 📈
 
 Der SAPler lebt in einer Welt von Transaktionscodes, **ABAP** und komplexen Modulen wie FI/CO, SD und MM. Er spricht eine eigene Sprache, die für Außenstehende wie eine Mischung aus Deutsch, Business-Jargon und kryptischen Befehlen klingt. Er ist davon überzeugt, dass es für jedes Problem eine T-Code-Lösung gibt, und er ist die einzige Person, die weiß, wie man in diesem gewaltigen System eine vernünftige Auswertung bekommt. Seine Welt dreht sich um Stabilität und Geschäftsprozesse, nicht um die neuesten coolen Features.
