@@ -1,4 +1,4 @@
-Hier ein e Übersicht der "Typen von IT-lern".
+## **Hier ein e Übersicht der "Typen von IT-lern".**
 
 By the Way ich bin ne Mischung aus Dino, Purist, Automation und Turnschuh .. ;)
 
@@ -22,7 +22,7 @@ Der Meister der Kabel und Konfigurationen. Er kann einen Fehler im Netzwerk iden
 
 ---
 
-### **Der Fensterputzer (von NT4.0 - WS2024) 🖥️**
+### **Der Fensterputzer von NT4.0 -  🖥️**
 
 Dieser Admin hat die gesamte Evolution des Windows-Servers miterlebt. Er hat mehr "blaue Bildschirme" gesehen als ein Ozeanologe das Meer. Seine graue Eminenz liegt darin, dass er jeden Fehlercode auswendig kennt und weiß, wo die versteckten Registry-Einträge liegen.
 
