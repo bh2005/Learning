@@ -1,6 +1,6 @@
 ## **Hier eine Übersicht der "Typen von IT-lern".**
 
-By the Way ich bin ne Mischung aus Debian Mensch, Dino, Purist, Forensik, Automation und Turnschuh .. ;) ein bh2005 eben !!!
+By the Way ich bin ne Mischung aus Ghost, Debian Mensch, Dino, Purist, Forensik, Automation und Turnschuh .. ;) ein bh2005 eben !!!
 
 ---
 
@@ -9,6 +9,10 @@ By the Way ich bin ne Mischung aus Debian Mensch, Dino, Purist, Forensik, Automa
 Hat mit einem ZX80 angefangen, kennt noch CP/M, OS/2, Fortran, BASIC und Pascal. Ein lebendes Fossil der Technologiegeschichte. Er erzählt Geschichten von 56k-Modems, dem Klang der Röhrenmonitore und der Zeit, als RAM noch in Kilobyte gemessen wurde. Seine Weisheit ist tief, aber er hält das Konzept von "Docker" für eine Art von Schiffsfracht.
 
 ---
+
+### Der Ghost Admin 👻
+
+Dieser Typ ist der ultimative Pragmatiker. Er redet nicht über agile Methoden oder Machine Learning, sondern löst einfach die Probleme. Sein Mantra lautet: "Es muss laufen." Er taucht morgens auf, erledigt die Support-Tickets im Akkord und behebt kritische Systemfehler, oft bevor jemand überhaupt bemerkt, dass es ein Problem gab. Seine größte Leistung ist seine Unsichtbarkeit: Er ist so effizient, dass er nie in Meetings sitzt oder komplizierte Status-Updates geben muss, weil seine Arbeit bereits erledigt ist. Er ist der Fels in der Brandung, der dafür sorgt, dass die Lichter anbleiben, während alle anderen über die nächste große Sache diskutieren.
 
 ### **Der Cloud-Architekt ☁️**
 
@@ -113,3 +117,16 @@ Der Debian Mensch ist der Purist der Linux-Welt. Er schätzt Freiheit, Stabilit�
 Der Forensiker ist der digitale Detektiv. Er ist darauf spezialisiert, nach einem Sicherheitsverstoß oder einem Systemausfall Hinweise zu finden. Seine Arbeit ist eine akribische Untersuchung von Logs, Festplattenabbildern und Netzwerkverkehr. Er konzentriert sich nicht darauf, den nächsten Angriff zu verhindern, sondern darauf, zu rekonstruieren, was in der Vergangenheit passiert ist. Er ist derjenige, der Ihnen genau sagen kann, wie, wann und von wem ein Server kompromittiert wurde. Seine Werkzeuge sind **Autopsy**, **Wireshark** und ein tiefes Verständnis von Dateisystemen und Speicherauszügen.
 
 ---
+
+### Der "KI ist die Lösung für alles" - Admin 🤖
+
+Dieser Typ glaubt, dass jede Herausforderung, von der Netzwerküberwachung bis zum Kaffeeholen, durch künstliche Intelligenz gelöst werden kann. Er ignoriert manuelle Arbeit und sucht ständig nach dem nächsten **AI-Tool**, das seine Aufgaben automatisiert. Seltsamerweise verlässt er sich so sehr auf die KI, dass er seine eigene "natürliche Intelligenz" dabei vernachlässigt, die Werkzeuge wirklich zu verstehen. Er ist der Erste, der in Meetings mit Begriffen wie **"Machine Learning-gestützte Anomalieerkennung"** um sich wirft.
+
+---
+
+### Der Big-Data-Science-Spezialist 📊
+
+Für diesen Typen ist nichts wichtiger als Daten. Er glaubt, dass die Antwort auf jedes Problem in den unstrukturierten Mengen von Logs, Metriken und Datenbankeinträgen liegt. Seine Werkzeuge sind **PySpark**, **Hadoop** und **SQL** auf Steroiden. Er ist davon überzeugt, dass man aus den Datenmengen, die andere Administratoren nur archivieren, wertvolle Erkenntnisse über die Systemleistung, das Benutzerverhalten oder potenzielle Sicherheitsprobleme gewinnen kann. Er ist der wahre Detektiv des 21. Jahrhunderts. 
+
+---
+
