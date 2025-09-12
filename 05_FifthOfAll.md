@@ -31,6 +31,12 @@ Dieser Typ ist der König der Racks. Er ist für die riesigen, redundanten, mult
 
 ---
 
+### Quantencomputer - Der Quanten-Pionier 🧪
+
+Dieser Typ denkt nicht in Einsen und Nullen, sondern in **Quanten-Bits (Qubits)**, **Überlagerung (Superposition)** und **Verschränkung (Entanglement)**. Er ist kein Admin, der Server im Rechenzentrum verwaltet, sondern ein Theoretiker und Experimentator, der in einer Welt von extrem kalten Temperaturen und komplexen Algorithmen lebt. Er glaubt daran, dass Quantencomputer in der Lage sein werden, Probleme zu lösen, die für klassische Supercomputer unmöglich sind. Er ist der Alchemist der modernen IT, der eine neue Dimension des Computings erschließt.
+
+---
+
 ## Cloud
 
 Die Wahl der Cloud ist eine der größten Entscheidungen in der modernen IT. Sie spiegelt nicht nur die technischen Anforderungen wider, sondern auch die Unternehmenskultur und die Arbeitsphilosophie.
@@ -59,9 +65,13 @@ Dieser Typ ist ein Experte darin, On-Premises-Infrastruktur mit der Cloud zu ver
 
 Der Oracle-Cloud-Nutzer ist der **Datenbank-Spezialist** der Cloud. Er wählt diese Plattform wegen ihrer unschlagbaren Leistung und den optimierten Diensten für große, unternehmenskritische Datenbanken. Er schätzt die Garantie und die Sicherheit, dass seine Daten in den Händen eines vertrauenswürdigen Partners liegen.
 
+---
+
 ### Hetzner - Der Preis-Leistungs-Pragmatiker 🪙
 
 Dieser Typ ist der sparsame ITler, der keine Kompromisse bei der Leistung eingeht. Er schätzt die transparenten Preise und die rohe Power der deutschen Server-Infrastruktur. Er braucht keine ausgefallenen Cloud-Dienste, sondern einfach nur einen zuverlässigen Server für sein Projekt. Er macht lieber alles selbst, als für einen Managed Service zu bezahlen.
+
+---
 
 ### Telekom & IBM - Der Corporate-Trusted-Partner 🤝
 
