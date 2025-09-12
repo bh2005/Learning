@@ -1,4 +1,4 @@
-## **Hier ein e Übersicht der "Typen von IT-lern".**
+## **Hier eine Übersicht der "Typen von IT-lern".**
 
 By the Way ich bin ne Mischung aus Dino, Purist, Automation und Turnschuh .. ;)
 
