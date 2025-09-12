@@ -1,4 +1,4 @@
-## Interagtion
+## Interaktion
 Die Art und Weise, wie ein ITler mit dem Computer interagiert, sagt viel über seine Arbeitsweise und seine Denkweise aus. Von den frühen Tagen bis zur Science-Fiction-Zukunft, hier sind die Typen, die man nach ihrem bevorzugten Eingabegerät einteilen kann.
 
 ---
