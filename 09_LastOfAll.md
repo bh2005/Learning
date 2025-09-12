@@ -69,7 +69,6 @@ Dieser Typ interessiert sich nicht für Transaktionen, sondern für die große, 
 
 * **Snowflake/BigQuery - Der Data-Analytiker:** Dieser Typ arbeitet mit riesigen Datenmengen, um daraus Geschäftseinblicke zu gewinnen. Er nutzt die **cloud-native** Skalierbarkeit, um schnelle Abfragen über Petabyte von Daten auszuführen. Für ihn sind die Rohdaten nur der Anfang; die wahren Erkenntnisse liegen in den Dashboards und Berichten, die er erstellt.
 
-Sehr gute Ergänzung! Die Welt der Mainframe-Datenbanken ist eine eigene Kategorie, die eine ganz besondere Art von IT-Profi hervorbringt.
 
 ---
 
