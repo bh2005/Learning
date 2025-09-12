@@ -55,4 +55,7 @@ Für diejenigen, die Kaffee nicht nur trinken, sondern zelebrieren. Das ist der 
     3.  Tampen Sie. Der "Tamper" drückt das Kaffeepulver fest. Üben Sie gleichmäßigen Druck aus, wie bei einem sauberen `git push`.
     4.  Setzen Sie den Siebträger ein und drücken Sie den Start-Knopf. Der Prozess erfordert eine akribische Beachtung von Details – von der Temperatur des Wassers bis zum Druck des Dampfes. Das ist keine Magie, das ist Ingenieurkunst.
 
-Jetzt sind Sie bereit. Wählen Sie Ihre Methode und denken Sie immer daran: Guter Kaffee ist kein Luxus, sondern ein essenzielles Betriebsmittel!
+Jetzt sind Sie bereit. Wählen Sie Ihre Methode und denken Sie immer daran: **Guter Kaffee ist kein Luxus, sondern ein essenzielles Betriebsmittel!**
+
+Nun zurücklehnen und dieses REPO durchstöbern ......
+
