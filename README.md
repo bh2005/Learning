@@ -2,6 +2,31 @@
 
 Dieses Repository ist eine Sammlung von praxisorientierten Anleitungen und Übungen zu verschiedenen Themenbereichen der IT-Infrastruktur, Softwareentwicklung und DevOps. Es ist als Lernplattform konzipiert, die Ihnen hilft, grundlegende bis fortgeschrittene Konzepte durch praktische Beispiele zu verinnerlichen.
 
+## Comming next
+Cloud Cost Management (FinOps)
+    - Kosten-Optimierung: Übungen zum Identifizieren von ungenutzten oder überdimensionierten Ressourcen.
+
+    - Automatisches Herunterskalieren: Wie man mit Skripten oder CI/CD-Pipelines temporäre Umgebungen nach Gebrauch wieder löscht, um Kosten zu sparen.
+Cloud-Sicherheit und Governance
+    - Identity and Access Management (IAM): Eine detaillierte Anleitung zur Erstellung von sicheren Rollen und Richtlinien mit dem Least-Privilege-Prinzip.
+
+    - Netzwerksicherheit: Übungen zur Konfiguration von Security Groups und Network Access Control Lists (NACLs), um den Netzwerkverkehr zu steuern.
+
+    - Compliance-Automatisierung: Eine Einführung, wie man mit Tools wie Cloud Custodian automatische Überprüfungen und Korrekturen der Cloud-Infrastruktur durchführt.
+GitOps-Workflows
+    - bei dem alle Infrastruktur- und Anwendungskonfigurationen in einem Git-Repository gespeichert und über einen Operator in Kubernetes angewendet werden.
+Distributed Tracing
+OpenTelemetry
+Service Mesh
+    - Eine Einführung in ein Service Mesh wie Istio oder Linkerd, das erweiterte Funktionen für das Routing, die Sicherheit und die Beobachtbarkeit von Microservices bietet, ohne den Anwendungscode zu ändern.
+csv, YAML, XML, TOML, JSON
+Matplotlib / Seaborn
+VS Code Setup
+Backup + Restore
+Disaster Recovery
+Künstlich Neurale Netze
+Treibstoff der IT
+
 ## Inhalt
 
 - [Linux](https://github.com/bh2005/Learning/tree/main/01_Grundlagen_und_Uebungen/01_Linux)
