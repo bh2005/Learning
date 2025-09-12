@@ -14,6 +14,8 @@ Hat mit einem ZX80 angefangen, kennt noch CP/M, OS/2, Fortran, BASIC und Pascal.
 
 Dieser Typ ist der ultimative Pragmatiker. Er redet nicht über agile Methoden oder Machine Learning, sondern löst einfach die Probleme. Sein Mantra lautet: "Es muss laufen." Er taucht morgens auf, erledigt die Support-Tickets im Akkord und behebt kritische Systemfehler, oft bevor jemand überhaupt bemerkt, dass es ein Problem gab. Seine größte Leistung ist seine Unsichtbarkeit: Er ist so effizient, dass er nie in Meetings sitzt oder komplizierte Status-Updates geben muss, weil seine Arbeit bereits erledigt ist. Er ist der Fels in der Brandung, der dafür sorgt, dass die Lichter anbleiben, während alle anderen über die nächste große Sache diskutieren.
 
+---
+
 ### **Der Cloud-Architekt ☁️**
 
 Spricht fließend in Akronymen wie IaaS, PaaS, SaaS und FaaS. Er plant, designt und automatisiert Infrastruktur, die nicht existiert. Seine Lieblingsbeschäftigung ist, über die Vor- und Nachteile von **Serverless Computing** zu diskutieren und sicherzustellen, dass Ihr Unternehmen niemals wieder einen physischen Server anfassen muss. Er ist der Überzeugung, dass alles, was nicht in der Cloud ist, nicht wirklich existiert. 
@@ -26,7 +28,7 @@ Der Meister der Kabel und Konfigurationen. Er kann einen Fehler im Netzwerk iden
 
 ---
 
-### **Der Fensterputzer von NT4.0 -  🖥️**
+### **Der Fensterputzer von NT3.5 bis ..  🖥️**
 
 Dieser Admin hat die gesamte Evolution des Windows-Servers miterlebt. Er hat mehr "blaue Bildschirme" gesehen als ein Ozeanologe das Meer. Seine graue Eminenz liegt darin, dass er jeden Fehlercode auswendig kennt und weiß, wo die versteckten Registry-Einträge liegen.
 
@@ -102,7 +104,7 @@ Der Gray Hat operiert in der Grauzone zwischen legal und illegal. Er hat keine b
 
 ### Der Red Hat 🤠
 
-Diese Person lebt und atmet **Red Hat Enterprise Linux (RHEL)**. Sie ist ein Meister von `yum`, `rpm` und `dnf`. Sie ist wahrscheinlich eine zertifizierte Fachkraft (RHCSA, RHCE) und kann ein System ohne grafische Benutzeroberfläche beheben, manchmal sogar mit geschlossenen Augen. Sie glauben an Stabilität, langfristigen Support und das Unternehmens-Ökosystem. Für sie ist jede andere Linux-Distribution nur ein Spielzeug. 
+Diese Person lebt und atmet **Red Hat Enterprise Linux (RHEL)**. Sie ist ein Meister von `yum`, `rpm` und `dnf`. Sie ist wahrscheinlich eine zertifizierte Fachkraft (RHCSA, RHCE) und kann ein System ohne grafische Benutzeroberfläche bedien, manchmal sogar mit geschlossenen Augen. Sie glauben an Stabilität, langfristigen Support und das Unternehmens-Ökosystem. Für sie ist jede andere Linux-Distribution nur ein Spielzeug. 
 
 ---
 
