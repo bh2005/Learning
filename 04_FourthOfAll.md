@@ -45,3 +45,32 @@ Der Java-Entwickler ist der Stabilitäts-Junkie, der in großen, komplexen Syste
 Dieser Typ denkt in Skripten. Er sieht die Kommandozeile als seine Hauptschnittstelle zur Welt. Er automatisiert seine Aufgaben mit einfachen, aber leistungsstarken Skripten. Er ist der pragmatische Problemlöser, der keine Frameworks oder komplexe Entwicklungsumgebungen benötigt. Für ihn ist die Lösung oft nur eine Pipe (`|`) und ein paar Befehle entfernt.
 
 ---
+
+### PowerShell - Der Windows-Automatisierer 💻
+
+Dieser Typ ist das Gegenstück zum Bash-Admin, der aber in der Welt von Windows zu Hause ist. Er denkt nicht in Text-Streams, sondern in **Objekten**. Er nutzt Cmdlets, um Active Directory, Exchange Server und Cloud-Dienste zu verwalten. Er hat eine Vorliebe für skriptgesteuerte Lösungen und glaubt, dass alles, was man klicken kann, auch automatisiert werden muss. Für ihn ist die Windows-Kommandozeile die wahre Macht.
+
+---
+
+### Brainfuck - Der Kryptische Gelehrte 🤯
+
+Dieser Programmierer schätzt die Komplexität über alles. Seine Sprache besteht aus nur acht Befehlen, aber um sie zu verstehen, muss man sich in die Tiefen der abstrakten Turing-Maschinen begeben. Er schreibt keine Software, um sie zu benutzen, sondern um die Grenzen des Machbaren zu erkunden. Für ihn ist es eine intellektuelle Übung, ein Rätsel, das es zu lösen gilt. Sein Code ist ein Kunstwerk, das nur er selbst wirklich deuten kann.
+
+---
+
+### Mac-Welt: Swift & Objective-C 🍏
+
+* **Objective-C - Der Mac-Veteran:**
+    Dieser Entwickler ist ein Relikt aus den alten Tagen der Apple-Programmierung. Er ist fließend in der Sprache der eckigen Klammern `[ ]` und kennt die Eigenheiten von **Cocoa** und **NeXTSTEP** auswendig. Er schätzt die Flexibilität und die direkte Interaktion mit den APIs.
+
+* **Swift - Der Apple-Designer:**
+    Der Swift-Entwickler ist die moderne Inkarnation des Mac-Programmierers. Er liebt die saubere, intuitive Syntax und die integrierten Sicherheitsfunktionen. Er glaubt an elegante und lesbare Lösungen, die nahtlos in das gesamte Apple-Ökosystem passen. Sein Ziel ist es, Anwendungen zu schaffen, die nicht nur funktionieren, sondern auch ein "Apple-Feeling" haben.
+
+---
+
+### OS/2-Welt: REXX - Der Historiker der Enterprise-Systeme 👴
+
+Dieser Typ ist ein Experte in einem Ökosystem, das die meisten jungen Entwickler nur aus Geschichtsbüchern kennen. REXX ist seine Sprache der Wahl. Er hat damit Mainframes und Unternehmensanwendungen in **OS/2** automatisiert. Er ist der Überzeugung, dass es für alles eine einfache, skriptbasierte Lösung gibt, und schmunzelt über die Komplexität moderner, cloud-nativer Umgebungen.
+
+---
+

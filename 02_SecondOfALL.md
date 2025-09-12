@@ -130,3 +130,17 @@ Für diesen Typen ist nichts wichtiger als Daten. Er glaubt, dass die Antwort au
 
 ---
 
+### Der Scotty-Ingenieur 🛠️
+
+Dieser Typ ist der ultimative Pragmatiker, wenn es brennt. Er liebt seine Maschinen über alles und redet mit ihnen, als wären sie Lebewesen. Er ist der Einzige, der das komplexe, oft altersschwache System versteht, das er am Laufen hält. Seine ikonische Phrase lautet: "Sie kann nicht mehr, Captain!", aber mit etwas schottischer Ingenieurskunst und Improvisation schafft er es immer, das System mit 110 % Leistung zu betreiben, um eine unmögliche Aufgabe zu erfüllen. Er ist der unsichtbare Held, der im Maschinenraum der IT-Infrastruktur arbeitet und alles mit purem Willen zusammenhält.
+
+---
+
+### "Hallo Computer"-Benutzer 🗣️
+
+Dieser Typ ist der Endnutzer der Zukunft. Er hat keinerlei Interesse an der darunter liegenden Technologie. Für ihn ist die gesamte Infrastruktur nur ein schwarzes Loch, mit dem man über eine einfache Sprachsteuerung interagiert. Er sagt "Hallo Computer" und erwartet, dass seine komplexesten Wünsche sofort erfüllt werden. Er nimmt die unglaubliche Technologie, die hinter dem System steckt, völlig für selbstverständlich. Er ist das Produkt des ultimativen UX-Designs – eine Schnittstelle, die so nahtlos ist, dass sie keine Aufmerksamkeit auf sich zieht.
+
+---
+
+Damit haben wir alle Persönlichkeiten der IT-Welt abgedeckt – vom Dinosaurier bis zum Visionär, vom Bits-und-Bytes-Maestro bis zum schöpferischen Designer. Eine faszinierende Reise durch die vielfältige Landschaft der IT.
+
