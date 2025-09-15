@@ -3,7 +3,7 @@
 Dieses Repository ist eine Sammlung von praxisorientierten Anleitungen und Übungen zu verschiedenen Themenbereichen der IT-Infrastruktur, Softwareentwicklung und DevOps. Es ist als Lernplattform konzipiert, die Ihnen hilft, grundlegende bis fortgeschrittene Konzepte durch praktische Beispiele zu verinnerlichen.
 
 ## Comming next
-- VS Code Setup
+
 - Backup + Restore
 - Disaster Recovery
 
