@@ -6,7 +6,6 @@ Dieses Repository ist eine Sammlung von praxisorientierten Anleitungen und Übun
 - VS Code Setup
 - Backup + Restore
 - Disaster Recovery
-- emacs
 
 ## Inhalt
 
