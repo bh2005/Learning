@@ -1,5 +1,15 @@
 # Emacs Cheat Sheet für DevOps
 
+### Wichtiger Tipp für Anfänger: Der Hilfemodus
+
+Verzweifeln Sie nicht! Emacs hat ein umfassendes Hilfesystem direkt eingebaut. Wenn Sie sich unsicher sind, drücken Sie `C-h` gefolgt von einem weiteren Buchstaben:
+
+* **`C-h t`**: Startet ein **Tutorial** für Einsteiger. Das ist der beste Weg, um die Grundlagen zu lernen.
+* **`C-h k`**: Zeigt an, was ein bestimmter Tastaturbefehl tut. Drücken Sie `C-h k`, gefolgt von einem Befehl (z.B. `C-s`), um eine Erklärung zu erhalten.
+* **`C-h f`**: Erklärt eine Funktion.
+
+Mit diesen Befehlen sind Sie gut gerüstet, um die ersten Schritte in Emacs zu machen.
+
 ## Überblick
 Dieses Cheat Sheet bietet eine Übersicht über grundlegende Emacs-Tastenkombinationen, Python-Entwicklung mit Elpy und Org-Mode für Literate DevOps. Es enthält ausführbaren Code für die Einrichtung auf Debian, ideal für HomeLab-Workflows.
 
@@ -52,13 +62,61 @@ EOF
 **Erklärung**: Konfiguriert Elpy für Autovervollständigung, Org-Babel für interaktive Code-Blöcke und grundlegende Einstellungen.
 
 ## Cheat Sheet: Tastenkombinationen
-### Grundlegende Navigation
-- `C-x C-f`: Datei öffnen (`~/file.py`).
-- `C-x C-s`: Speichern.
-- `C-x C-c`: Emacs beenden.
-- `C-g`: Befehl abbrechen.
-- `C-h t`: Emacs-Tutorial starten.
-- `M-x`: Befehl ausführen (z. B. `M-x eval-buffer`).
+Die meisten Emacs-Befehle werden mit Tastenkombinationen ausgeführt, die oft mit zwei speziellen Tasten beginnen:
+
+* **`C-`**: Steht für die **`Strg`**-Taste (Control). Drücken und halten Sie `Strg`, während Sie die nächste Taste drücken. Beispiel: `C-x` bedeutet `Strg` + `x`.
+* **`M-`**: Steht für die **`Alt`**-Taste (Meta) auf den meisten Tastaturen. Drücken und halten Sie `Alt`, während Sie die nächste Taste drücken. Beispiel: `M-f` bedeutet `Alt` + `f`.
+
+---
+
+### Navigation & Bearbeitung
+
+| Aktion | Befehl | Erklärung |
+| :--- | :--- | :--- |
+| **Öffnen** | `C-x C-f` | Öffnet eine Datei. (`C-x` drücken, loslassen, dann `C-f` drücken). |
+| **Speichern** | `C-x C-s` | Speichert die aktuelle Datei. |
+| **Speichern unter** | `C-x C-w` | Speichert die aktuelle Datei unter einem neuen Namen. |
+| **Beenden** | `C-x C-c` | Schließt Emacs. |
+
+### Cursor-Bewegung
+
+| Aktion | Befehl | Erklärung |
+| :--- | :--- | :--- |
+| **Zeichen vor/zurück** | `C-f` / `C-b` | Bewegt den Cursor ein Zeichen vorwärts / rückwärts. |
+| **Zeile rauf/runter** | `C-p` / `C-n` | Bewegt den Cursor eine Zeile nach oben / unten. |
+| **Wort vor/zurück** | `M-f` / `M-b` | Bewegt den Cursor ein Wort vorwärts / rückwärts. |
+| **Zeilenanfang/Ende** | `C-a` / `C-e` | Bewegt den Cursor an den Anfang / das Ende der aktuellen Zeile. |
+| **Seitenanfang/Ende** | `M-<` / `M->` | Bewegt den Cursor an den Anfang / das Ende des Dokuments. |
+
+### Textbearbeitung & Ausschneiden
+
+| Aktion | Befehl | Erklärung |
+| :--- | :--- | :--- |
+| **Löschen** | `C-d` | Löscht das Zeichen unter dem Cursor. |
+| **Zeile löschen** | `C-k` | Löscht den Rest der Zeile vom Cursor an. |
+| **Ausschneiden** | `C-w` | Schneidet den ausgewählten Text aus (nachdem Sie ihn mit `C-Space` markiert haben). |
+| **Kopieren** | `M-w` | Kopiert den ausgewählten Text. |
+| **Einfügen** | `C-y` | Fügt den Text ein. |
+
+### Suche und Ersetzen
+
+| Aktion | Befehl | Erklärung |
+| :--- | :--- | :--- |
+| **Suche** | `C-s` | Startet eine inkrementelle Suche nach Text. |
+| **Ersetzen** | `M-%` | Findet und ersetzt Text. |
+
+### Fenster und Puffer
+
+| Aktion | Befehl | Erklärung | |
+| :--- | :--- | :--- | :--- |
+| **Puffer anzeigen** | `C-x C-b` | Zeigt eine Liste aller geöffneten Puffer an (Dateien). |
+| **Puffer wechseln** | `C-x b` | Wechselt zu einem anderen Puffer (Sie müssen den Namen eintippen). |
+| **Puffer schließen** | `C-x k` | Schließt den aktuellen Puffer. |
+| **Fenster teilen (vertikal)** | `C-x 2` | Teilt das Fenster in zwei vertikale Teile. |
+| **Fenster teilen (horizontal)** | `C-x 3` | Teilt das Fenster in zwei horizontale Teile. |
+| **Fenster wechseln** | `C-x o` | Wechselt zwischen den geteilten Fenstern. |
+
+---
 
 ### Python mit Elpy
 - `C-c C-c`: Code an Python-REPL senden.
