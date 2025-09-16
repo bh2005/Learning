@@ -2,10 +2,10 @@
 
 Dieses Repository ist eine Sammlung von praxisorientierten Anleitungen und Übungen zu verschiedenen Themenbereichen der IT-Infrastruktur, Softwareentwicklung und DevOps. Es ist als Lernplattform konzipiert, die Ihnen hilft, grundlegende bis fortgeschrittene Konzepte durch praktische Beispiele zu verinnerlichen.
 
+Aktuell sind wir bei **58** verschieden Themen!!
+
 ## Comming next
 
-- Backup + Restore
-- Disaster Recovery
 
 ## Inhalt
 
