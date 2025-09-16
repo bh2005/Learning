@@ -5,7 +5,8 @@ Dieses Repository ist eine Sammlung von praxisorientierten Anleitungen und Übun
 Aktuell sind wir bei **58** verschieden Themen!!
 
 ## Comming next
-
+- Kryptographie & Verschlüsselung
+- TLS und Co
 
 ## Inhalt
 
