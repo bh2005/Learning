@@ -44,8 +44,12 @@ Die Benutzeroberfläche wird direkt in Godot gestaltet und in die Visualisierung
 - **Schriftarten**: Eine klare, technische Monospace-Schriftart (z. B. Fira Code) stellt Daten professionell dar.
 - **Animationen**: Sanfte Animationen (z. B. beim Laden neuer Daten oder Verschieben von Knoten) sorgen für eine flüssige und ansprechende Benutzererfahrung.
 
-![Beispiel Netzwerkkarte](network_map.png "Interaktive CDP/LLDP-Netzwerkkarte in Godot")
+![Beispiel Netzwerkkarte](network_map3.jpg "Interaktive CDP/LLDP-Netzwerkkarte in Godot")
 
 ## Zusammenfassung
 
 Die Visualisierung einer CDP/LLDP-Netzwerkkarte in Godot ist mehr als eine statische Darstellung – sie ist eine dynamische, interaktive Umgebung, die es Benutzern ermöglicht, das Netzwerk aktiv zu erkunden. Godot UI-Controls wie GraphEdit, Buttons und Popups bieten Werkzeuge, um Daten zu filtern, zu steuern und detaillierte Einblicke zu gewinnen. Die Kombination aus Force-Directed-Layouts, farbcodierten Verbindungen und ansprechender Ästhetik macht die Netzwerkkarte sowohl funktional als auch visuell ansprechend.
+
+![Beispiel Netzwerkkarte2](network_map2.png "Interaktive CDP/LLDP-Netzwerkkarte in Godot")
+
+![Beispiel Netzwerkkarte3](network_map.png "Interaktive CDP/LLDP-Netzwerkkarte in Godot")
