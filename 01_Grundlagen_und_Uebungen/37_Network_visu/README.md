@@ -44,7 +44,7 @@ Die Benutzeroberfläche wird direkt in Godot gestaltet und in die Visualisierung
 - **Schriftarten**: Eine klare, technische Monospace-Schriftart (z. B. Fira Code) stellt Daten professionell dar.
 - **Animationen**: Sanfte Animationen (z. B. beim Laden neuer Daten oder Verschieben von Knoten) sorgen für eine flüssige und ansprechende Benutzererfahrung.
 
-![Beispiel Netzwerkkarte](images/network_map_example.png "Interaktive CDP/LLDP-Netzwerkkarte in Godot")
+![Beispiel Netzwerkkarte](network_map.png "Interaktive CDP/LLDP-Netzwerkkarte in Godot")
 
 ## Zusammenfassung
 
