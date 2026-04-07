@@ -5,7 +5,7 @@
 Performance-Daten (Perfdata) sind entscheidend für die Analyse historischer Metriken, das Erkennen von Trends und die Prognose von Engpässen in der IT-Überwachung. Checkmk visualisiert Perfdata in Graphen, die wertvolle Einblicke in die Leistung von Systemen liefern. Diese Anleitung erweitert das zuvor entwickelte agentenlose `api_check`-Plugin, um die **Antwortzeit** und **Antwortgröße** einer API als Perfdata zu erfassen. Wir implementieren die Metriken, konfigurieren Schwellwerte und visualisieren die Daten in Checkmk. Die Übungen verwenden die **Checkmk Raw Edition** und basieren auf der Dokumentation (https://docs.checkmk.com/latest/de/devel_check_plugins.html). Sie sind für Nutzer mit Grundkenntnissen in Python und HTTP geeignet.
 
 **Voraussetzungen**:
-- Ein Linux-System mit Checkmk Raw Edition installiert (z. B. Ubuntu 22.04 oder Debian 11).
+- Ein Linux-System mit Checkmk Raw Edition installiert (z. B. Ubuntu 22.04 oder Debian 12).
 - Eine Checkmk-Site (z. B. `mysite`) mit `omd su mysite`-Zugriff.
 - Das `api_check`-Plugin aus der vorherigen Anleitung (siehe `checkmk_agentless_check_plugin.md`).
 - Python 3 mit der Bibliothek `requests` (installiere mit `pip install requests`).

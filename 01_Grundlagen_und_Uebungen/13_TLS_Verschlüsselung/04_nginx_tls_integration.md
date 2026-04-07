@@ -4,7 +4,7 @@
 Nginx ist ein leistungsstarker Open-Source-Webserver, der häufig für die Bereitstellung von Webanwendungen verwendet wird. Durch die Integration von TLS-Zertifikaten kann Nginx HTTPS aktivieren, um sichere, verschlüsselte Kommunikation zu gewährleisten. Diese Anleitung zeigt Ihnen, wie Sie TLS-Zertifikate (z. B. ein selbstsigniertes Zertifikat oder ein von einer CA signiertes Zertifikat) in Nginx auf einem Debian-System einrichten. Wir verwenden die Zertifikate aus der vorherigen OpenSSL-Anleitung (`ca.crt`, `myserver.key`, `myserver-san.crt`) und konfigurieren Nginx, um eine einfache Webseite über HTTPS bereitzustellen. Ziel ist es, Ihnen die Fähigkeiten zu vermitteln, einen sicheren Webserver einzurichten. Diese Anleitung ist ideal für Administratoren und Entwickler, die HTTPS für ihre Webanwendungen implementieren möchten.
 
 Voraussetzungen:
-- Ein Debian-System (z. B. Debian 11 oder 12) mit Root- oder Sudo-Zugriff
+- Ein Debian-System (z. B. Debian 12 oder 12) mit Root- oder Sudo-Zugriff
 - OpenSSL installiert und TLS-Zertifikate verfügbar (z. B. in `~/tls-certs` aus der vorherigen Anleitung: `ca.crt`, `myserver.key`, `myserver-san.crt`)
 - Mindestens 2 GB RAM und ausreichend Festplattenspeicher (mindestens 5 GB frei)
 - Grundlegende Kenntnisse der Linux-Kommandozeile und Kryptographie

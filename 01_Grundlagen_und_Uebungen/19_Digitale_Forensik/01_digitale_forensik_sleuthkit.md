@@ -4,7 +4,7 @@
 Digitale Forensik befasst sich mit der Untersuchung digitaler Geräte und Daten, um Beweise für kriminelle Aktivitäten zu sammeln, ohne diese zu verändern. **The Sleuth Kit (TSK)** ist ein Open-Source-Toolkit für forensische Analysen von Festplatten, Dateisystemen und Dateien. Es ermöglicht die Erstellung von Disk-Images, Dateisystem-Analysen und die Erholung gelöschter Daten. Diese Anleitung führt Sie in die Installation und grundlegende Nutzung von TSK auf einem Debian-System ein und zeigt, wie Sie eine forensische Untersuchung durchführen. Ziel ist es, Ihnen die Fähigkeiten zu vermitteln, erste forensische Analysen mit TSK durchzuführen. Diese Anleitung ist ideal für IT-Sicherheitsexperten, Ermittler und Lernende, die in die Digitale Forensik einsteigen möchten.
 
 **Voraussetzungen:**
-- Ein Debian-System (z. B. Debian 11 oder 12) mit Root- oder Sudo-Zugriff
+- Ein Debian-System (z. B. Debian 12 oder 12) mit Root- oder Sudo-Zugriff
 - Grundlegende Kenntnisse der Linux-Kommandozeile
 - Ein Test-Datenträger (z. B. USB-Stick oder VM-Disk-Image) für forensische Übungen
 - Ein Texteditor (z. B. `nano`, `vim`)

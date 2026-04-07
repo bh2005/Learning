@@ -5,7 +5,7 @@
 Nachdem die Grundlagen der Checkmk REST-API etabliert sind, konzentrieren wir uns auf fortgeschrittene Anwendungsfälle, insbesondere die **Integration mit einem CMDB-System**. Diese Erweiterung zeigt, wie man Host-Daten aus einer CSV-Datei in Checkmk importiert und synchronisiert, um eine typische CMDB-Integration zu simulieren. Wir verwenden Python und die Checkmk REST-API, um Hosts automatisch zu erstellen oder zu aktualisieren, basierend auf einer CSV-Datei mit Hostnamen und IP-Adressen. Die Übungen sind für Nutzer mit fortgeschrittenen Kenntnissen in Python, grundlegenden API-Kenntnissen und Vertrautheit mit Checkmk geeignet.
 
 **Voraussetzungen**:
-- Ein Linux-System mit Checkmk Raw Edition installiert (z. B. Ubuntu 22.04 oder Debian 11).
+- Ein Linux-System mit Checkmk Raw Edition installiert (z. B. Ubuntu 22.04 oder Debian 12).
 - Eine Checkmk-Site (z. B. `mysite`) mit einem API-Benutzer (`api_user`) und Secret.
 - Python 3 installiert.
 - Python-Bibliotheken `requests` und `csv` (installiere mit `pip install requests`).

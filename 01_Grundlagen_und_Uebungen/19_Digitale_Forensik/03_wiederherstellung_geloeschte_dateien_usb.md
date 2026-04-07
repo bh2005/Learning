@@ -4,7 +4,7 @@
 Die Wiederherstellung gelöschter Dateien auf einem USB-Stick ist eine zentrale Aufgabe in der digitalen Forensik, um verlorene oder absichtlich entfernte Daten wiederherzustellen, ohne die Integrität des Mediums zu beeinträchtigen. **The Sleuth Kit (TSK)** ist ein Open-Source-Toolkit, das Dateisystem-Analysen ermöglicht, insbesondere für Dateisysteme wie FAT32 oder NTFS, die häufig auf USB-Sticks verwendet werden. Diese Anleitung führt Sie durch die forensische Wiederherstellung gelöschter Dateien auf einem USB-Stick unter Debian, mit Fokus auf TSK und ergänzend Autopsy für eine visuelle Analyse. Ziel ist es, Ihnen die Fähigkeiten zu vermitteln, gelöschte Dateien sicher zu identifizieren und wiederherzustellen. Diese Anleitung ist ideal für IT-Sicherheitsexperten, Ermittler und Lernende, die in die digitale Forensik einsteigen möchten.
 
 **Voraussetzungen:**
-- Ein Debian-System (z. B. Debian 11 oder 12) mit Root- oder Sudo-Zugriff
+- Ein Debian-System (z. B. Debian 12 oder 12) mit Root- oder Sudo-Zugriff
 - Ein USB-Stick mit FAT32 oder NTFS (für Tests, keine produktiven Daten!)
 - Grundlegende Kenntnisse der Linux-Kommandozeile
 - The Sleuth Kit und Autopsy installiert

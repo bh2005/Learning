@@ -218,7 +218,7 @@
    ```
    - Inhalt:
      ```dockerfile
-     FROM python:3.9-slim-bullseye
+     FROM python:3.9-slim-bookworm
      WORKDIR /app
      RUN useradd -m appuser && chown -R appuser:appuser /app
      USER appuser

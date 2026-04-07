@@ -4,7 +4,7 @@
 Die Visualisierung von Big Data hilft, Muster in großen Datensätzen zu erkennen, und der Versand der Ergebnisse per E-Mail ist ein häufiger Anwendungsfall in der Automatisierung von Berichten. Mit **PySpark** kannst du große Datenmengen analysieren, die Ergebnisse in ein Pandas-DataFrame übertragen und mit **Matplotlib** und **Seaborn** visualisieren. Mit **smtplib** kannst du die Ergebnisse (Markdown-Bericht und Diagramme) per E-Mail versenden. Diese Anleitung führt Anfänger durch praktische Übungen zur **Analyse von Daten mit PySpark**, **Konvertierung in Pandas**, **Erstellung von Diagrammen** (Balkendiagramme, Histogramme, Zeitreihen), **Einbettung in Markdown** und **Versand per E-Mail**. Die Übungen verwenden die JSON-Datei `large_data.json` (100.000 Log-Einträge) und die optimierte `optimized_data.parquet`. Eine **Spielerei** zeigt, wie du die Visualisierungen und den Bericht per E-Mail versendest. Die Übungen sind auf einem Debian-basierten System ausführbar und für Nutzer mit grundlegenden Kenntnissen in Bash, Python, PySpark und E-Mail-Konfiguration geeignet.
 
 **Voraussetzungen**:
-- Ein Debian-basiertes System (z. B. Ubuntu 22.04, Debian 11); Windows-Nutzer können WSL2 verwenden; macOS ist kompatibel.
+- Ein Debian-basiertes System (z. B. Ubuntu 22.04, Debian 12); Windows-Nutzer können WSL2 verwenden; macOS ist kompatibel.
 - Ein Terminal (z. B. Bash unter Linux).
 - Installierte Tools:
   - Java Runtime Environment (JRE): `sudo apt install default-jre`

@@ -1,5 +1,14 @@
 # Lernprojekt: Installation von Gitea mit TurnKey Linux als LXC-Container
 
+> ℹ️ **Hinweis: Gitea und Forgejo (Stand: April 2026)**
+>
+> Im Jahr 2022 wurde Gitea von einem Teil der Kernentwickler zu **[Forgejo](https://forgejo.org)** geforkt.
+> Forgejo ist vollständig kompatibel mit der Gitea-API und wird von der Community aktiv weiterentwickelt.
+> TurnKey Linux bietet aktuell noch eine Gitea-Appliance an — eine offizielle Forgejo-Appliance ist in Planung.
+>
+> **Für neue Deployments** empfiehlt sich ein direktes Forgejo-Setup (https://forgejo.org/docs/latest/admin/installation/).
+> Diese Anleitung gilt unverändert auch für Forgejo, da beide Projekte kompatibel sind.
+
 ## Vorbereitung: Umgebung einrichten
 1. **Proxmox VE prüfen**:
    - Melde dich an der Proxmox-Weboberfläche an: `https://192.168.30.2:8006`.
@@ -51,15 +60,15 @@
    - Öffne die Proxmox-Weboberfläche.
    - Gehe zu `Storage > local > Content > Templates`.
    - Lade die neueste TurnKey Gitea-Vorlage herunter:
-     - URL: `http://mirror.turnkeylinux.org/turnkeylinux/images/proxmox/debian-11-turnkey-gitea_18.0-1_amd64.tar.gz`[](https://www.turnkeylinux.org/gitea)
+     - URL: `http://mirror.turnkeylinux.org/turnkeylinux/images/proxmox/debian-12-turnkey-gitea_18.1-1_amd64.tar.gz`
      - Alternativ per CLI auf dem Proxmox-Host:
        ```bash
-       pveam download local debian-11-turnkey-gitea_18.0-1_amd64.tar.gz
+       pveam download local debian-12-turnkey-gitea_18.1-1_amd64.tar.gz
        ```
 2. **LXC-Container erstellen**:
    - In Proxmox: `Create CT`:
      - Hostname: `gitea`
-     - Template: `debian-11-turnkey-gitea_18.0-1_amd64`
+     - Template: `debian-12-turnkey-gitea_18.1-1_amd64`
      - IP-Adresse: `192.168.30.104/24`
      - Gateway: `192.168.30.1`
      - DNS-Server: `192.168.30.1`

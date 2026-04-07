@@ -4,8 +4,8 @@
 Die Integration von **Apache Maven** mit **Jenkins** ermöglicht eine automatisierte Continuous Integration (CI)-Pipeline, bei der Code-Änderungen automatisch gebaut, getestet und deployt werden. Maven übernimmt den Build-Prozess (z. B. Kompilierung, Tests), während Jenkins die Orchestrierung, Planung und Überwachung handhabt. Diese Anleitung zeigt, wie Sie Maven und Jenkins auf einem Debian-System einrichten und integrieren, um eine einfache CI-Pipeline für ein Java-Projekt zu erstellen. Ziel ist es, Ihnen die Fähigkeiten zu vermitteln, CI-Prozesse für größere Java-Projekte zu automatisieren. Diese Anleitung ist ideal für Entwickler, die ihre Workflows effizienter gestalten möchten.
 
 **Voraussetzungen:**
-- Ein Debian-System (z. B. Debian 11 oder 12) mit Root- oder Sudo-Zugriff
-- Java Development Kit (JDK) installiert (z. B. OpenJDK 11, wie in der vorherigen Java-Anleitung)
+- Ein Debian-System (z. B. Debian 12 oder 12) mit Root- oder Sudo-Zugriff
+- Java Development Kit (JDK) installiert (z. B. OpenJDK 17, wie in der vorherigen Java-Anleitung)
 - Mindestens 4 GB RAM und ausreichend Festplattenspeicher (mindestens 10 GB frei)
 - Grundlegende Kenntnisse der Linux-Kommandozeile, Java und Maven (z. B. aus der vorherigen Maven-Anleitung)
 - Ein Git-Repository (z. B. auf GitHub) mit einem Java-Maven-Projekt
@@ -34,7 +34,7 @@ Hier sind die wichtigsten Konzepte und Techniken, die wir behandeln:
 1. **Schritt 1**: Installiere Jenkins und Maven.
    ```bash
    sudo apt update
-   sudo apt install -y openjdk-11-jdk maven
+   sudo apt install -y openjdk-17-jdk maven
    sudo wget -O /usr/share/keyrings/jenkins-keyring.asc \
        https://pkg.jenkins.io/debian-stable/jenkins.io-2023.key
    echo "deb [signed-by=/usr/share/keyrings/jenkins-keyring.asc] https://pkg.jenkins.io/debian-stable binary/" | \

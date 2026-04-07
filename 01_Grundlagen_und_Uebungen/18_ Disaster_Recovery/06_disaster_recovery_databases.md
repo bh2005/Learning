@@ -4,7 +4,7 @@
 Disaster Recovery (DR) für Datenbanken ist entscheidend, um Datenverluste und Ausfallzeiten bei Hardwaredefekten, Softwarefehlern oder Cyberangriffen zu minimieren. Diese Anleitung konzentriert sich auf DR-Strategien für gängige Datenbanksysteme auf Debian: **MySQL/MariaDB** und **PostgreSQL**. Sie deckt Backup, Restore, Replikation und Automatisierung ab, um die Verfügbarkeit und Integrität kritischer Daten zu gewährleisten. Ziel ist es, Ihnen die Fähigkeiten zu vermitteln, effektive DR-Pläne für Datenbanken zu erstellen und umzusetzen. Diese Anleitung ist ideal für Administratoren, die Datenbankdienste schützen möchten.
 
 **Voraussetzungen:**
-- Ein Debian-System (z. B. Debian 11 oder 12) mit Root- oder Sudo-Zugriff
+- Ein Debian-System (z. B. Debian 12 oder 12) mit Root- oder Sudo-Zugriff
 - Installierte MySQL/MariaDB- oder PostgreSQL-Server
 - Mindestens 4 GB RAM und ausreichend Festplattenspeicher (mindestens 10 GB frei)
 - Externer Speicher (z. B. NAS, Cloud) für Backups

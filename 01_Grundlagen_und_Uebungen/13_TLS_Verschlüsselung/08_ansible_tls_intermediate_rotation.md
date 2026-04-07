@@ -4,7 +4,7 @@
 Zwischenzertifikate (Intermediate Certificates) sind ein wesentlicher Bestandteil der TLS-Vertrauenskette, insbesondere in Szenarien mit Proxies oder Firewalls, die Zwischen-CAs verwenden. Die Automatisierung der Zertifikatrotation für Zwischenzertifikate erfordert die Verwaltung von Root-CA, Zwischen-CA und Serverzertifikaten sowie deren Integration in Nginx. Diese Anleitung erweitert das Ansible-Playbook aus der vorherigen Anleitung, um Zertifikatrotation mit Zwischenzertifikaten (aus der Anleitung "Integration von TLS-Zertifikaten mit Zwischenzertifikaten") auf mehreren Debian-Servern zu automatisieren. Ziel ist es, Ihnen die Fähigkeiten zu vermitteln, komplexe Vertrauensketten in einer Multi-Server-Umgebung zu verwalten und zu rotieren. Diese Anleitung ist ideal für Administratoren, die skalierbare, sichere Systeme mit Zwischenzertifikaten einrichten möchten.
 
 Voraussetzungen:
-- Ein Debian-System (z. B. Debian 11 oder 12) als Steuerknoten mit Root- oder Sudo-Zugriff
+- Ein Debian-System (z. B. Debian 12 oder 12) als Steuerknoten mit Root- oder Sudo-Zugriff
 - Mindestens zwei Debian-Server als Zielknoten mit Nginx und OpenSSL installiert
 - Root- und Zwischen-CA-Zertifikate verfügbar (z. B. in `~/ca`: `root/ca.crt`, `intermediate/intermediate.crt`, `intermediate/myserver.key`, `intermediate/myserver-bundle.crt`)
 - Ansible installiert auf dem Steuerknoten

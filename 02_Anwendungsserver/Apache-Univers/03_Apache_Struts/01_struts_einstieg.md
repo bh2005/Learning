@@ -1,11 +1,23 @@
 # Praxisorientierte Anleitung: Einstieg in Apache Struts auf Debian
 
+> ⚠️ **Legacy-Framework – Nur für bestehende Systeme und Lernzwecke**
+>
+> Apache Struts 2 wird seit 2022 kaum noch aktiv weiterentwickelt. Die letzte Hauptversion (2.5.x) erhält nur noch Sicherheitsupdates.
+> Struts ist außerdem bekannt für kritische Sicherheitslücken (u. a. CVE-2017-5638, Log4Shell-Umfeld).
+>
+> **Für neue Projekte werden folgende Alternativen empfohlen:**
+> - **Spring Boot** – de-facto Standard für Java-Webanwendungen, aktiv entwickelt
+> - **Jakarta EE** (ehem. Java EE) – offizieller Java-Enterprise-Standard
+> - **Quarkus** / **Micronaut** – moderne, cloud-native Java-Frameworks
+>
+> Diese Anleitung eignet sich zur Wartung bestehender Struts-Anwendungen sowie zum Verständnis des MVC-Patterns und der Tomcat-Deployment-Konzepte.
+
 ## Einführung
-Apache Struts ist ein Open-Source-Framework für die Entwicklung von Java-Webanwendungen, das das MVC-Modell (Model-View-Controller) unterstützt. Es erleichtert die Erstellung skalierbarer und wartbarer Webanwendungen durch vordefinierte Komponenten und Konventionen. Diese Anleitung führt Sie in die Grundlagen der Installation und Nutzung von Apache Struts auf einem Debian-System ein, zeigt Ihnen, wie Sie eine einfache Webanwendung erstellen und diese mit Apache Tomcat bereitstellen. Ziel ist es, Ihnen die Fähigkeiten zu vermitteln, eine Struts-basierte Anwendung zu entwickeln. Diese Anleitung ist ideal für Java-Entwickler, die moderne Webanwendungen erstellen möchten.
+Apache Struts ist ein Open-Source-Framework für die Entwicklung von Java-Webanwendungen, das das MVC-Modell (Model-View-Controller) unterstützt. Es erleichtert die Erstellung skalierbarer und wartbarer Webanwendungen durch vordefinierte Komponenten und Konventionen. Diese Anleitung führt Sie in die Grundlagen der Installation und Nutzung von Apache Struts auf einem Debian-System ein, zeigt Ihnen, wie Sie eine einfache Webanwendung erstellen und diese mit Apache Tomcat bereitstellen. Ziel ist es, Ihnen die Fähigkeiten zu vermitteln, eine Struts-basierte Anwendung zu entwickeln.
 
 Voraussetzungen:
-- Ein Debian-System (z. B. Debian 11 oder 12) mit installiertem Apache Tomcat (z. B. `tomcat9`)
-- Java Development Kit (JDK) installiert (mindestens Java 8, empfohlen Java 11)
+- Ein Debian-System (z. B. Debian 12) mit installiertem Apache Tomcat (z. B. `tomcat10`)
+- Java Development Kit (JDK) installiert (mindestens Java 11, empfohlen Java 17)
 - Maven für die Verwaltung von Abhängigkeiten
 - Root- oder Sudo-Zugriff für die Installation
 - Grundlegende Kenntnisse der Linux-Kommandozeile, Java und Webentwicklung

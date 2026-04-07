@@ -4,7 +4,7 @@
 Disaster Recovery (DR) für RAID-Systeme (Redundant Array of Independent Disks) umfasst Strategien und Tools, um Datenverluste und Systemausfälle bei Hardwaredefekten, Softwarefehlern oder anderen Störungen zu minimieren. RAID bietet Redundanz (z. B. RAID 1, 5, 6), aber ein DR-Plan ist entscheidend, um Datenintegrität und Verfügbarkeit zu gewährleisten. Diese Anleitung konzentriert sich auf DR-Grundlagen für Software-RAID auf Debian mit Tools wie `mdadm` sowie Backup- und Restore-Techniken. Ziel ist es, Ihnen die Fähigkeiten zu vermitteln, effektive DR-Pläne für RAID-Systeme zu erstellen und umzusetzen. Diese Anleitung ist ideal für Administratoren, die RAID-basierte Speicherlösungen schützen möchten.
 
 **Voraussetzungen:**
-- Ein Debian-System (z. B. Debian 11 oder 12) mit Root- oder Sudo-Zugriff
+- Ein Debian-System (z. B. Debian 12 oder 12) mit Root- oder Sudo-Zugriff
 - Ein Software-RAID (z. B. RAID 1, 5 oder 6) mit `mdadm` eingerichtet
 - Mindestens 4 GB RAM und ausreichend Festplattenspeicher (mindestens 10 GB frei)
 - Externe Speichermedien (z. B. NAS, USB-Festplatte) für Backups

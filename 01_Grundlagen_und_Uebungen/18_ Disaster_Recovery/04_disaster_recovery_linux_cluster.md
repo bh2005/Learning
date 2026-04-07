@@ -4,7 +4,7 @@
 Disaster Recovery (DR) für Linux-Cluster beinhaltet Strategien und Tools, um hochverfügbare Systeme wie Cluster (z. B. HA-Cluster mit Pacemaker/Corosync oder Kubernetes) nach Ausfällen wie Hardwaredefekten, Softwarefehlern oder Cyberangriffen wiederherzustellen. Diese Anleitung konzentriert sich auf DR-Grundlagen für Linux-Cluster auf Debian, mit Fokus auf **Pacemaker/Corosync** für HA-Cluster und **Kubernetes** für containerisierte Workloads. Ziel ist es, Ihnen die Fähigkeiten zu vermitteln, effektive DR-Pläne für Linux-Cluster zu erstellen und umzusetzen. Diese Anleitung ist ideal für Administratoren, die resiliente Cluster-Umgebungen sicherstellen möchten.
 
 **Voraussetzungen:**
-- Ein Debian-basierter Cluster (z. B. Debian 11 oder 12) mit mindestens zwei Knoten
+- Ein Debian-basierter Cluster (z. B. Debian 12 oder 12) mit mindestens zwei Knoten
 - Administratorrechte (Root oder Sudo)
 - Grundlegende Kenntnisse der Linux-Kommandozeile und Cluster-Technologien
 - Externer Speicher (z. B. NFS, Cloud) für Backups

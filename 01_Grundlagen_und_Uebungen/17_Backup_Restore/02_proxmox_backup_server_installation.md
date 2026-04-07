@@ -4,7 +4,7 @@
 **Proxmox Backup Server (PBS)** ist ein Open-Source-Tool für deduplizierte, inkrementelle Backups, das nahtlos mit Proxmox VE integriert wird. Es reduziert Speicherbedarf durch Deduplizierung (Entfernen redundanter Daten) und ermöglicht schnelle Backups/Restores für VMs, LXC und Hosts. Diese Anleitung führt Sie in die Installation und Konfiguration von PBS auf einem Debian-System ein und zeigt, wie Sie deduplizierte Backups für Proxmox VE einrichten. Ziel ist es, Ihnen die Fähigkeiten zu vermitteln, effiziente Backup-Strategien für virtuelle Umgebungen umzusetzen. Diese Anleitung ist ideal für Administratoren, die deduplizierte Backups in Proxmox implementieren möchten.
 
 Voraussetzungen:
-- Ein Debian-System (z. B. Debian 11 oder 12) mit Root- oder Sudo-Zugriff
+- Ein Debian-System (z. B. Debian 12 oder 12) mit Root- oder Sudo-Zugriff
 - Proxmox VE installiert (z. B. auf einem separaten Host, wie in vorherigen Anleitungen)
 - Mindestens 8 GB RAM und dedizierter Speicher (mindestens 500 GB SSD für deduplizierte Backups)
 - Netzwerkverbindung zwischen PBS und Proxmox VE
@@ -37,8 +37,8 @@ Hier sind die wichtigsten Konzepte und Befehle, die wir behandeln:
    ```bash
    sudo apt update
    sudo apt install -y gnupg
-   wget https://enterprise.proxmox.com/debian/proxmox-release-bullseye.gpg -O /etc/apt/trusted.gpg.d/proxmox-release-bullseye.gpg
-   echo "deb https://enterprise.proxmox.com/debian/pbs bullseye pbs-no-subscription" | sudo tee /etc/apt/sources.list.d/pbs.list
+   wget https://enterprise.proxmox.com/debian/proxmox-release-bookworm.gpg -O /etc/apt/trusted.gpg.d/proxmox-release-bookworm.gpg
+   echo "deb https://enterprise.proxmox.com/debian/pbs bookworm pbs-no-subscription" | sudo tee /etc/apt/sources.list.d/pbs.list
    sudo apt update
    sudo apt install -y proxmox-backup-server
    ```

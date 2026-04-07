@@ -4,7 +4,7 @@
 Das ACME-Protokoll (Automated Certificate Management Environment) ist ein standardisiertes Netzwerkprotokoll (RFC 8555), das die automatisierte Ausstellung, Erneuerung und Verwaltung von TLS-Zertifikaten ermöglicht. Es wurde vom Internet Security Research Group (ISRG) für Let's Encrypt entwickelt und wird von Clients wie Certbot oder acme.sh implementiert. ACME ermöglicht vollständige Automatisierung durch Challenges (z. B. HTTP-01 oder DNS-01), die Domainbesitz validieren, ohne manuelle Intervention. Diese Anleitung erkundet das ACME-Protokoll auf einem Debian-System, zeigt die Integration mit Certbot für die Automatisierung von Zertifikaten in Nginx und erweitert das Rotationsskript aus vorherigen Anleitungen. Ziel ist es, Ihnen die Fähigkeiten zu vermitteln, ACME für wartungsarme HTTPS-Infrastrukturen zu nutzen. Diese Anleitung ist ideal für Administratoren und Entwickler, die skalierbare Zertifikatsverwaltung implementieren möchten.
 
 Voraussetzungen:
-- Ein Debian-System (z. B. Debian 11 oder 12) mit Root- oder Sudo-Zugriff
+- Ein Debian-System (z. B. Debian 12 oder 12) mit Root- oder Sudo-Zugriff
 - Nginx installiert und konfiguriert (z. B. aus vorherigen Anleitungen)
 - Python 3 und pip installiert
 - Ein öffentlich erreichbarer Domainname (z. B. `example.com`), der auf die Server-IP zeigt
@@ -202,7 +202,7 @@ In dieser Anleitung haben Sie das ACME-Protokoll erkundet und Certbot sowie acme
 Das ACME-Protokoll (Automated Certificate Management Environment) ist ein standardisiertes Protokoll der IETF (RFC 8555), das automatisierte Interaktionen zwischen Zertifizierungsstellen (CAs) und Servern für die Ausstellung, Validierung und Erneuerung von TLS-Zertifikaten ermöglicht. Es wird von Diensten wie Let's Encrypt genutzt, um kostenlose, vertrauenswürdige Zertifikate ohne manuelle Intervention zu erzeugen. ACME unterstützt Challenges (z. B. HTTP-01 für Domainvalidierung) und ermöglicht vollständige Automatisierung durch Clients wie Certbot. Diese Anleitung erkundet das ACME-Protokoll, erklärt seine Funktionsweise und zeigt, wie Sie es mit Certbot und Skripten auf einem Debian-System für die vollständige Automatisierung von Zertifikatserstellung und -erneuerung implementieren. Ziel ist es, Ihnen die Fähigkeiten zu vermitteln, ACME für sichere, wartungsarme HTTPS-Setups zu nutzen. Diese Anleitung ist ideal für Administratoren und Entwickler, die automatisierte Zertifikatsverwaltung erkunden möchten.
 
 Voraussetzungen:
-- Ein Debian-System (z. B. Debian 11 oder 12) mit Root- oder Sudo-Zugriff
+- Ein Debian-System (z. B. Debian 12 oder 12) mit Root- oder Sudo-Zugriff
 - Nginx installiert und konfiguriert (z. B. aus vorherigen Anleitungen)
 - Mindestens 2 GB RAM und ausreichend Festplattenspeicher (mindestens 5 GB frei)
 - Ein öffentlich erreichbarer Domainname (z. B. `myserver.example.com`), der auf die Server-IP zeigt

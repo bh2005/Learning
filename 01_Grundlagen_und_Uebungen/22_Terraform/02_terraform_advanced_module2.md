@@ -6,9 +6,9 @@
 
 **Voraussetzungen**:
 - Lokale Maschine (z. B. Proxmox-VM, TrueNAS-VM, oder PC) mit Ubuntu 22.04 LTS oder kompatiblem Linux.
-- Terraform installiert (Version 1.5.7, wie in Modul 1):
+- Terraform installiert (Version 1.9.8, wie in Modul 1):
   ```bash
-  terraform version  # Erwartet: Terraform v1.5.7
+  terraform version  # Erwartet: Terraform v1.9.8
   ```
 - Grundkenntnisse in Terraform (z. B. `resource`, `variable`, `output`, `tfstate` aus Modul 1) und Linux (z. B. `bash`, `nano`).
 - Optional: HomeLab mit TrueNAS (`192.168.30.100`) für Backups und OPNsense für Netzwerkverständnis.
@@ -39,7 +39,7 @@
    ```
 2. **Terraform prüfen**:
    ```bash
-   terraform version  # Erwartet: Terraform v1.5.7
+   terraform version  # Erwartet: Terraform v1.9.8
    ```
    - Falls nicht installiert, siehe Modul 1 (`01_terraform_basics_module1.md`) für Installationsanweisungen.
 

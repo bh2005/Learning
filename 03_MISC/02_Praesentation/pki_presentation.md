@@ -18,7 +18,7 @@
 ---
 
 ## Einrichtung in der HomeLab
-- **Server**: Debian 13 VM (`pki.homelab.local`, `192.168.30.123`)
+- **Server**: Debian 12 VM (`pki.homelab.local`, `192.168.30.123`)
 - **Tools**: OpenSSL
 - **Struktur**:
   ```bash

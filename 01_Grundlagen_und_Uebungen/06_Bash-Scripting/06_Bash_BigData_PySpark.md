@@ -4,7 +4,7 @@
 Big Data umfasst die Verarbeitung massiver Datenmengen, oft mit verteilten Systemen. **Apache Spark** mit seiner Python-API **PySpark** ist ideal für Big-Data-Analysen, kann aber über Bash-Skripte automatisiert werden, um Installation, Datengenerierung, Analyse und Dokumentation zu steuern. Diese Anleitung führt Anfänger durch praktische Übungen zur **Automatisierung der PySpark-Installation**, **Erstellung eines simulierten Datensatzes**, **Ausführung von PySpark-Analysen**, **Aggregation mit Bash-Tools** (z. B. `jq`), **Konvertierung in Parquet** und **Dokumentation in Markdown**. Eine **Spielerei** zeigt, wie du Ergebnisse in Markdown zusammenfasst und per E-Mail versendest (mit `mail`). Die Übungen verwenden die JSON-Datei `large_data.json` (100.000 Einträge) und sind auf einem Debian-basierten System ausführbar, geeignet für Nutzer mit grundlegenden Kenntnissen in Bash und Python.
 
 **Voraussetzungen**:
-- Ein Debian-basiertes System (z. B. Ubuntu 22.04, Debian 11); Windows-Nutzer können WSL2 verwenden; macOS ist kompatibel.
+- Ein Debian-basiertes System (z. B. Ubuntu 22.04, Debian 12); Windows-Nutzer können WSL2 verwenden; macOS ist kompatibel.
 - Ein Terminal (z. B. Bash unter Linux).
 - Installierte Tools:
   - `jq` für JSON-Verarbeitung: `sudo apt install jq`

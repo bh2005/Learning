@@ -4,7 +4,7 @@
 Die forensische Wiederherstellung gelöschter Dateien auf Dateisystemen wie **NTFS** (New Technology File System, Windows) und **APFS** (Apple File System, macOS) ist eine zentrale Aufgabe in der digitalen Forensik, um verlorene oder absichtlich entfernte Daten wiederherzustellen, ohne die Integrität des Mediums zu beeinträchtigen. **The Sleuth Kit (TSK)** ist ein Open-Source-Toolkit, das die Analyse dieser Dateisysteme unterstützt, einschließlich der Identifizierung und Wiederherstellung gelöschter Dateien. Diese Anleitung zeigt, wie man gelöschte Dateien auf NTFS- und APFS-Medien (z. B. USB-Stick oder Festplatte) unter Debian mit TSK und optional Autopsy wiederherstellt. Ziel ist es, Ihnen die Fähigkeiten zu vermitteln, forensische Analysen und Wiederherstellungen auf diesen Dateisystemen durchzuführen. Diese Anleitung ist ideal für IT-Sicherheitsexperten, Ermittler und Lernende, die ihre forensischen Kenntnisse erweitern möchten.
 
 **Voraussetzungen:**
-- Ein Debian-System (z. B. Debian 11 oder 12) mit Root- oder Sudo-Zugriff
+- Ein Debian-System (z. B. Debian 12 oder 12) mit Root- oder Sudo-Zugriff
 - Ein Test-Medium (z. B. USB-Stick oder VM-Disk-Image) mit NTFS- oder APFS-Dateisystem
 - Grundlegende Kenntnisse der Linux-Kommandozeile und digitaler Forensik
 - The Sleuth Kit und Autopsy installiert

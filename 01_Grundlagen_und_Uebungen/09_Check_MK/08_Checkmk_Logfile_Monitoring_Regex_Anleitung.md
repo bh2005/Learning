@@ -4,7 +4,7 @@
 Das Logfile Monitoring in Checkmk ermöglicht die Überwachung von Logdateien, um bestimmte Muster oder Fehler zu erkennen, z. B. in Systemlogs oder Anwendungslogs. Das `logwatch`-Plugin analysiert Logdateien und erzeugt Warnungen basierend auf definierten regulären Ausdrücken (Regex). Diese Anleitung führt Anfänger in die **Verwendung des Logfile Monitoring mit komplexen Regex-Mustern** ein, basierend auf der offiziellen Dokumentation (https://docs.checkmk.com/latest/de/monitoring_logfiles.html). Der Fokus liegt auf **Grundlagen der Logdateiüberwachung**, **Installation und Konfiguration des `logwatch`-Plugins auf dem localhost mit Regex**, **Integration in eine Checkmk-Site** sowie **Fehlerbehebung**. Eine **Spielerei** zeigt, wie du Logdateiüberwachungsdaten über die Checkmk-REST-API abrufst und in Markdown- sowie JSON-Format exportierst, wobei der Hostname als Kommandozeilenparameter übergeben wird, um die Konsistenz mit vorherigen Anleitungen zu wahren. Die Übungen verwenden die **Checkmk Raw Edition** (Open Source) und sind für Nutzer mit grundlegenden Kenntnissen in Linux, Python und Checkmk geeignet, wobei Regex-Kenntnisse hilfreich, aber nicht zwingend erforderlich sind.
 
 **Voraussetzungen**:
-- Ein Linux-System mit Checkmk Raw Edition installiert (z. B. Ubuntu 22.04 oder Debian 11).
+- Ein Linux-System mit Checkmk Raw Edition installiert (z. B. Ubuntu 22.04 oder Debian 12).
 - Ein Terminal (z. B. `bash` oder `zsh`) mit Root-Zugriff oder `sudo`-Rechten.
 - Eine Checkmk-Site (z. B. `mysite`) eingerichtet (siehe vorherige Anleitung).
 - Checkmk-Agent auf dem localhost installiert (siehe vorherige Anleitung).

@@ -4,7 +4,7 @@
 **Java** ist eine weit verbreitete, objektorientierte Programmiersprache, die für ihre Plattformunabhängigkeit bekannt ist. **Eclipse** ist eine beliebte, kostenlose Integrated Development Environment (IDE), die Java-Entwicklung durch Funktionen wie Autovervollständigung und Debugging erleichtert. Diese Anleitung führt Sie in die Installation von Java und Eclipse auf einem Debian-System ein und zeigt, wie Sie ein einfaches Java-Projekt erstellen, das grundlegende Konzepte wie Variablen, Schleifen und Methoden verwendet. Ziel ist es, Anfängern ohne Programmiererfahrung die Fähigkeiten zu vermitteln, Java-Programme mit Eclipse zu entwickeln. Diese Anleitung ist ideal für Lernende, die eine benutzerfreundliche Entwicklungsumgebung nutzen möchten.
 
 **Voraussetzungen:**
-- Ein Debian-System (z. B. Debian 11 oder 12) mit Root- oder Sudo-Zugriff
+- Ein Debian-System (z. B. Debian 12 oder 12) mit Root- oder Sudo-Zugriff
 - Mindestens 4 GB RAM und ausreichend Festplattenspeicher (mindestens 10 GB frei)
 - Grundlegende Kenntnisse der Linux-Kommandozeile
 - Internetzugang für Downloads
@@ -31,17 +31,17 @@ Hier sind die wichtigsten Konzepte und Werkzeuge, die wir behandeln:
 ### Übung 1: Java und Eclipse installieren
 **Ziel**: Lernen, wie man Java und Eclipse auf einem Debian-System installiert und eine Entwicklungsumgebung einrichtet.
 
-1. **Schritt 1**: Installiere das OpenJDK 11.
+1. **Schritt 1**: Installiere das OpenJDK 17 (LTS, empfohlen).
    ```bash
    sudo apt update
-   sudo apt install -y openjdk-11-jdk
+   sudo apt install -y openjdk-17-jdk
    ```
    Überprüfe die Installation:
    ```bash
    java -version
    javac -version
    ```
-   Die Ausgabe sollte die Version von Java (z. B. OpenJDK 11) anzeigen.
+   Die Ausgabe sollte die Version von Java (z. B. OpenJDK 17) anzeigen.
 2. **Schritt 2**: Lade und installiere Eclipse.
    - Lade die Eclipse IDE für Java Developers herunter (z. B. von https://www.eclipse.org/downloads/).
    - Alternative: Verwende das Debian-Paket oder Snap.
@@ -55,7 +55,7 @@ Hier sind die wichtigsten Konzepte und Werkzeuge, die wir behandeln:
    - Wähle einen Workspace (z. B. `~/eclipse-workspace`) und starte die IDE.
 3. **Schritt 3**: Konfiguriere die Java-Umgebung in Eclipse.
    - Gehe zu **Window** > **Preferences** > **Java** > **Installed JREs**.
-   - Stelle sicher, dass OpenJDK 11 (z. B. `/usr/lib/jvm/java-11-openjdk-amd64`) ausgewählt ist.
+   - Stelle sicher, dass OpenJDK 17 (z. B. `/usr/lib/jvm/java-17-openjdk-amd64`) ausgewählt ist.
 4. **Schritt 4**: Erstelle ein erstes Java-Projekt.
    - In Eclipse: **File** > **New** > **Java Project**.
    - Projektname: `HelloWorldProject`.

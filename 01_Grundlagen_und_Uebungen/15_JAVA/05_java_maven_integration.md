@@ -4,7 +4,7 @@
 **Apache Maven** ist ein leistungsstarkes Build-Management-Tool für Java-Projekte, das die Verwaltung von Abhängigkeiten, Builds und Projektstrukturen vereinfacht. Es verwendet eine `pom.xml`-Datei (Project Object Model), um Projektkonfigurationen und Abhängigkeiten zu definieren, und ermöglicht skalierbare Projekte durch standardisierte Prozesse. Diese Anleitung zeigt, wie Sie Maven auf einem Debian-System installieren, ein Java-Projekt mit Abhängigkeiten erstellen und es bauen. Ziel ist es, Anfängern mit Java-Grundkenntnissen die Fähigkeiten zu vermitteln, größere Projekte mit externen Bibliotheken zu verwalten. Diese Anleitung ist ideal für Lernende, die ihre Java-Projekte professionell strukturieren möchten.
 
 **Voraussetzungen:**
-- Ein Debian-System (z. B. Debian 11 oder 12) mit Root- oder Sudo-Zugriff
+- Ein Debian-System (z. B. Debian 12 oder 12) mit Root- oder Sudo-Zugriff
 - Java Development Kit (JDK) installiert (z. B. OpenJDK 11, wie in der vorherigen Java-Anleitung)
 - Mindestens 2 GB RAM und ausreichend Festplattenspeicher (mindestens 5 GB frei)
 - Grundlegende Kenntnisse der Linux-Kommandozeile und Java (z. B. Klassen, Methoden, Packages)

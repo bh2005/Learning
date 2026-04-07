@@ -9,7 +9,7 @@ Proxmox VE ist eine leistungsstarke Virtualisierungsplattform, die standardmäß
 - **Was ist SDN in Proxmox?**: SDN trennt die Steuerungsebene (Control Plane, z. B. Regeln für Routing) von der Datenebene (Data Plane, tatsächlicher Datenverkehr). In Proxmox wird dies durch OVS und den `pve-sdn`-Dienst realisiert, der Funktionen wie VLANs, VNets, IPAM (IP Address Management) und virtuelle Router bereitstellt.
 - **Warum ist das Setup wichtig?**: Ohne den `pve-sdn`-Dienst fehlen die GUI-Optionen für SDN (z. B. Zonen, VNets) und die zugrunde liegende Infrastruktur (z. B. OVS-Flows). Fehler im Setup führen zu Problemen wie nicht erreichbaren VMs oder falsch konfigurierten Netzwerken.
 - **Voraussetzungen**:
-  - Ein funktionierender Proxmox VE-Knoten (Version 7.x oder höher empfohlen, da SDN in älteren Versionen eingeschränkt ist).
+  - Ein funktionierender Proxmox VE-Knoten (Version 8.x empfohlen; SDN ist ab 8.1 vollständig in die GUI integriert).
   - Internetzugang für Paketinstallationen.
   - Grundlegende Netzwerkkonfiguration (z. B. eine funktionierende Bridge wie `vmbr0` oder `ovsbr0`, siehe Modul 1).
   - Root-Zugriff auf die Shell (via GUI-Console oder SSH).
@@ -34,7 +34,7 @@ Proxmox VE ist eine leistungsstarke Virtualisierungsplattform, die standardmäß
    sudo apt update
    ```
    - **Bedeutung**: Aktualisiert die Liste der verfügbaren Pakete, ähnlich wie ein App-Store, der nach Updates sucht. Dies stellt sicher, dass Sie die neueste Version von `pve-sdn` erhalten.
-   - **Fehlerbehebung**: Falls `apt update` fehlschlägt, prüfen Sie die Internetverbindung (`ping 8.8.8.8`) oder die Paketquellen in `/etc/apt/sources.list`. Stellen Sie sicher, dass die Proxmox-Repositorys (z. B. `deb http://download.proxmox.com/debian/pve bullseye pve-no-subscription`) korrekt konfiguriert sind.
+   - **Fehlerbehebung**: Falls `apt update` fehlschlägt, prüfen Sie die Internetverbindung (`ping 8.8.8.8`) oder die Paketquellen in `/etc/apt/sources.list`. Stellen Sie sicher, dass die Proxmox-Repositorys (z. B. `deb http://download.proxmox.com/debian/pve bookworm pve-no-subscription`) korrekt konfiguriert sind.
 3. **pve-sdn installieren**: Führen Sie aus:
    ```bash
    sudo apt install pve-sdn
@@ -54,7 +54,7 @@ Proxmox VE ist eine leistungsstarke Virtualisierungsplattform, die standardmäß
    ```bash
    dpkg -l | grep pve-sdn
    ```
-   - **Erwartete Ausgabe**: Zeigt die installierte Version, z. B. `ii  pve-sdn 7.0-1`.
+   - **Erwartete Ausgabe**: Zeigt die installierte Version, z. B. `ii  pve-sdn 8.1-1`.
    - **Fehlerbehebung**: Falls das Paket nicht angezeigt wird, wiederholen Sie die Installation oder prüfen Sie Logs mit `journalctl -u apt`.
 
 **Tipp**: Notieren Sie sich die installierte Version von `pve-sdn`, da einige Funktionen (z. B. BGP-Unterstützung) von der Version abhängen.

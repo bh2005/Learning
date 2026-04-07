@@ -6,9 +6,9 @@
 
 **Voraussetzungen**:
 - GCP-Konto mit aktiviertem Free Tier oder $300-Guthaben, Projekt `homelab-lamp` (Projekt-ID: z. B. `homelab-lamp-123456`).
-- Terraform installiert (Version 1.5.7, wie in Modul 1):
+- Terraform installiert (Version 1.9.8, wie in Modul 1):
   ```bash
-  terraform version  # Erwartet: Terraform v1.5.7
+  terraform version  # Erwartet: Terraform v1.9.8
   ```
 - Google Cloud SDK (`gcloud`) installiert (lokal oder auf einer VM):
   ```bash
@@ -36,10 +36,10 @@
 ### Vorbereitung: Projekt einrichten
 1. **Terraform installieren** (falls nicht vorhanden, siehe Modul 1):
    ```bash
-   wget https://releases.hashicorp.com/terraform/1.5.7/terraform_1.5.7_linux_amd64.zip
-   unzip terraform_1.5.7_linux_amd64.zip
+   wget https://releases.hashicorp.com/terraform/1.9.8/terraform_1.9.8_linux_amd64.zip
+   unzip terraform_1.9.8_linux_amd64.zip
    sudo mv terraform /usr/local/bin/
-   terraform version  # Erwartet: Terraform v1.5.7
+   terraform version  # Erwartet: Terraform v1.9.8
    ```
 2. **Google Cloud SDK installieren**:
    ```bash

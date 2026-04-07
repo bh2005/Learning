@@ -4,7 +4,7 @@
 Simple Network Management Protocol (SNMP) ist ein Standardprotokoll zur Überwachung von Netzwerkgeräten wie Switches, Router, Drucker oder Server. Checkmk nutzt SNMP, um Daten von Geräten ohne installierten Checkmk-Agenten zu sammeln, und bietet umfangreiche Unterstützung für SNMP v1, v2c und v3. Diese Anleitung führt Anfänger in die **Überwachung mit SNMP in Checkmk** ein, mit Fokus auf **Grundlagen von SNMP**, **Konfiguration von SNMP auf einem Gerät**, **Integration eines SNMP-Hosts in Checkmk** sowie **Fehlerbehebung**. Eine **Spielerei** zeigt, wie du SNMP-Daten als Markdown-Tabelle exportierst, um die Verbindung zu vorherigen Themen (z. B. Markdown-Ausgabe) herzustellen. Die Übungen verwenden die **Checkmk Raw Edition** (Open Source) und sind für Nutzer mit grundlegenden Kenntnissen in Linux, Netzwerken und Checkmk geeignet.
 
 **Voraussetzungen**:
-- Ein Linux-System mit Checkmk Raw Edition installiert (z. B. Ubuntu 22.04 oder Debian 11).
+- Ein Linux-System mit Checkmk Raw Edition installiert (z. B. Ubuntu 22.04 oder Debian 12).
 - Ein Terminal (z. B. `bash` oder `zsh`) mit Root-Zugriff oder `sudo`-Rechten.
 - Eine Checkmk-Site (z. B. `mysite`) eingerichtet (siehe vorherige Anleitung).
 - Ein SNMP-fähiges Gerät (z. B. ein Switch, Router oder ein Linux-Server mit `snmpd`) im Netzwerk.

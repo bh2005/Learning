@@ -4,7 +4,7 @@
 Java ist eine leistungsstarke Programmiersprache, die fortgeschrittene Konzepte wie **Arrays**, **Methodenüberladung** und **Exception-Handling** bietet, um strukturierte, flexible und robuste Programme zu entwickeln. **Arrays** ermöglichen die Speicherung mehrerer Werte in einer einzigen Variable, **Methodenüberladung** erlaubt mehrere Methoden mit demselben Namen, aber unterschiedlichen Parametern, und **Exception-Handling** hilft, Fehler zu behandeln, ohne dass Programme abstürzen. Diese Anleitung zeigt, wie Sie diese Konzepte in Java auf einem Debian-System anwenden. Ziel ist es, Anfängern die Fähigkeiten zu vermitteln, komplexere Java-Programme zu schreiben. Diese Anleitung ist ideal für Lernende mit Grundkenntnissen in Java.
 
 **Voraussetzungen:**
-- Ein Debian-System (z. B. Debian 11 oder 12) mit Root- oder Sudo-Zugriff
+- Ein Debian-System (z. B. Debian 12 oder 12) mit Root- oder Sudo-Zugriff
 - Java Development Kit (JDK) installiert (z. B. OpenJDK 11, wie in der vorherigen Java-Anleitung)
 - Mindestens 2 GB RAM und ausreichend Festplattenspeicher (mindestens 5 GB frei)
 - Grundlegende Kenntnisse der Linux-Kommandozeile und Java (z. B. Klassen, Variablen, Schleifen)

@@ -10,7 +10,7 @@ Python-Skripte sind für die Kommandozeile optimiert, können aber mit **Tkinter
 Die Übungen verwenden die JSON-Datei `sample_data.json` und die Funktionen aus `summary_functions.py`. Eine **Spielerei** integriert alle Funktionen in ein Hauptfenster mit interaktiven Schaltflächen. Die Übungen sind auf einem Debian-basierten System ausführbar und für Nutzer mit grundlegenden Python-Kenntnissen geeignet.
 
 **Voraussetzungen**:
-- Ein Debian-basiertes System (z. B. Ubuntu 22.04, Debian 11); Windows-Nutzer können WSL2 mit X-Server (z. B. Xming) verwenden; macOS ist kompatibel.
+- Ein Debian-basiertes System (z. B. Ubuntu 22.04, Debian 12); Windows-Nutzer können WSL2 mit X-Server (z. B. Xming) verwenden; macOS ist kompatibel.
 - Ein Terminal (z. B. Bash unter Linux).
 - Installierte Tools:
   - Python 3 und `pip`: `sudo apt install python3 python3-pip`

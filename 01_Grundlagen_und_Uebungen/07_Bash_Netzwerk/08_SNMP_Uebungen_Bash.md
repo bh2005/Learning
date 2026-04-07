@@ -4,7 +4,7 @@
 Das Simple Network Management Protocol (SNMP) ermöglicht die Überwachung und Verwaltung von Netzwerkgeräten durch Abfragen von Statusinformationen. Auf einem Debian-System kannst du einen SNMP-Agenten (`snmpd`) und Client-Tools (`snmp`) verwenden, um System- und Netzwerkdaten abzurufen. Diese Anleitung führt Anfänger durch praktische Übungen zur **Installation und Konfiguration eines SNMP-Agenten**, **Datenabfrage mit SNMP-Tools** und **Abfrage von Netzwerk-Interfaces**. Die Übungen konzentrieren sich auf die Einrichtung eines SNMP-Dienstes, das Abrufen von Systeminformationen (z. B. Uptime) und die Analyse von Netzwerk-Interfaces. Eine **Spielerei** zeigt, wie du die Ergebnisse in einer Markdown-Tabelle zusammenfasst, um die Verbindung zu vorherigen Themen (z. B. Markdown-Ausgabe) herzustellen. Durch diese Übungen lernst du, SNMP in einer Bash-Umgebung auf einem Debian-System zu meistern.
 
 **Voraussetzungen**:
-- Ein Debian-basiertes System (z. B. Ubuntu 22.04, Debian 11); Windows-Nutzer können WSL2 verwenden (eingeschränkt, da `snmpd` Root-Zugriff benötigt); macOS ist weniger geeignet.
+- Ein Debian-basiertes System (z. B. Ubuntu 22.04, Debian 12); Windows-Nutzer können WSL2 verwenden (eingeschränkt, da `snmpd` Root-Zugriff benötigt); macOS ist weniger geeignet.
 - Ein Terminal (z. B. Bash unter Linux).
 - Internetzugriff für die Installation von Paketen.
 - Root-Zugriff für Konfigurationen (via `sudo`).

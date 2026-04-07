@@ -1,10 +1,12 @@
 # Praxisorientierte Anleitung: Implementierung von Validierungslogik in Apache Struts für Benutzereingaben auf Debian
 
+> ⚠️ **Legacy-Framework** – Apache Struts 2 wird nicht mehr aktiv entwickelt. Für neue Projekte empfiehlt sich Spring Boot (Bean Validation / Jakarta Validation) oder Jakarta EE. Diese Anleitung eignet sich zum Verständnis von MVC-Validierungskonzepten und zur Wartung bestehender Struts-Anwendungen.
+
 ## Einführung
-Die Validierung von Benutzereingaben ist ein wesentlicher Bestandteil sicherer Webanwendungen, um ungültige oder schädliche Daten zu verhindern. Apache Struts 2 bietet leistungsstarke Mechanismen wie XML-basierte und Annotationsbasierte Validierung, um Eingaben zu prüfen. Diese Anleitung zeigt Ihnen, wie Sie Validierungslogik in die To-Do-Listen-Anwendung aus der vorherigen Anleitung integrieren, um sicherzustellen, dass Aufgaben nicht leer sind und bestimmte Kriterien erfüllen. Ziel ist es, Ihnen die Fähigkeiten zu vermitteln, Struts-Validierungen zu implementieren und Benutzereingaben sicher zu verarbeiten. Diese Anleitung ist ideal für Java-Entwickler, die robuste Webanwendungen entwickeln möchten.
+Die Validierung von Benutzereingaben ist ein wesentlicher Bestandteil sicherer Webanwendungen, um ungültige oder schädliche Daten zu verhindern. Apache Struts 2 bietet Mechanismen wie XML-basierte und annotationsbasierte Validierung, um Eingaben zu prüfen. Diese Anleitung zeigt Ihnen, wie Sie Validierungslogik in die To-Do-Listen-Anwendung aus der vorherigen Anleitung integrieren. Ziel ist es, Ihnen die Fähigkeiten zu vermitteln, Struts-Validierungen zu implementieren und Benutzereingaben sicher zu verarbeiten.
 
 Voraussetzungen:
-- Ein Debian-System (z. B. Debian 11 oder 12) mit installiertem Apache Tomcat (`tomcat9`), Maven, Java JDK (mindestens Java 8, empfohlen Java 11) und MySQL
+- Ein Debian-System (z. B. Debian 12) mit installiertem Apache Tomcat (`tomcat10`), Maven, Java JDK (mindestens Java 11, empfohlen Java 17) und MySQL
 - Die To-Do-Listen-Anwendung aus der vorherigen Anleitung (im Verzeichnis `my-struts-todo`)
 - Root- oder Sudo-Zugriff für die Bereitstellung
 - Grundlegende Kenntnisse der Linux-Kommandozeile, Java, Struts und MySQL

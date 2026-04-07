@@ -120,7 +120,7 @@ In Proxmox SDN sind **Zonen** und **VNets** die Kernbausteine für die Organisat
    - Gehen Sie zu *Hardware* > *Netzwerkgerät (net0)* > *Bearbeiten*.
    - **Bridge**: Wählen Sie `ovsbr0` (falls nicht bereits gesetzt).
    - **VLAN Tag**: Geben Sie `10` ein (passend zu `vnet-web`).
-   - Alternativ: Wählen Sie `vnet-web` direkt aus, wenn die GUI dies unterstützt (ab Proxmox 7.3+).
+   - Alternativ: Wählen Sie `vnet-web` direkt aus, wenn die GUI dies unterstützt (ab Proxmox 8.x).
    - **Modell**: Lassen Sie `VirtIO` für beste Performance.
    - Klicken Sie auf *OK* und dann auf *Anwenden*.
 3. **IP-Adresse konfigurieren**:

@@ -4,7 +4,7 @@
 Die Integration von **The Sleuth Kit (TSK)** mit **Bulk Extractor** ermöglicht eine leistungsstarke Kombination für die forensische Analyse und massenhafte Datenextraktion aus Speichermedien. TSK ist ein Open-Source-Toolkit für die Analyse von Dateisystemen, während Bulk Extractor spezifische Datenmuster wie E-Mail-Adressen, URLs, Kreditkartennummern oder Schlüsselwörter aus großen Datenmengen extrahiert, unabhängig vom Dateisystem. Diese Anleitung zeigt, wie man TSK und Bulk Extractor auf Debian integriert, um gelöschte Dateien zu analysieren und relevante Daten aus einem Disk-Image (z. B. USB-Stick mit NTFS oder ext4) zu extrahieren. Ziel ist es, Ihnen die Fähigkeiten zu vermitteln, forensische Analysen mit hohem Datenvolumen effizient durchzuführen. Diese Anleitung ist ideal für IT-Sicherheitsexperten, forensische Ermittler und Lernende, die fortgeschrittene forensische Techniken meistern möchten.
 
 **Voraussetzungen:**
-- Ein Debian-System (z. B. Debian 11 oder 12) mit Root- oder Sudo-Zugriff
+- Ein Debian-System (z. B. Debian 12 oder 12) mit Root- oder Sudo-Zugriff
 - Ein Test-Medium (z. B. USB-Stick mit NTFS oder ext4) oder ein Disk-Image
 - Grundlegende Kenntnisse der Linux-Kommandozeile und digitaler Forensik
 - The Sleuth Kit und Bulk Extractor installiert

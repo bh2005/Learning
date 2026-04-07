@@ -4,7 +4,7 @@
 OpenSSL ist ein leistungsstarkes Open-Source-Tool für kryptographische Operationen, einschließlich der Erstellung und Verwaltung von TLS-Zertifikaten, die für sichere Kommunikation (z. B. HTTPS) unerlässlich sind. TLS-Zertifikate gewährleisten Vertraulichkeit, Integrität und Authentizität von Daten. Diese Anleitung zeigt Ihnen, wie Sie OpenSSL auf einem Debian-System verwenden, um eine selbstsignierte Zertifizierungsstelle (CA) zu erstellen, Serverzertifikate zu generieren und zu signieren sowie Zertifikate zu verwalten. Ziel ist es, Ihnen die Fähigkeiten zu vermitteln, TLS-Zertifikate für Webanwendungen oder andere sichere Kommunikationsszenarien einzurichten. Diese Anleitung ist ideal für Administratoren und Entwickler, die TLS-Sicherheit in ihren Projekten implementieren möchten.
 
 Voraussetzungen:
-- Ein Debian-System (z. B. Debian 11 oder 12) mit Root- oder Sudo-Zugriff
+- Ein Debian-System (z. B. Debian 12 oder 12) mit Root- oder Sudo-Zugriff
 - OpenSSL installiert (z. B. `openssl` Version 1.1.1 oder höher)
 - Mindestens 2 GB RAM und ausreichend Festplattenspeicher (mindestens 5 GB frei)
 - Grundlegende Kenntnisse der Linux-Kommandozeile und Kryptographie

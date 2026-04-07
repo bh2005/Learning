@@ -4,7 +4,7 @@
 Ansible ist ein Open-Source-Automatisierungstool, das die Konfiguration und Verwaltung mehrerer Server vereinfacht. Durch die Integration der Zertifikatrotation in Ansible können Sie TLS-Zertifikate auf mehreren Debian-Servern zentral verwalten, Ablaufdaten überwachen, Zertifikate erneuern und Nginx ohne Downtime neu laden. Diese Anleitung zeigt Ihnen, wie Sie die Zertifikatrotation aus der vorherigen Anleitung (mit OpenSSL oder Let's Encrypt) in ein Ansible-Playbook integrieren, um sie auf mehrere Server anzuwenden. Ziel ist es, Ihnen die Fähigkeiten zu vermitteln, Zertifikatrotation für Multi-Server-Umgebungen zu automatisieren. Diese Anleitung ist ideal für Administratoren, die skalierbare, sichere Systeme verwalten möchten.
 
 Voraussetzungen:
-- Ein Debian-System (z. B. Debian 11 oder 12) als Steuerknoten mit Root- oder Sudo-Zugriff
+- Ein Debian-System (z. B. Debian 12 oder 12) als Steuerknoten mit Root- oder Sudo-Zugriff
 - Mindestens zwei Debian-Server als Zielknoten mit Nginx und OpenSSL installiert
 - TLS-Zertifikate verfügbar (z. B. in `~/tls-certs`: `myserver.crt`, `myserver.key`)
 - Ansible installiert auf dem Steuerknoten

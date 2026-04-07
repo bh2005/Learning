@@ -4,7 +4,7 @@
 Der `cmk`-Befehl ist das zentrale Kommandozeilenwerkzeug von Checkmk, einer leistungsstarken Open-Source- und Enterprise-Software für IT-Monitoring. Es ermöglicht Administratoren, Hosts und Services zu verwalten, Service-Discoveries durchzuführen und Fehler zu beheben. Diese Anleitung führt Anfänger in die **Verwendung des `cmk`-Befehls** ein, mit Fokus auf **Grundlegende Befehle**, **Service-Discovery und Inventur**, **Fehlerbehebung** sowie **Automatisierung von Monitoring-Aufgaben**. Eine **Spielerei** zeigt, wie du die Ausgabe von `cmk` in eine Markdown-Tabelle umwandelst, um die Verbindung zu vorherigen Themen (z. B. Markdown-Ausgabe) herzustellen. Die Übungen sind für Nutzer mit grundlegenden Kenntnissen in Checkmk und Linux geeignet und verwenden die **Checkmk Raw Edition** (Open Source), da sie kostenlos ist.
 
 **Voraussetzungen**:
-- Ein Linux-System mit Checkmk Raw Edition installiert (z. B. Ubuntu 22.04 oder Debian 11).
+- Ein Linux-System mit Checkmk Raw Edition installiert (z. B. Ubuntu 22.04 oder Debian 12).
 - Ein Terminal (z. B. `bash` oder `zsh`) mit Zugriff auf eine Checkmk-Site (z. B. `mysite`).
 - Root-Zugriff oder `sudo`-Rechte sowie Berechtigungen für die Checkmk-Site (z. B. als Benutzer `mysite`).
 - Checkmk-Agent auf mindestens einem überwachten Host installiert.

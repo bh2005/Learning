@@ -4,7 +4,7 @@
 Kryptographie ist die Wissenschaft der Sicherung von Informationen durch Umwandlung in ein Format, das nur von autorisierten Benutzern gelesen werden kann. Sie umfasst Techniken wie Verschlüsselung, Hashing und digitale Signaturen, die in der modernen Informationssicherheit eine zentrale Rolle spielen. Diese Anleitung führt Sie in die Anwendung grundlegender kryptographischer Techniken auf einem Debian-System ein, einschließlich symmetrischer und asymmetrischer Verschlüsselung sowie Hashing. Sie lernen, wie Sie mit OpenSSL und GPG Daten verschlüsseln und entschlüsseln sowie eine Python-Anwendung für kryptographische Operationen erstellen. Ziel ist es, Ihnen die Fähigkeiten zu vermitteln, Daten sicher zu schützen und Integrität zu gewährleisten. Diese Anleitung ist ideal für Einsteiger in die Kryptographie, die praktische Erfahrungen sammeln möchten.
 
 Voraussetzungen:
-- Ein Debian-System (z. B. Debian 11 oder 12) mit Root- oder Sudo-Zugriff
+- Ein Debian-System (z. B. Debian 12 oder 12) mit Root- oder Sudo-Zugriff
 - Python 3 installiert
 - Mindestens 2 GB RAM und ausreichend Festplattenspeicher (mindestens 5 GB frei)
 - Grundlegende Kenntnisse der Linux-Kommandozeile und Python

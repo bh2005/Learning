@@ -4,7 +4,7 @@
 Big Data umfasst die Verarbeitung massiver Datenmengen, die oft verteilte Systeme erfordern. Mit **Apache Spark** und seiner Python-API **PySpark** kannst du Big-Data-Konzepte lokal simulieren, indem du DataFrames, verteilte Verarbeitung und optimierte Dateiformate wie Parquet nutzt. Diese Anleitung führt Anfänger durch praktische Übungen zur **Installation von PySpark**, **Erstellung eines simulierten Datensatzes**, **Datenanalyse mit DataFrames**, **Aggregation von Daten** und **Optimierung mit Parquet**. Eine **Spielerei** zeigt, wie du die Ergebnisse in einer Markdown-Tabelle zusammenfasst, um die Verbindung zu vorherigen Themen (z. B. Markdown-Ausgabe) herzustellen. Die Übungen sind auf einem Debian-basierten System ausführbar und für Nutzer mit grundlegenden Kenntnissen in Bash, Python und Big-Data-Konzepten geeignet.
 
 **Voraussetzungen**:
-- Ein Debian-basiertes System (z. B. Ubuntu 22.04, Debian 11); Windows-Nutzer können WSL2 verwenden; macOS ist kompatibel.
+- Ein Debian-basiertes System (z. B. Ubuntu 22.04, Debian 12); Windows-Nutzer können WSL2 verwenden; macOS ist kompatibel.
 - Ein Terminal (z. B. Bash unter Linux).
 - Installierte Tools:
   - Java Runtime Environment (JRE): `sudo apt install default-jre`

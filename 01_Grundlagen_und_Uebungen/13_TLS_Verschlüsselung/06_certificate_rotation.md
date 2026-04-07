@@ -4,7 +4,7 @@
 Zertifikatrotation ist der Prozess des regelmäßigen Erneuerns von TLS-Zertifikaten, um Ablaufdaten zu vermeiden und die Sicherheit zu gewährleisten. Automatisierte Skripte können dies überprüfen, neue Zertifikate generieren und den Webserver (z. B. Nginx) ohne Downtime neu laden. Diese Anleitung zeigt Ihnen, wie Sie mit OpenSSL und Bash-Skripten auf einem Debian-System eine Zertifikatrotation implementieren, einschließlich der Überprüfung von Ablaufdaten, Erneuerung und Integration mit Nginx. Wir verwenden selbstsignierte Zertifikate als Beispiel, das auf Let's Encrypt erweitert werden kann. Ziel ist es, Ihnen die Fähigkeiten zu vermitteln, Zertifikate automatisch zu rotieren und Server sicher zu aktualisieren. Diese Anleitung ist ideal für Administratoren, die wartungsarme, sichere Systeme einrichten möchten.
 
 Voraussetzungen:
-- Ein Debian-System (z. B. Debian 11 oder 12) mit Root- oder Sudo-Zugriff
+- Ein Debian-System (z. B. Debian 12 oder 12) mit Root- oder Sudo-Zugriff
 - OpenSSL und Nginx installiert (z. B. aus vorherigen Anleitungen)
 - TLS-Zertifikate verfügbar (z. B. in `~/tls-certs`: `myserver.crt`, `myserver.key`)
 - Bash und Cron für Automatisierung

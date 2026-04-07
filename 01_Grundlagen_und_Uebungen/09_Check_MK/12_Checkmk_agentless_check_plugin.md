@@ -5,7 +5,7 @@
 Agentenlose Check-Plugins, auch **aktive Checks** genannt, werden direkt vom Checkmk-Server ausgeführt und erfordern keinen Checkmk-Agenten auf dem Zielsystem. Sie eignen sich ideal zur Überwachung externer Dienste wie HTTP-APIs, DNS-Server oder andere Netzwerkdienste. Diese Anleitung führt dich in die Entwicklung eines Python-Plugins ein, das den HTTP-Statuscode einer öffentlichen API (z. B. `httpbin.org`) überwacht. Wir konfigurieren und testen das Plugin in Checkmk und integrieren es in die Weboberfläche. Die Übungen verwenden die **Checkmk Raw Edition** und basieren auf der offiziellen Dokumentation (https://docs.checkmk.com/latest/de/devel_check_plugins.html). Sie sind für Nutzer mit Grundkenntnissen in Python und HTTP geeignet.
 
 **Voraussetzungen**:
-- Ein Linux-System mit Checkmk Raw Edition installiert (z. B. Ubuntu 22.04 oder Debian 11).
+- Ein Linux-System mit Checkmk Raw Edition installiert (z. B. Ubuntu 22.04 oder Debian 12).
 - Eine Checkmk-Site (z. B. `mysite`) mit `omd su mysite`-Zugriff.
 - Python 3 mit der Bibliothek `requests` (installiere mit `pip install requests`).
 - Grundkenntnisse in Python und HTTP-Statuscodes.

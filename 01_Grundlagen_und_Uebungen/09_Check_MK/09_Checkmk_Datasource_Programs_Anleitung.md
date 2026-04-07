@@ -4,7 +4,7 @@
 Datasource-Programme in Checkmk ermöglichen die Erweiterung der Datenquellen des Checkmk-Agenten, um benutzerdefinierte Daten (z. B. Prozessanzahl, benutzerdefinierte Metriken) zu erfassen. Sie ersetzen oder ergänzen den Standard-Agenten und geben Daten im Checkmk-Format aus. Diese Anleitung führt Anfänger in die **Verwendung von Datasource-Programmen** ein, basierend auf der offiziellen Dokumentation (https://docs.checkmk.com/latest/de/datasource_programs.html). Der Fokus liegt auf **Grundlagen von Datasource-Programmen**, **Erstellung und Konfiguration eines einfachen Datasource-Programms auf dem localhost**, **Integration in eine Checkmk-Site** sowie **Fehlerbehebung**. Eine **Spielerei** zeigt, wie du Daten eines Datasource-Programms über die Checkmk-REST-API abrufst und in Markdown- sowie JSON-Format exportierst, wobei der Hostname als Kommandozeilenparameter übergeben wird. Die Übungen verwenden die **Checkmk Raw Edition** (Open Source) und sind für Nutzer mit grundlegenden Kenntnissen in Linux, Python und Checkmk geeignet.
 
 **Voraussetzungen**:
-- Ein Linux-System mit Checkmk Raw Edition installiert (z. B. Ubuntu 22.04 oder Debian 11).
+- Ein Linux-System mit Checkmk Raw Edition installiert (z. B. Ubuntu 22.04 oder Debian 12).
 - Ein Terminal (z. B. `bash` oder `zsh`) mit Root-Zugriff oder `sudo`-Rechten.
 - Eine Checkmk-Site (z. B. `mysite`) eingerichtet (siehe vorherige Anleitung).
 - Checkmk-Agent auf dem localhost installiert (siehe vorherige Anleitung).

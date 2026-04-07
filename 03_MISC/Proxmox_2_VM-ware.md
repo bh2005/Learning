@@ -1,7 +1,21 @@
 # How to Export a VM from Proxmox VE and Import it into VMware  
-**Complete Step-by-Step Migration Guide (2025)**  
+**Complete Step-by-Step Migration Guide (2026)**  
 
-This document explains how to migrate a virtual machine from **Proxmox VE (KVM/QEMU)** to **VMware** products (ESXi, vSphere, Workstation, or Fusion) by converting the disk and recreating the VM manually.
+This document explains how to migrate a virtual machine from **Proxmox VE 8.x (KVM/QEMU)** to **VMware** products (ESXi, vSphere, Workstation Pro, or Fusion) by converting the disk and recreating the VM manually.
+
+> ⚠️ **Important: VMware Licensing Changes since Broadcom Acquisition (November 2023)**
+>
+> Broadcom acquired VMware in November 2023. This has resulted in significant licensing and product changes:
+>
+> - **ESXi Free Edition has been discontinued** — a paid subscription is now required for all ESXi deployments
+> - **vSphere licensing** has moved to a subscription-only model (no more perpetual licenses)
+> - **VMware Workstation Pro** is now **free for personal use** (as of May 2024); commercial use requires a subscription
+> - **VMware Fusion Pro** (macOS) is now **free for personal use** (as of May 2024)
+> - **VMware Workstation Player** has been discontinued as a standalone product — replaced by Workstation Pro (free tier)
+>
+> For homelab and non-commercial use, ESXi alternatives worth considering: **Proxmox VE** (free, open-source), **XCP-ng** (free Xen-based).
+>
+> Sources: https://blogs.vmware.com/workstation/2024/05/vmware-workstation-pro-now-available-free-for-personal-use.html
 
 Works with **QCOW2, RAW, LVM-thin, ZFS** disks and **Linux or Windows** guests.
 
@@ -132,11 +146,12 @@ sudo yum install open-vm-tools -y
 
 ## Alternative Tools (when qemu-img fails)
 
-| Tool                     | Description                                      |
-|--------------------------|--------------------------------------------------|
-| StarWind V2V Converter   | Free GUI tool – direct QCOW2 → VMDK conversion   |
-| VMware vCenter Converter | Live P2V migration (run inside the running VM)   |
-| OVF Tool (VMware)        | Advanced export (experimental with Proxmox)      |
+| Tool                     | Status      | Description                                      |
+|--------------------------|-------------|--------------------------------------------------|
+| StarWind V2V Converter   | ✅ Aktiv    | Free GUI tool – direct QCOW2 → VMDK conversion   |
+| VMware vCenter Converter | ❌ Eingestellt | Wurde von Broadcom eingestellt (EOL seit 2021) — nicht mehr verfügbar |
+| OVF Tool (VMware)        | ✅ Aktiv    | Advanced export/import (experimental with Proxmox) |
+| `qemu-img` (Proxmox)     | ✅ Aktiv    | Empfohlener Weg — vorinstalliert auf Proxmox 8.x |
 
 ---
 

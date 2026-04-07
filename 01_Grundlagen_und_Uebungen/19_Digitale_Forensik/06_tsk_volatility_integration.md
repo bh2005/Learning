@@ -4,7 +4,7 @@
 Die Integration von **The Sleuth Kit (TSK)** mit **Volatility** ermöglicht eine umfassende forensische Analyse, indem Dateisystem-Analysen (TSK) mit Speicher-Forensik (Volatility) kombiniert werden. TSK analysiert Festplatten und Dateisysteme (z. B. NTFS, ext4), während Volatility Speicherabbilder (RAM-Dumps) untersucht, um Prozesse, Netzwerkverbindungen und flüchtige Daten zu extrahieren. Diese Anleitung zeigt, wie man TSK und Volatility auf Debian integriert, um gelöschte Dateien von einem USB-Stick (ext4) und zugehörige RAM-Daten zu analysieren. Ziel ist es, Ihnen die Fähigkeiten zu vermitteln, kombinierte Festplatten- und Speicheranalysen durchzuführen. Diese Anleitung ist ideal für IT-Sicherheitsexperten, forensische Ermittler und Lernende, die fortgeschrittene forensische Techniken meistern möchten.
 
 **Voraussetzungen:**
-- Ein Debian-System (z. B. Debian 11 oder 12) mit Root- oder Sudo-Zugriff
+- Ein Debian-System (z. B. Debian 12 oder 12) mit Root- oder Sudo-Zugriff
 - Ein Test-USB-Stick mit ext4-Dateisystem und ein RAM-Dump (z. B. via `LiME`)
 - Grundlegende Kenntnisse der Linux-Kommandozeile und digitaler Forensik
 - The Sleuth Kit, Volatility 2 oder 3 und Autopsy installiert
