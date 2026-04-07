@@ -4,7 +4,7 @@
 Die Hardware- und Software-Inventarisierung in Checkmk ermöglicht die Erfassung detaillierter Informationen über Hosts, wie CPU, Speicher, Betriebssystem oder installierte Software, die im Inventarbaum der Weboberfläche dargestellt werden. Diese Anleitung führt Anfänger in die **manuelle Installation und Nutzung der Inventarisierung** ein, basierend auf der offiziellen Dokumentation (https://docs.checkmk.com/latest/de/inventory.html#_installation_von_hand), mit einem Fokus auf die **Integration mit externen Systemen** (https://docs.checkmk.com/latest/de/inventory.html#external) über die Checkmk-REST-API. Der Fokus liegt auf **Grundlagen der Inventarisierung**, **manuelle Installation und Konfiguration auf dem localhost**, **Integration in eine Checkmk-Site** sowie **Fehlerbehebung**. Eine **Spielerei** zeigt, wie du Inventurdaten über die REST-API abrufst und in Markdown- sowie JSON-Format exportierst, wobei der Hostname als Kommandozeilenparameter übergeben wird. Die Übungen verwenden die **Checkmk Raw Edition** (Open Source) und sind für Nutzer mit grundlegenden Kenntnissen in Linux, Python und Checkmk geeignet.
 
 **Voraussetzungen**:
-- Ein Linux-System mit Checkmk Raw Edition installiert (z. B. Ubuntu 22.04 oder Debian 11).
+- Ein Linux-System mit Checkmk Raw Edition installiert (z. B. Ubuntu 22.04 oder Debian 12).
 - Ein Terminal (z. B. `bash` oder `zsh`) mit Root-Zugriff oder `sudo`-Rechten.
 - Eine Checkmk-Site (z. B. `mysite`) eingerichtet (siehe vorherige Anleitung).
 - Checkmk-Agent auf dem localhost installiert (siehe vorherige Anleitung).

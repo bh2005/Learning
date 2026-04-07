@@ -4,7 +4,7 @@
 Diese Anleitung zeigt, wie du mit Ansible die Installation und Konfiguration einer Flask-Anwendung mit SQLite auf einem Debian-basierten localhost automatisierst. Sie baut auf der vorherigen Anleitung zur Integration von Bash-Skripten mit Flask-APIs und SQLite auf und verwendet die dort beschriebene To-Do-Listen-Anwendung. Das Ansible-Playbook installiert Python, SQLite, Flask und Flask-RESTful, richtet die SQLite-Datenbank ein, kopiert die Flask-Anwendung (`app.py`) und startet sie im Hintergrund. Eine Spielerei generiert einen Markdown-Bericht über den Installationsstatus, um die Verbindung zu vorherigen Themen (z. B. Markdown-Ausgabe) herzustellen. Die Übungen sind für Nutzer mit grundlegenden Kenntnissen in Ansible und Linux-Systemadministration gedacht.
 
 **Voraussetzungen**:
-- Ein Debian-basiertes System (z. B. Debian 11/12 oder Ubuntu 22.04) als localhost.
+- Ein Debian-basiertes System (z. B. Debian 12/12 oder Ubuntu 22.04) als localhost.
 - Ein Terminal (z. B. Bash).
 - Root- oder sudo-Berechtigungen auf dem localhost.
 - Ansible installiert (prüfe mit `ansible --version`; installiere via `sudo apt install ansible` oder `pip install ansible`).

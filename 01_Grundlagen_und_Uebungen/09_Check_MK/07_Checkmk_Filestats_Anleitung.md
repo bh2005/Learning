@@ -4,7 +4,7 @@
 Das `mk_filestats`-Plugin in Checkmk ermöglicht die Überwachung von Dateien und Verzeichnissen, z. B. deren Größe, Anzahl, Alter oder Änderungszeitpunkt. Es ist besonders nützlich für die Überwachung von Logdateien, Datenbanken oder Konfigurationsdateien. Diese Anleitung führt Anfänger in die **Verwendung des `mk_filestats`-Plugins** ein, basierend auf der offiziellen Dokumentation (https://docs.checkmk.com/latest/de/mk_filestats.html). Der Fokus liegt auf **Grundlagen der Dateiüberwachung**, **Installation und Konfiguration des Plugins auf dem localhost**, **Integration in eine Checkmk-Site** sowie **Fehlerbehebung**. Eine **Spielerei** zeigt, wie du Dateiüberwachungsdaten über die Checkmk-REST-API abrufst und in Markdown- sowie JSON-Format exportierst, wobei der Hostname als Kommandozeilenparameter übergeben wird, um die Konsistenz mit vorherigen Anleitungen zu wahren. Die Übungen verwenden die **Checkmk Raw Edition** (Open Source) und sind für Nutzer mit grundlegenden Kenntnissen in Linux, Python und Checkmk geeignet.
 
 **Voraussetzungen**:
-- Ein Linux-System mit Checkmk Raw Edition installiert (z. B. Ubuntu 22.04 oder Debian 11).
+- Ein Linux-System mit Checkmk Raw Edition installiert (z. B. Ubuntu 22.04 oder Debian 12).
 - Ein Terminal (z. B. `bash` oder `zsh`) mit Root-Zugriff oder `sudo`-Rechten.
 - Eine Checkmk-Site (z. B. `mysite`) eingerichtet (siehe vorherige Anleitung).
 - Checkmk-Agent auf dem localhost installiert (siehe vorherige Anleitung).

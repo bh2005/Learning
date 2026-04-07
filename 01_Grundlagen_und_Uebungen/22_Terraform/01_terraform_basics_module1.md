@@ -29,10 +29,10 @@
 ### Vorbereitung: Terraform installieren
 1. **Terraform auf der lokalen Maschine installieren**:
    ```bash
-   wget https://releases.hashicorp.com/terraform/1.5.7/terraform_1.5.7_linux_amd64.zip
-   unzip terraform_1.5.7_linux_amd64.zip
+   wget https://releases.hashicorp.com/terraform/1.9.8/terraform_1.9.8_linux_amd64.zip
+   unzip terraform_1.9.8_linux_amd64.zip
    sudo mv terraform /usr/local/bin/
-   terraform version  # Erwartet: Terraform v1.5.7
+   terraform version  # Erwartet: Terraform v1.9.8
    ```
 2. **Projektverzeichnis erstellen**:
    ```bash

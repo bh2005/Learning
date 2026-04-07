@@ -4,7 +4,7 @@
 Funktionen in Bash sind ein zentraler Baustein, um Skripte modular, wiederverwendbar und lesbar zu gestalten. Fehlerbehandlung ist essenziell, um robuste Skripte zu schreiben, die unerwartete Situationen (z. B. fehlende Dateien, ungültige Eingaben) graceful handhaben. Diese Anleitung führt Anfänger durch praktische Übungen zur **Definition und Nutzung von Funktionen**, **Parameterübergabe**, **Rückgabewerten mit Exit-Codes**, **Fehlerbehandlung mit Bedingungen** und **Logging**. Die Übungen verwenden die JSON-Datei `sample_data.json` aus der vorherigen Python-Anleitung (mit Log-Einträgen) und `jq` für die JSON-Verarbeitung. Eine **Spielerei** zeigt, wie du Funktionen und Fehlerbehandlung kombinierst, um Daten zu analysieren und Ergebnisse in Markdown zu dokumentieren. Die Übungen sind auf einem Debian-basierten System ausführbar und für Nutzer mit grundlegenden Kenntnissen in Bash geeignet.
 
 **Voraussetzungen**:
-- Ein Debian-basiertes System (z. B. Ubuntu 22.04, Debian 11); Windows-Nutzer können WSL2 verwenden; macOS ist kompatibel.
+- Ein Debian-basiertes System (z. B. Ubuntu 22.04, Debian 12); Windows-Nutzer können WSL2 verwenden; macOS ist kompatibel.
 - Ein Terminal (z. B. Bash unter Linux).
 - Installierte Tools:
   - `jq` für JSON-Verarbeitung: `sudo apt install jq`

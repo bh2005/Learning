@@ -4,7 +4,7 @@
 Die Automatisierung der Zertifikatserstellung ist entscheidend, um TLS-Zertifikate effizient zu verwalten und Ablaufprobleme zu vermeiden. Certbot, ein Client für Let's Encrypt, ermöglicht die automatische Erstellung, Erneuerung und Installation von vertrauenswürdigen TLS-Zertifikaten für HTTPS. Diese Anleitung zeigt Ihnen, wie Sie Certbot auf einem Debian-System verwenden, um die Zertifikatserstellung und -erneuerung für einen Nginx-Webserver zu automatisieren, einschließlich Skripten für die Überprüfung und Integration mit Cron. Ziel ist es, Ihnen die Fähigkeiten zu vermitteln, TLS-Zertifikate automatisch bereitzustellen und zu erneuern, um sichere Webanwendungen ohne manuellen Aufwand zu gewährleisten. Diese Anleitung ist ideal für Administratoren und Entwickler, die wartungsarme, sichere Systeme einrichten möchten.
 
 Voraussetzungen:
-- Ein Debian-System (z. B. Debian 11 oder 12) mit Root- oder Sudo-Zugriff
+- Ein Debian-System (z. B. Debian 12 oder 12) mit Root- oder Sudo-Zugriff
 - Nginx installiert und konfiguriert
 - Mindestens 2 GB RAM und ausreichend Festplattenspeicher (mindestens 5 GB frei)
 - Ein öffentlich erreichbarer Domainname (z. B. `myserver.example.com`), der auf die Server-IP zeigt

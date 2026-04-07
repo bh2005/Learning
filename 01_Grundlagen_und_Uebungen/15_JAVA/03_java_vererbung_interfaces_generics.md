@@ -4,7 +4,7 @@
 Java ist eine objektorientierte Programmiersprache, die fortgeschrittene Konzepte wie **Vererbung**, **Interfaces** und **Generics** bietet, um strukturierte, wiederverwendbare und typensichere Programme zu entwickeln. **Vererbung** ermöglicht die Wiederverwendung von Code durch Hierarchien, **Interfaces** definieren Verträge für Klassen, und **Generics** sorgen für Typensicherheit bei Collections und Methoden. Diese Anleitung zeigt, wie Sie diese Konzepte in Java auf einem Debian-System anwenden. Ziel ist es, Anfängern mit Grundkenntnissen die Fähigkeiten zu vermitteln, komplexere Java-Programme zu schreiben. Diese Anleitung ist ideal für Lernende, die ihre Java-Kenntnisse vertiefen möchten.
 
 **Voraussetzungen:**
-- Ein Debian-System (z. B. Debian 11 oder 12) mit Root- oder Sudo-Zugriff
+- Ein Debian-System (z. B. Debian 12 oder 12) mit Root- oder Sudo-Zugriff
 - Java Development Kit (JDK) installiert (z. B. OpenJDK 11, wie in der vorherigen Java-Anleitung)
 - Mindestens 2 GB RAM und ausreichend Festplattenspeicher (mindestens 5 GB frei)
 - Grundlegende Kenntnisse der Linux-Kommandozeile und Java (z. B. Klassen, Methoden, Exception-Handling)

@@ -4,7 +4,7 @@
 Die **Open Monitoring Distribution (OMD)** ist ein Framework, das Checkmk und seine Abhängigkeiten (z. B. Nagios, Apache, RRDtool) in einer isolierten Umgebung, genannt **Site**, bereitstellt. Der `omd`-Befehl ist das zentrale Kommandozeilenwerkzeug zur Verwaltung dieser Sites in Checkmk, einer leistungsstarken Open-Source- und Enterprise-Software für IT-Monitoring. Diese Anleitung führt Anfänger in die **Verwendung des `omd`-Befehls** ein, mit Fokus auf **Erstellen und Verwalten von Checkmk-Sites**, **Konfiguration und Start/Stopp von Sites**, **Fehlerbehebung und Backup** sowie **Automatisierung von Verwaltungsaufgaben**. Eine **Spielerei** zeigt, wie du den Status von Sites als Markdown-Tabelle exportierst, um die Verbindung zu vorherigen Themen (z. B. Markdown-Ausgabe) herzustellen. Die Übungen sind für Nutzer mit grundlegenden Kenntnissen in Linux und Checkmk geeignet und verwenden die **Checkmk Raw Edition** (Open Source).
 
 **Voraussetzungen**:
-- Ein Linux-System mit Checkmk Raw Edition installiert (z. B. Ubuntu 22.04 oder Debian 11).
+- Ein Linux-System mit Checkmk Raw Edition installiert (z. B. Ubuntu 22.04 oder Debian 12).
 - Ein Terminal (z. B. `bash` oder `zsh`) mit Root-Zugriff oder `sudo`-Rechten.
 - Checkmk Raw Edition installiert (siehe vorherige Anleitung).
 - Grundkenntnisse in Linux (z. B. `sudo`, `systemctl`) und Checkmk (z. B. Konzept von Sites).

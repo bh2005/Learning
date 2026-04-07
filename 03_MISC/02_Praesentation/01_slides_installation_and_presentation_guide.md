@@ -21,7 +21,7 @@
    - Öffne: `https://192.168.30.2:8006`.
    - Gehe zu `Datacenter > Node > Create LXC`.
    - Konfiguriere:
-     - Template: `debian-13-standard`
+     - Template: `debian-12-standard`
      - Hostname: `slides`
      - IP-Adresse: `192.168.30.124/24`
      - Gateway: `192.168.30.1`
@@ -111,7 +111,7 @@
    ---
 
    ## Einrichtung in der HomeLab
-   - **Server**: Debian 13 VM (`pki.homelab.local`, `192.168.30.123`)
+   - **Server**: Debian 12 VM (`pki.homelab.local`, `192.168.30.123`)
    - **Tools**: OpenSSL
    - **Struktur**:
      ```bash

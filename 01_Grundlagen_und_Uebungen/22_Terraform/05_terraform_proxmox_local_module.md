@@ -7,9 +7,9 @@
 **Voraussetzungen**:
 - Proxmox VE-Server (z. B. Version 8.x) in der HomeLab, erreichbar unter einer IP (z. B. `192.168.30.10`).
 - Proxmox-Benutzer mit API-Zugriff (z. B. `terraform@pve`) und Token.
-- Terraform installiert (Version 1.5.7, wie in Modul 1):
+- Terraform installiert (Version 1.9.8, wie in Modul 1):
   ```bash
-  terraform version  # Erwartet: Terraform v1.5.7
+  terraform version  # Erwartet: Terraform v1.9.8
   ```
 - Grundkenntnisse in Terraform (z. B. `resource`, `variable`, `output`, `tfstate`, Modules, Workspaces aus Modul 1–4) und Linux (z. B. `bash`, `nano`).
 - HomeLab mit TrueNAS (`192.168.30.100`) für Backups und OPNsense (`192.168.30.1`) für Netzwerkmanagement.
@@ -34,10 +34,10 @@
 ### Vorbereitung: Projekt einrichten
 1. **Terraform installieren** (falls nicht vorhanden, siehe Modul 1):
    ```bash
-   wget https://releases.hashicorp.com/terraform/1.5.7/terraform_1.5.7_linux_amd64.zip
-   unzip terraform_1.5.7_linux_amd64.zip
+   wget https://releases.hashicorp.com/terraform/1.9.8/terraform_1.9.8_linux_amd64.zip
+   unzip terraform_1.9.8_linux_amd64.zip
    sudo mv terraform /usr/local/bin/
-   terraform version  # Erwartet: Terraform v1.5.7
+   terraform version  # Erwartet: Terraform v1.9.8
    ```
 2. **Proxmox-API-Zugriff einrichten**:
    - Melde dich in der Proxmox-Weboberfläche an (`https://192.168.30.10:8006`).

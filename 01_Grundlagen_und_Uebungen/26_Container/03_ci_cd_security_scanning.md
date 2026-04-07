@@ -215,7 +215,7 @@
      ```
      - Ändere:
        ```dockerfile
-       FROM python:3.9-slim-bullseye
+       FROM python:3.9-slim-bookworm
        ```
      - Baue und teste erneut:
        ```bash

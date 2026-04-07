@@ -297,7 +297,7 @@
      ```
      - Ändere die erste Zeile zu:
        ```dockerfile
-       FROM python:3.9-slim-bullseye
+       FROM python:3.9-slim-bookworm
        ```
    - Baue das Image neu:
      ```bash

@@ -4,7 +4,7 @@
 Funktionen in Python sind ein zentraler Baustein, um Code modular, wiederverwendbar und lesbar zu gestalten. Fehlerbehandlung ist essenziell, um robuste Skripte zu schreiben, die unerwartete Situationen (z. B. ungültige Eingaben, fehlende Dateien) graceful handhaben. Diese Anleitung führt Anfänger durch praktische Übungen zur **Definition und Nutzung von Funktionen**, **Parameterübergabe**, **Rückgabewerten**, **Fehlerbehandlung mit try-except**, **benutzerdefinierten Ausnahmen** und **Logging**. Die Übungen verwenden einen simulierten Datensatz (JSON-Format, ähnlich den vorherigen Big-Data-Übungen) für praktische Beispiele. Eine **Spielerei** zeigt, wie du Funktionen und Fehlerbehandlung kombinierst, um Daten zu analysieren und Ergebnisse in Markdown zu dokumentieren. Die Übungen sind auf einem Debian-basierten System ausführbar und für Nutzer mit grundlegenden Kenntnissen in Python geeignet.
 
 **Voraussetzungen**:
-- Ein Debian-basiertes System (z. B. Ubuntu 22.04, Debian 11); Windows-Nutzer können WSL2 verwenden; macOS ist kompatibel.
+- Ein Debian-basiertes System (z. B. Ubuntu 22.04, Debian 12); Windows-Nutzer können WSL2 verwenden; macOS ist kompatibel.
 - Ein Terminal (z. B. Bash unter Linux).
 - Installierte Tools:
   - Python 3 und `pip`: `sudo apt install python3 python3-pip`

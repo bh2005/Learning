@@ -4,7 +4,7 @@
 Java hat sich mit modernen Konzepten wie **Lambda-Ausdrücke**, **Streams** und **Enums** weiterentwickelt, um funktionale Programmierung, effiziente Datenverarbeitung und strukturierte Konstanten zu ermöglichen. **Lambda-Ausdrücke** bieten eine prägnante Syntax für funktionale Schnittstellen, **Streams** vereinfachen die Verarbeitung von Datenkollektionen, und **Enums** definieren benannte Konstanten mit zusätzlicher Funktionalität. Diese Anleitung zeigt, wie Sie diese Konzepte in Java auf einem Debian-System anwenden. Ziel ist es, Lernenden mit Grundkenntnissen die Fähigkeiten zu vermitteln, moderne Java-Programme zu schreiben. Diese Anleitung ist ideal für Anfänger, die ihre Java-Kenntnisse vertiefen möchten.
 
 **Voraussetzungen:**
-- Ein Debian-System (z. B. Debian 11 oder 12) mit Root- oder Sudo-Zugriff
+- Ein Debian-System (z. B. Debian 12 oder 12) mit Root- oder Sudo-Zugriff
 - Java Development Kit (JDK) installiert (z. B. OpenJDK 11 oder höher, wie in der vorherigen Java-Anleitung)
 - Mindestens 2 GB RAM und ausreichend Festplattenspeicher (mindestens 5 GB frei)
 - Grundlegende Kenntnisse der Linux-Kommandozeile und Java (z. B. Klassen, Interfaces, Generics)

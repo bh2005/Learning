@@ -1,5 +1,12 @@
 # Lernprojekt: Integration von TurnKey Linux GNU social mit OpenLDAP für Authentifizierung
 
+> ⚠️ **VERALTET – Nur für Lernzwecke geeignet**
+>
+> GNU Social wird seit 2014 nicht mehr aktiv weiterentwickelt. Die TurnKey-Appliance basiert auf Debian 11 (Bullseye), das seit Juni 2026 End-of-Life ist.
+>
+> Diese Anleitung eignet sich ausschließlich zum Erlernen von OpenLDAP-Integration, Ansible-Automatisierung und LDAP-Authentifizierungskonzepten.
+> Für produktive Deployments: siehe Mastodon- oder Misskey-Anleitungen.
+
 ## Vorbereitung: Umgebung prüfen
 1. **Proxmox VE prüfen**:
    - Melde dich an der Proxmox-Weboberfläche an: `https://192.168.30.2:8006`.

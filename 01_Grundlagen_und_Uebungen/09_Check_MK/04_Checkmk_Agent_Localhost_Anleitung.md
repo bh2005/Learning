@@ -4,7 +4,7 @@
 Der Checkmk-Agent ist ein leichtgewichtiges Programm, das auf einem zu überwachenden Host installiert wird, um Systemdaten wie CPU, Speicher oder Dateisysteme an einen Checkmk-Server zu senden. Diese Anleitung führt Anfänger in die **Installation eines Checkmk-Agenten auf dem localhost** ein, mit Fokus auf **Installation des Agenten**, **Konfiguration für localhost-Überwachung**, **Integration mit einer Checkmk-Site** sowie **Fehlerbehebung**. Eine **Spielerei** zeigt, wie du die Agent-Daten als Markdown-Tabelle exportierst, um die Verbindung zu vorherigen Themen (z. B. Markdown-Ausgabe) herzustellen. Die Übungen sind für Nutzer mit grundlegenden Kenntnissen in Linux und Checkmk geeignet und verwenden die **Checkmk Raw Edition** (Open Source). Die Schritte folgen der offiziellen Dokumentation (https://docs.checkmk.com/latest/de/agent_linux.html#install) und korrigieren den Fehler in Schritt 2 der vorherigen Anleitung.
 
 **Voraussetzungen**:
-- Ein Linux-System mit Checkmk Raw Edition installiert (z. B. Ubuntu 22.04 oder Debian 11).
+- Ein Linux-System mit Checkmk Raw Edition installiert (z. B. Ubuntu 22.04 oder Debian 12).
 - Ein Terminal (z. B. `bash` oder `zsh`) mit Root-Zugriff oder `sudo`-Rechten.
 - Eine Checkmk-Site (z. B. `mysite`) eingerichtet (siehe vorherige Anleitung).
 - Internetzugang oder Zugriff auf die Checkmk-Weboberfläche für den Agent-Download.

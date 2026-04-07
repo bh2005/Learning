@@ -1,6 +1,19 @@
 ```markdown
 # Lernprojekt: Installation von Papermerge DMS auf Debian 12
 
+> ℹ️ **Versionshinweis (Stand: April 2026)**
+>
+> Diese Anleitung beschreibt die Installation von **Papermerge v3.5.x** (Django-basiert, direktes Deployment).
+> Seit Version **4.x** hat sich die Architektur grundlegend geändert:
+> - v4 setzt auf **Docker Compose** als primären Installationsweg
+> - Celery + Redis sind nun Pflichtkomponenten für die Hintergrundverarbeitung
+> - Das Konfigurationsformat wurde von `papermerge.conf.py` auf **Umgebungsvariablen / `.env`-Dateien** umgestellt
+>
+> Für neue Deployments wird **v4.x** empfohlen. Die offizielle Installationsanleitung für v4 findet sich unter:
+> https://docs.papermerge.io
+>
+> Die vorliegende Anleitung (v3.5.x) bleibt für das Erlernen von Python/Django-Deployments, Gunicorn, Nginx und PostgreSQL-Integration auf Debian 12 weiterhin vollständig nutzbar.
+
 ## Vorbereitung: Umgebung prüfen
 1. **Proxmox VE prüfen**:
    - Melde dich an der Proxmox-Weboberfläche an: `https://192.168.30.2:8006`.

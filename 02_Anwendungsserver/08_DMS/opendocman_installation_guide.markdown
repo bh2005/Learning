@@ -1,6 +1,18 @@
 ```markdown
 # Lernprojekt: Installation von OpenDocMan auf Debian 12
 
+> ⚠️ **Eingeschränkt wartbar – Lernzwecke beachten**
+>
+> OpenDocMan (letzte stabile Version: 1.4.4, ca. 2019) wird kaum noch aktiv weiterentwickelt.
+> **Kritisches Kompatibilitätsproblem**: OpenDocMan benötigt PHP 7.4 oder niedriger.
+> Debian 12 liefert standardmäßig PHP 8.2 aus – OpenDocMan läuft darauf **nicht fehlerfrei**.
+>
+> **Handlungsoptionen:**
+> - PHP 7.4 manuell nachinstallieren (Sicherheitsrisiko, da EOL seit November 2022)
+> - **Empfohlene Alternativen**: [Papermerge](https://docs.papermerge.io) (aktiv entwickelt) oder [Nextcloud](https://nextcloud.com) mit der Files-App
+>
+> Diese Anleitung eignet sich zum Erlernen von Apache/PHP/MySQL-Deployments und Ansible-Automatisierung.
+
 ## Vorbereitung: Umgebung prüfen
 1. **Proxmox VE prüfen**:
    - Melde dich an der Proxmox-Weboberfläche an: `https://192.168.30.2:8006`.

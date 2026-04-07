@@ -4,7 +4,7 @@
 Disaster Recovery (DR) für **DNS** (Domain Name System) und **LDAP** (Lightweight Directory Access Protocol) auf Debian-Systemen ist entscheidend, um die Verfügbarkeit von Netzwerkdiensten und Verzeichnisdiensten nach Ausfällen (z. B. Hardwarefehler, Cyberangriffe) sicherzustellen. DNS löst Domainnamen in IP-Adressen auf, während LDAP Benutzer- und Gruppeninformationen für Authentifizierung und Autorisierung verwaltet. Diese Anleitung konzentriert sich auf DR-Strategien für DNS (mit BIND9) und LDAP (mit OpenLDAP) auf Debian, einschließlich Backup, Restore und Replikation. Ziel ist es, Ihnen die Fähigkeiten zu vermitteln, effektive DR-Pläne für diese Dienste zu erstellen und umzusetzen. Diese Anleitung ist ideal für Administratoren, die kritische Netzwerkdienste schützen möchten.
 
 **Voraussetzungen:**
-- Ein Debian-System (z. B. Debian 11 oder 12) mit Root- oder Sudo-Zugriff
+- Ein Debian-System (z. B. Debian 12 oder 12) mit Root- oder Sudo-Zugriff
 - Installierte BIND9- und OpenLDAP-Server
 - Mindestens 4 GB RAM und ausreichend Festplattenspeicher (mindestens 10 GB frei)
 - Externer Speicher (z. B. NAS, Cloud) für Backups

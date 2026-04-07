@@ -1,10 +1,12 @@
 # Praxisorientierte Anleitung: Integration von Apache Struts mit MySQL für dynamische Daten auf Debian
 
+> ⚠️ **Legacy-Framework** – Apache Struts 2 wird nicht mehr aktiv entwickelt. Für neue Projekte empfiehlt sich Spring Boot oder Jakarta EE. Diese Anleitung eignet sich zur Wartung bestehender Struts-Anwendungen und zum Erlernen von Java-Datenbankintegration (JDBC/JPA).
+
 ## Einführung
-Die Integration von Apache Struts mit einer MySQL-Datenbank ermöglicht die Entwicklung dynamischer Java-Webanwendungen, die Daten persistent speichern und abrufen. Diese Anleitung zeigt Ihnen, wie Sie eine Struts-Webanwendung auf einem Debian-System erstellen, die mit MySQL verbunden ist, um eine To-Do-Listen-Anwendung zu implementieren. Ziel ist es, Ihnen die Fähigkeiten zu vermitteln, Struts mit MySQL zu integrieren und dynamische Daten zu verwalten. Die Anleitung ist ideal für Java-Entwickler, die datenbankgestützte Webanwendungen entwickeln möchten.
+Die Integration von Apache Struts mit einer MySQL-Datenbank ermöglicht die Entwicklung dynamischer Java-Webanwendungen, die Daten persistent speichern und abrufen. Diese Anleitung zeigt Ihnen, wie Sie eine Struts-Webanwendung auf einem Debian-System erstellen, die mit MySQL verbunden ist, um eine To-Do-Listen-Anwendung zu implementieren. Ziel ist es, Ihnen die Fähigkeiten zu vermitteln, Struts mit MySQL zu integrieren und dynamische Daten zu verwalten.
 
 Voraussetzungen:
-- Ein Debian-System (z. B. Debian 11 oder 12) mit installiertem Apache Tomcat (`tomcat9`), Maven und Java JDK (mindestens Java 8, empfohlen Java 11)
+- Ein Debian-System (z. B. Debian 12) mit installiertem Apache Tomcat (`tomcat10`), Maven und Java JDK (mindestens Java 11, empfohlen Java 17)
 - MySQL-Server installiert
 - Root- oder Sudo-Zugriff
 - Grundlegende Kenntnisse der Linux-Kommandozeile, Java, Struts und MySQL

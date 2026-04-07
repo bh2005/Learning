@@ -4,7 +4,7 @@
 Bash-Skripte sind für die Kommandozeile optimiert, können aber mit Tools wie **Zenity** ein einfaches grafisches User Interface (GUI) erhalten, um die Benutzerinteraktion zu verbessern. Diese Anleitung erweitert die Big-Data-Anleitung (UUID: b3e150ae-b336-4b09-bccd-06a316339e49) und zeigt, wie du ein GUI für ein Bash-Skript erstellst, das PySpark-Analysen steuert. Das GUI ermöglicht die Auswahl von Aktionen (z. B. Daten generieren, Fehler analysieren, Bericht erstellen, E-Mail versenden), die Eingabe von Parametern (z. B. Dateipfad, E-Mail-Empfänger) und die Anzeige von Ergebnissen in Dialogfenstern. Eine **Spielerei** integriert alle Funktionen in ein Hauptmenü mit Fortschrittsbalken für langlaufende Aufgaben. Die Übungen verwenden die JSON-Datei `large_data.json` (100.000 Einträge) und sind auf einem Debian-basierten System ausführbar, geeignet für Nutzer mit grundlegenden Kenntnissen in Bash und Python.
 
 **Voraussetzungen**:
-- Ein Debian-basiertes System (z. B. Ubuntu 22.04, Debian 11); Windows-Nutzer können WSL2 verwenden (GUI-Unterstützung via X-Server erforderlich); macOS ist kompatibel.
+- Ein Debian-basiertes System (z. B. Ubuntu 22.04, Debian 12); Windows-Nutzer können WSL2 verwenden (GUI-Unterstützung via X-Server erforderlich); macOS ist kompatibel.
 - Ein Terminal (z. B. Bash unter Linux).
 - Installierte Tools:
   - `zenity`: Für GUI-Dialoge: `sudo apt install zenity`

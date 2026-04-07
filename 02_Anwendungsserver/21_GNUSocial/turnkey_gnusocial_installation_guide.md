@@ -1,5 +1,17 @@
 # Lernprojekt: Installation von TurnKey Linux GNU social in einer HomeLab-Umgebung
 
+> ⚠️ **VERALTET – Nur für Lernzwecke geeignet**
+>
+> GNU Social wird seit 2014 nicht mehr aktiv weiterentwickelt. Die letzte stabile Version stammt aus diesem Jahr.
+> Die TurnKey-Appliance basiert auf Debian 11 (Bullseye), das seit Juni 2026 End-of-Life ist.
+>
+> **Für den produktiven Einsatz werden folgende Alternativen empfohlen:**
+> - [Mastodon](https://joinmastodon.org) – meistgenutzte Fediverse-Plattform, aktiv entwickelt
+> - [Misskey / Calckey / Firefish](https://misskey-hub.net) – funktionsreich, modern
+> - [Pixelfed](https://pixelfed.org) – Instagram-Alternative im Fediverse
+>
+> Diese Anleitung eignet sich ausschließlich zum Erlernen von LXC-Container-Deployments, Ansible-Automatisierung und HomeLab-Netzwerkkonfiguration.
+
 ## Vorbereitung: Umgebung einrichten
 1. **Proxmox VE prüfen**:
    - Melde dich an der Proxmox-Weboberfläche an: `https://192.168.30.2:8006`.

@@ -1,10 +1,10 @@
 # Praxisorientierte Anleitung: Grundlagentraining für LaTeX in einem Debian LXC-Container
 
 ## Einführung
-Diese Anleitung bietet einen praxisnahen Einstieg in LaTeX für die Erstellung einer Bachelorarbeit, basierend auf der Struktur aus deiner Anfrage (siehe `vim_scripting_thesis_guide.md`, Artifact ID: `53986cf3-6ace-4cd8-9176-33c3ec8fc23f`). Wir nutzen einen Debian 13 LXC-Container (IP `192.168.30.121`, `thesis.homelab.local`) in der HomeLab-Umgebung und zeigen, wie du LaTeX installierst, eine Bachelorarbeit gemäß der vorgegebenen Gliederung erstellst, und LaTeX mit `vim`, Vim-Script, `.bashrc` und `tmux` integrierst. Die Übungen sind für Anfänger geeignet, die LaTeX für wissenschaftliche Dokumente lernen möchten, und bauen auf die HomeLab-Umgebung auf, einschließlich TrueNAS-Backups (`192.168.30.100`).
+Diese Anleitung bietet einen praxisnahen Einstieg in LaTeX für die Erstellung einer Bachelorarbeit, basierend auf der Struktur aus deiner Anfrage (siehe `vim_scripting_thesis_guide.md`, Artifact ID: `53986cf3-6ace-4cd8-9176-33c3ec8fc23f`). Wir nutzen einen Debian 12 LXC-Container (IP `192.168.30.121`, `thesis.homelab.local`) in der HomeLab-Umgebung und zeigen, wie du LaTeX installierst, eine Bachelorarbeit gemäß der vorgegebenen Gliederung erstellst, und LaTeX mit `vim`, Vim-Script, `.bashrc` und `tmux` integrierst. Die Übungen sind für Anfänger geeignet, die LaTeX für wissenschaftliche Dokumente lernen möchten, und bauen auf die HomeLab-Umgebung auf, einschließlich TrueNAS-Backups (`192.168.30.100`).
 
 **Voraussetzungen**:
-- Ein Debian 13 LXC-Container (`thesis.homelab.local`, IP `192.168.30.121`) in Proxmox VE (`https://192.168.30.2:8006`).
+- Ein Debian 12 LXC-Container (`thesis.homelab.local`, IP `192.168.30.121`) in Proxmox VE (`https://192.168.30.2:8006`).
 - OPNsense-Router (`192.168.30.1`) mit Unbound DNS für Namensauflösung.
 - Grundkenntnisse in `vim` (Modi, `.vimrc`, Vim-Script) und Bash.
 - Internetzugang für Debian-Paketquellen.

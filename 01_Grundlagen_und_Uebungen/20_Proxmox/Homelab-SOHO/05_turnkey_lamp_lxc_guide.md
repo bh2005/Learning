@@ -21,7 +21,7 @@ Die **TurnKey Linux LAMP-Stack-Vorlage** bietet eine vorgefertigte Lösung für 
 - Zugriff auf den Webserver erfolgt über HTTP/HTTPS (Ports 80/443).
 - OPNsense schützt den Container mit Firewall-Regeln und Suricata IDS/IPS.
 
-**Hinweis**: Die TurnKey LAMP-Stack-Vorlage basiert auf Debian (z. B. Debian 11 oder 12) und enthält Apache 2.4, MariaDB 10.x, PHP 8.x sowie Tools wie phpMyAdmin und Webmin.
+**Hinweis**: Die TurnKey LAMP-Stack-Vorlage basiert auf Debian (z. B. Debian 12 oder 12) und enthält Apache 2.4, MariaDB 10.x, PHP 8.x sowie Tools wie phpMyAdmin und Webmin.
 
 **Quellen**:
 - TurnKey Linux-Dokumentation: https://www.turnkeylinux.org/lampstack

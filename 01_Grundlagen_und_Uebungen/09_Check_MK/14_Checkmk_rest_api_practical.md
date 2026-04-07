@@ -5,7 +5,7 @@
 Die Checkmk REST-API ermöglicht die Automatisierung von Monitoring-Aufgaben wie Host-Management, Service-Abfragen und Konfigurationsänderungen. Diese Anleitung führt in die praktische Nutzung der REST-API ein, basierend auf der offiziellen Dokumentation (https://docs.checkmk.com/latest/de/rest_api.html). Ziel ist es, wiederkehrende Aufgaben zu automatisieren und Daten mit externen Systemen wie einem CMDB zu integrieren. Wir verwenden Python-Skripte, um **Hosts zu erstellen**, **Services mit Problemzuständen abzufragen** und **Host-Daten aus einer CSV-Datei zu importieren**. Die Übungen sind für Nutzer mit Grundkenntnissen in Python und APIs geeignet und verwenden die **Checkmk Raw Edition** (Version 2.3).
 
 **Voraussetzungen**:
-- Ein Linux-System mit Checkmk Raw Edition installiert (z. B. Ubuntu 22.04 oder Debian 11).
+- Ein Linux-System mit Checkmk Raw Edition installiert (z. B. Ubuntu 22.04 oder Debian 12).
 - Eine Checkmk-Site (z. B. `mysite`) mit einem API-Benutzer (`api_user`) und Secret.
 - Python 3 mit den Bibliotheken `requests` und `csv` (installiere mit `pip install requests`).
 - Ein Terminal mit `omd su mysite`-Zugriff.

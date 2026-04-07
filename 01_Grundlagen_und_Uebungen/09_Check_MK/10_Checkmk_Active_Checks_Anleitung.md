@@ -4,7 +4,7 @@
 Aktive Checks in Checkmk sind vordefinierte Überprüfungen, die direkt vom Checkmk-Server ausgeführt werden, um Dienste wie HTTP, ICMP oder SMTP zu überwachen, ohne dass ein Agent auf dem Zielhost erforderlich ist. Diese Anleitung führt Anfänger in die **Verwendung von aktiven Checks** ein, basierend auf der offiziellen Dokumentation (https://docs.checkmk.com/latest/de/active_checks.html). Der Fokus liegt auf **Grundlagen von aktiven Checks**, **Konfiguration eines HTTP-Checks auf dem localhost**, **Integration in eine Checkmk-Site** sowie **Fehlerbehebung**. Eine **Spielerei** zeigt, wie du Daten eines aktiven Checks über die Checkmk-REST-API abrufst und in Markdown- sowie JSON-Format exportierst, wobei der Hostname als Kommandozeilenparameter übergeben wird. Die Übungen verwenden die **Checkmk Raw Edition** (Open Source) und sind für Nutzer mit grundlegenden Kenntnissen in Linux, Python und Checkmk geeignet.
 
 **Voraussetzungen**:
-- Ein Linux-System mit Checkmk Raw Edition installiert (z. B. Ubuntu 22.04 oder Debian 11).
+- Ein Linux-System mit Checkmk Raw Edition installiert (z. B. Ubuntu 22.04 oder Debian 12).
 - Ein Terminal (z. B. `bash` oder `zsh`) mit Root-Zugriff oder `sudo`-Rechten.
 - Eine Checkmk-Site (z. B. `mysite`) eingerichtet (siehe vorherige Anleitung, UUID: 3560880a-8a37-41a0-98f1-cd422c8a3e31).
 - Ein Webserver (z. B. Apache oder Nginx) auf dem localhost für den HTTP-Check (installiere z. B. mit `sudo apt install apache2`).

@@ -90,8 +90,8 @@
    - Führen Sie den Befehl `sudo apt update` aus.
    - **Erwartete Ausgabe** (Auszug):
      ```
-     Hit:1 http://deb.debian.org/debian bullseye InRelease
-     Hit:2 http://download.proxmox.com/debian/pve bullseye InRelease
+     Hit:1 http://deb.debian.org/debian bookworm InRelease
+     Hit:2 http://download.proxmox.com/debian/pve bookworm InRelease
      Reading package lists... Done
      Building dependency tree... Done
      All packages are up to date.
@@ -101,7 +101,7 @@
      - **Warum wichtig für SDN?**: Ein aktueller Paketkatalog ist notwendig, um die neuesten Versionen von SDN-Komponenten (z. B. `pve-sdn`) oder Sicherheitsupdates zu installieren. Veraltete Pakete können zu Inkompatibilitäten oder Sicherheitslücken führen.
    - **Zusätzlicher Kontext**: Die Repositories sind in `/etc/apt/sources.list` oder in Dateien unter `/etc/apt/sources.list.d/` definiert. Für Proxmox sollten Sie das Proxmox-Repository eingetragen haben, z. B.:
      ```plaintext
-     deb http://download.proxmox.com/debian/pve bullseye pve-no-subscription
+     deb http://download.proxmox.com/debian/pve bookworm pve-no-subscription
      ```
    - **Möglicher Stolperstein**:
      - Falls `sudo apt update` fehlschlägt (z. B. „Could not resolve ...“), prüfen Sie:

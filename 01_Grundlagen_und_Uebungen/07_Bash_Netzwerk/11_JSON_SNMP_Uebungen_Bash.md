@@ -4,7 +4,7 @@
 Die Verarbeitung von JSON-Daten auf der Kommandozeile ist eine häufige Aufgabe in der Systemadministration, insbesondere bei der Analyse von Netzwerkdaten wie SNMPwalk-Ausgaben. Da Bash keine native JSON-Unterstützung bietet, ist `jq` ein unverzichtbares Tool zum Parsen, Filtern und Transformieren von JSON. Diese Anleitung führt Anfänger durch praktische Übungen zur **Vorbereitung von JSON-Daten**, **Parsen von Systeminformationen**, **Parsen von Netzwerk-Interfaces**, **Berechnung der Schnittstellengeschwindigkeit** und **Formatierung in Markdown-Tabellen**. Die Übungen verwenden die bereitgestellten JSON-Daten eines Cisco-Switches (SNMPwalk). Eine **Spielerei** zeigt, wie du die Ergebnisse in einem Markdown-Dokument mit eingebetteten JSON- und Geschwindigkeitsdaten visualisierst, um die Verbindung zu vorherigen Themen (z. B. Markdown-Ausgabe) herzustellen. Die Übungen sind auf einem Debian-basierten System ausführbar und für Nutzer mit grundlegenden Kenntnissen in Bash, JSON und Netzwerktechnik geeignet.
 
 **Voraussetzungen**:
-- Ein Debian-basiertes System (z. B. Ubuntu 22.04, Debian 11); Windows-Nutzer können WSL2 verwenden; macOS ist kompatibel.
+- Ein Debian-basiertes System (z. B. Ubuntu 22.04, Debian 12); Windows-Nutzer können WSL2 verwenden; macOS ist kompatibel.
 - Ein Terminal (z. B. Bash unter Linux).
 - Installierte Tools:
   - `jq` für JSON-Verarbeitung: `sudo apt install jq`

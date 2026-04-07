@@ -41,7 +41,7 @@ Das **AWS Toolkit** ist eine kostenlose Erweiterung, die VS Code mit den wichtig
 ### Übung 3: Eine Serverless-Anwendung bereitstellen 🚀
 **Ziel**: Erstelle und deploye eine neue serverless Anwendung mit dem AWS Serverless Application Model (SAM).
 
-1.  **Schritt 1**: Öffne die Befehlspalette (`Strg+Umschalt+P`) und suche nach **`AWS: Create new SAM Application`**. Wähle eine Runtime, z. B. Python 3.9, und einen Speicherort für dein Projekt aus.
+1.  **Schritt 1**: Öffne die Befehlspalette (`Strg+Umschalt+P`) und suche nach **`AWS: Create new SAM Application`**. Wähle eine Runtime, z. B. Python 3.12, und einen Speicherort für dein Projekt aus.
 2.  **Schritt 2**: VS Code generiert eine komplette Projektstruktur für eine serverless Anwendung, inklusive der Python-Funktion und der Konfigurationsdatei.
 3.  **Schritt 3**: Klicke mit der rechten Maustaste auf die Projektdatei `template.yaml` in deinem Explorer und wähle **"Deploy Serverless Application"**.
 4.  **Schritt 4**: Folge den Anweisungen in der Befehlspalette. Das AWS Toolkit automatisiert den gesamten Prozess: Es packt deinen Code, lädt ihn hoch und aktualisiert deine CloudFormation-Ressourcen.

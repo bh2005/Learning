@@ -5,7 +5,7 @@
 Checkmk-Erweiterungen erweitern die Funktionalität von Checkmk durch benutzerdefinierte Überwachungsskripte. Diese Anleitung führt Anfänger in die Entwicklung eines **Agenten-Plugins** (für den Host) und eines **Check-Plugins** (für den Checkmk-Server) ein, um die Systemlaufzeit (Uptime) eines Hosts zu überwachen. Am Ende wird die Erweiterung in ein installierbares `.mkp`-Paket verpackt. Die Übungen verwenden die **Checkmk Raw Edition** und basieren auf der offiziellen Dokumentation (https://docs.checkmk.com/latest/de/devel_intro.html). Sie sind für Nutzer mit Grundkenntnissen in Linux und Python geeignet.
 
 **Voraussetzungen**:
-- Ein Linux-System mit Checkmk Raw Edition installiert (z. B. Ubuntu 22.04 oder Debian 11).
+- Ein Linux-System mit Checkmk Raw Edition installiert (z. B. Ubuntu 22.04 oder Debian 12).
 - Eine Checkmk-Site (z. B. `mysite`) mit installiertem Checkmk-Agenten auf dem Host (kann derselbe Server sein).
 - Ein Terminal mit `omd su mysite`-Zugriff.
 - Python 3 installiert.

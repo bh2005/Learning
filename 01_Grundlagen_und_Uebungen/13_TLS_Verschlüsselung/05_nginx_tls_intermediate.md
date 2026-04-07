@@ -4,7 +4,7 @@
 Zwischenzertifikate (Intermediate Certificates) sind ein wichtiger Bestandteil der TLS-Vertrauenskette, insbesondere in Szenarien mit Proxies oder Firewalls, die ihre eigenen Zwischen-CAs verwenden, um Zertifikate zu signieren. Eine vollständige Vertrauenskette besteht aus dem Serverzertifikat, einem oder mehreren Zwischenzertifikaten und dem Root-Zertifikat. Diese Anleitung zeigt Ihnen, wie Sie mit OpenSSL auf einem Debian-System eine eigene Root-CA und eine Zwischen-CA erstellen, ein Serverzertifikat signieren und die Vertrauenskette in Nginx integrieren, um HTTPS für einen Webserver zu aktivieren. Ziel ist es, Ihnen die Fähigkeiten zu vermitteln, TLS-Zertifikate mit Zwischenzertifikaten korrekt zu konfigurieren, wie es bei Proxies oder Firewalls erforderlich sein kann. Diese Anleitung ist ideal für Administratoren und Entwickler, die sichere Kommunikation mit komplexen Vertrauensketten einrichten möchten.
 
 Voraussetzungen:
-- Ein Debian-System (z. B. Debian 11 oder 12) mit Root- oder Sudo-Zugriff
+- Ein Debian-System (z. B. Debian 12 oder 12) mit Root- oder Sudo-Zugriff
 - OpenSSL und Nginx installiert (z. B. aus den vorherigen Anleitungen)
 - TLS-Zertifikate aus der vorherigen Anleitung verfügbar (z. B. in `~/tls-certs`: `ca.crt`, `myserver.key`, `myserver-san.crt`)
 - Mindestens 2 GB RAM und ausreichend Festplattenspeicher (mindestens 5 GB frei)

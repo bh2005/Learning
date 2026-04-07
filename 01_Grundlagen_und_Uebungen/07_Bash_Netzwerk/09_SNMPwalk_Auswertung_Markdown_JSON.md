@@ -4,7 +4,7 @@
 Ein gespeicherter SNMPwalk enthält umfangreiche Informationen über ein Netzwerkgerät, wie z. B. einen Cisco-Switch, in Form von OIDs (Object Identifiers) und deren Werten. Diese Daten können mit Bash-Tools wie `grep`, `awk` und `jq` analysiert, in Markdown-Tabellen formatiert und in JSON konvertiert werden, um sie übersichtlich darzustellen oder für weitere Verarbeitung zu nutzen. Diese Anleitung führt Anfänger durch praktische Übungen zur **Vorbereitung eines gespeicherten SNMPwalk**, **Auswertung von Systeminformationen**, **Auswertung von Netzwerk-Interfaces**, **Formatierung in Markdown-Tabellen** und **Konvertierung in JSON**. Eine **Spielerei** zeigt, wie du die Ergebnisse in einem Markdown-Dokument mit eingebettetem JSON visualisierst. Die Übungen sind auf einem Debian-basierten System ausführbar und verwenden typische Cisco-OIDs (z. B. `1.3.6.1.2.1.1` für Systeminformationen, `1.3.6.1.2.1.2.2` für Interfaces).
 
 **Voraussetzungen**:
-- Ein Debian-basiertes System (z. B. Ubuntu 22.04, Debian 11); Windows-Nutzer können WSL2 verwenden; macOS ist kompatibel.
+- Ein Debian-basiertes System (z. B. Ubuntu 22.04, Debian 12); Windows-Nutzer können WSL2 verwenden; macOS ist kompatibel.
 - Ein Terminal (z. B. Bash unter Linux).
 - Installierte Tools:
   - `jq` für JSON-Verarbeitung: `sudo apt install jq`

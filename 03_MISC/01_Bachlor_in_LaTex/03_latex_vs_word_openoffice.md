@@ -1,7 +1,7 @@
 # Praxisorientierte Gegenüberstellung: Warum LaTeX besser als Word oder OpenOffice für wissenschaftliche Arbeiten geeignet ist
 
 ## Einführung
-Wissenschaftliche Arbeiten, wie z. B. Bachelorarbeiten, erfordern Präzision, Konsistenz und professionelle Formatierung. Diese Gegenüberstellung analysiert, warum LaTeX gegenüber Microsoft Word und OpenOffice (bzw. LibreOffice) für solche Arbeiten besser geeignet ist. Wir betrachten Kriterien wie Formatierung, Literaturverwaltung, Skalierbarkeit, Automatisierung und Integration mit `vim`/`tmux` in der HomeLab-Umgebung (Debian 13 LXC-Container, IP `192.168.30.121`). Die Gliederung der Bachelorarbeit (siehe `latex_thesis_training.md`, Artifact ID: `f939e22c-4069-4698-99ad-dba6a1122ad1`) dient als Referenz.
+Wissenschaftliche Arbeiten, wie z. B. Bachelorarbeiten, erfordern Präzision, Konsistenz und professionelle Formatierung. Diese Gegenüberstellung analysiert, warum LaTeX gegenüber Microsoft Word und OpenOffice (bzw. LibreOffice) für solche Arbeiten besser geeignet ist. Wir betrachten Kriterien wie Formatierung, Literaturverwaltung, Skalierbarkeit, Automatisierung und Integration mit `vim`/`tmux` in der HomeLab-Umgebung (Debian 12 LXC-Container, IP `192.168.30.121`). Die Gliederung der Bachelorarbeit (siehe `latex_thesis_training.md`, Artifact ID: `f939e22c-4069-4698-99ad-dba6a1122ad1`) dient als Referenz.
 
 ## Kriterien für die Gegenüberstellung
 Die Bewertung basiert auf den folgenden Kriterien, die für wissenschaftliche Arbeiten entscheidend sind:

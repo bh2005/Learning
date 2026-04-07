@@ -4,7 +4,7 @@
 Java ist eine weit verbreitete, objektorientierte Programmiersprache, die für ihre Plattformunabhängigkeit und Vielseitigkeit bekannt ist. Sie wird in Webanwendungen, mobilen Apps und Big-Data-Tools wie Apache Spark eingesetzt. Diese Anleitung führt Anfänger in die Installation von Java auf einem Debian-System ein und zeigt, wie man einfache Programme schreibt, die grundlegende Konzepte wie Variablen, Schleifen und Klassen verwenden. Ziel ist es, Ihnen die Fähigkeiten zu vermitteln, erste Java-Programme zu entwickeln und die Grundlagen der Programmierung zu verstehen. Diese Anleitung ist ideal für Anfänger ohne Programmiererfahrung, die Java lernen möchten.
 
 **Voraussetzungen:**
-- Ein Debian-System (z. B. Debian 11 oder 12) mit Root- oder Sudo-Zugriff
+- Ein Debian-System (z. B. Debian 12 oder 12) mit Root- oder Sudo-Zugriff
 - Mindestens 2 GB RAM und ausreichend Festplattenspeicher (mindestens 5 GB frei)
 - Grundlegende Kenntnisse der Linux-Kommandozeile
 - Ein Texteditor (z. B. `nano`, `vim` oder eine IDE wie IntelliJ IDEA Community Edition)
@@ -30,24 +30,25 @@ Hier sind die wichtigsten Konzepte und Befehle, die wir behandeln:
 ### Übung 1: Java installieren und konfigurieren
 **Ziel**: Lernen, wie man das Java Development Kit (JDK) auf einem Debian-System installiert und eine einfache Entwicklungsumgebung einrichtet.
 
-1. **Schritt 1**: Installiere das OpenJDK 11.
+1. **Schritt 1**: Installiere das OpenJDK 17 (LTS, empfohlen).
    ```bash
    sudo apt update
-   sudo apt install -y openjdk-11-jdk
+   sudo apt install -y openjdk-17-jdk
    ```
+   > ℹ️ **Java-Versionen**: Java 17 und 21 sind die aktuellen LTS-Versionen (Long-Term Support). Java 11 ist noch gepflegt, aber Java 17 ist der empfohlene Standard für neue Projekte.
 2. **Schritt 2**: Überprüfe die Java-Installation.
    ```bash
    java -version
    javac -version
    ```
-   Die Ausgabe sollte die Version von Java (z. B. OpenJDK 11) anzeigen.
+   Die Ausgabe sollte die Version von Java (z. B. OpenJDK 17) anzeigen.
 3. **Schritt 3**: Konfiguriere die Umgebungsvariable `JAVA_HOME`.
    ```bash
    nano ~/.bashrc
    ```
    Füge am Ende folgende Zeile hinzu:
    ```bash
-   export JAVA_HOME=/usr/lib/jvm/java-11-openjdk-amd64
+   export JAVA_HOME=/usr/lib/jvm/java-17-openjdk-amd64
    ```
    Aktiviere die Änderungen:
    ```bash

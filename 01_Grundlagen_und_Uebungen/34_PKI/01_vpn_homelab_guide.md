@@ -28,7 +28,7 @@ Ein **Virtual Private Network (VPN)** ist ein sicheres, verschlüsseltes Netzwer
    - Öffne: `https://192.168.30.2:8006`.
    - Logge dich ein (z. B. `root@pam`).
 
-2. **Erstelle einen neuen Debian 13 LXC-Container**:
+2. **Erstelle einen neuen Debian 12 LXC-Container**:
    - Gehe zu `Datacenter > Node > Create CT`.
    - Konfiguriere:
      - Hostname: `vpn`

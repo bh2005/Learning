@@ -4,7 +4,7 @@
 Multi-Domain-Zertifikate (SAN-Zertifikate) ermöglichen die Absicherung mehrerer Domains oder Subdomains mit einem einzigen TLS-Zertifikat, was effizient und kostensparend ist. Certbot unterstützt die Erstellung solcher Zertifikate und ihre automatische Erneuerung. Diese Anleitung erweitert das Zertifikatrotationsskript aus der vorherigen Anleitung, um Multi-Domain-Zertifikate zu handhaben, einschließlich der Konfiguration für mehrere Domains, der Erneuerung und der Integration mit Nginx. Ziel ist es, Ihnen die Fähigkeiten zu vermitteln, Multi-Domain-TLS-Zertifikate automatisch zu verwalten und zu rotieren. Diese Anleitung ist ideal für Administratoren, die mehrere Domains mit einem Zertifikat sichern möchten.
 
 Voraussetzungen:
-- Ein Debian-System (z. B. Debian 11 oder 12) mit Root- oder Sudo-Zugriff
+- Ein Debian-System (z. B. Debian 12 oder 12) mit Root- oder Sudo-Zugriff
 - Certbot und Nginx installiert (z. B. aus der vorherigen Certbot-Anleitung)
 - Mindestens 2 GB RAM und ausreichend Festplattenspeicher (mindestens 5 GB frei)
 - Öffentlich erreichbare Domainnamen (z. B. `example.com`, `sub.example.com`), die auf die Server-IP zeigen

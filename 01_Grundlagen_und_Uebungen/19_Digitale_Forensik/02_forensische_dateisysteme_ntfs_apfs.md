@@ -4,7 +4,7 @@
 Die forensische Analyse von Dateisystemen wie **NTFS** (New Technology File System, Windows) und **APFS** (Apple File System, macOS) ist ein zentraler Bestandteil der digitalen Forensik, um Beweise aus Speichermedien zu extrahieren, ohne die Integrität der Daten zu beeinträchtigen. **The Sleuth Kit (TSK)** bietet leistungsstarke Tools zur Analyse dieser Dateisysteme, einschließlich Partitionserkennung, Datei-Extraktion und Wiederherstellung gelöschter Daten. Diese Anleitung führt Sie in die forensische Untersuchung von NTFS- und APFS-Dateisystemen auf Debian ein, mit Fokus auf TSK und ergänzenden Tools wie Autopsy. Ziel ist es, Ihnen die Fähigkeiten zu vermitteln, forensische Analysen von NTFS- und APFS-Medien durchzuführen. Diese Anleitung ist ideal für IT-Sicherheitsexperten, Ermittler und Lernende, die in die forensische Analyse von Dateisystemen einsteigen möchten.
 
 **Voraussetzungen:**
-- Ein Debian-System (z. B. Debian 11 oder 12) mit Root- oder Sudo-Zugriff
+- Ein Debian-System (z. B. Debian 12 oder 12) mit Root- oder Sudo-Zugriff
 - Grundlegende Kenntnisse der Linux-Kommandozeile und digitaler Forensik
 - Ein Test-Datenträger mit NTFS oder APFS (z. B. USB-Stick oder VM-Disk-Image)
 - The Sleuth Kit und Autopsy installiert
