@@ -1,4 +1,3 @@
-```markdown
 # Lernprojekt: Installation von Papermerge DMS auf Debian 12
 
 > ℹ️ **Versionshinweis (Stand: April 2026)**

@@ -1,4 +1,3 @@
-```markdown
 # Lernprojekt: Installation von OpenDocMan auf Debian 12
 
 > ⚠️ **Eingeschränkt wartbar – Lernzwecke beachten**
