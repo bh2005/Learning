@@ -20,6 +20,8 @@ Der **ELK Stack** (Elasticsearch, Logstash, Kibana) ist ein Open-Source-Framewor
 
 **Hinweis**: Das Projekt verwendet die Open-Source-Version des ELK Stacks (keine Elastic-Lizenz) und läuft lokal, um die Privatsphäre zu schützen.
 
+> ℹ️ **Version**: Diese Anleitung verwendet Elastic Stack 8.17.0. Die aktuelle Version findest du unter [elastic.co/downloads](https://www.elastic.co/downloads/). Ab Elastic 8.x ist Security (TLS/Authentifizierung) standardmäßig aktiviert — für Test-Umgebungen kann es in `elasticsearch.yml` mit `xpack.security.enabled: false` deaktiviert werden.
+
 **Quellen**:
 - Elastic-Dokumentation: https://www.elastic.co/guide/en/elastic-stack/current/index.html
 - Apache-Dokumentation: https://httpd.apache.org/docs/2.4/
@@ -78,7 +80,7 @@ Der **ELK Stack** (Elasticsearch, Logstash, Kibana) ist ein Open-Source-Framewor
      version: '3.7'
      services:
        elasticsearch:
-         image: docker.elastic.co/elasticsearch/elasticsearch:8.15.0
+         image: docker.elastic.co/elasticsearch/elasticsearch:8.17.0
          environment:
            - discovery.type=single-node
            - xpack.security.enabled=false
@@ -90,7 +92,7 @@ Der **ELK Stack** (Elasticsearch, Logstash, Kibana) ist ein Open-Source-Framewor
          networks:
            - elk-net
        logstash:
-         image: docker.elastic.co/logstash/logstash:8.15.0
+         image: docker.elastic.co/logstash/logstash:8.17.0
          volumes:
            - ./logstash:/usr/share/logstash/pipeline
          ports:
@@ -100,7 +102,7 @@ Der **ELK Stack** (Elasticsearch, Logstash, Kibana) ist ein Open-Source-Framewor
          networks:
            - elk-net
        kibana:
-         image: docker.elastic.co/kibana/kibana:8.15.0
+         image: docker.elastic.co/kibana/kibana:8.17.0
          environment:
            - ELASTICSEARCH_HOSTS=http://elasticsearch:9200
          ports:
@@ -136,7 +138,7 @@ Der **ELK Stack** (Elasticsearch, Logstash, Kibana) ist ein Open-Source-Framewor
        ```json
        {
          "name": "...",
-         "version": { "number": "8.15.0" }
+         "version": { "number": "8.17.0" }
        }
        ```
    - Kibana:
@@ -213,7 +215,7 @@ Der **ELK Stack** (Elasticsearch, Logstash, Kibana) ist ein Open-Source-Framewor
      - Füge ein Volume für Logstash hinzu:
        ```yaml
        logstash:
-         image: docker.elastic.co/logstash/logstash:8.15.0
+         image: docker.elastic.co/logstash/logstash:8.17.0
          volumes:
            - ./logstash:/usr/share/logstash/pipeline
            - /var/log/apache2:/var/log/apache2:ro
@@ -319,7 +321,7 @@ Der **ELK Stack** (Elasticsearch, Logstash, Kibana) ist ein Open-Source-Framewor
      - Füge hinzu:
        ```yaml
        filebeat:
-         image: docker.elastic.co/beats/filebeat:8.15.0
+         image: docker.elastic.co/beats/filebeat:8.17.0
          volumes:
            - ./filebeat.yml:/usr/share/filebeat/filebeat.yml:ro
            - /var/log/apache2:/var/log/apache2:ro

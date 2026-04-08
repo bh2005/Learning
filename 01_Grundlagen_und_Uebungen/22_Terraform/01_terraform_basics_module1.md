@@ -28,6 +28,7 @@
 
 ### Vorbereitung: Terraform installieren
 1. **Terraform auf der lokalen Maschine installieren**:
+   > ℹ️ **Version**: Die Anleitungen verwenden Terraform 1.9.8. Die aktuelle Version findest du unter [releases.hashicorp.com/terraform](https://releases.hashicorp.com/terraform/) — ersetze die Versionsnummer entsprechend. Empfohlen: apt-Repository für automatische Updates (siehe [Terraform Docs](https://www.terraform.io/docs/cli/install/apt.html)).
    ```bash
    wget https://releases.hashicorp.com/terraform/1.9.8/terraform_1.9.8_linux_amd64.zip
    unzip terraform_1.9.8_linux_amd64.zip

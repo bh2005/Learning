@@ -2,7 +2,7 @@
 
 ## Einführung
 
-Der **ELK Stack** (Elasticsearch, Logstash, Kibana) ist ein Open-Source-Framework für die zentralisierte Verarbeitung, Speicherung und Visualisierung von Log-Daten. Diese Anleitung beschreibt zwei Installationsmethoden für eine HomeLab-Umgebung: 1) **Nativ via APT auf Debian 12 (Bookworm)**, für eine stabile, integrierte Installation auf einer VM, und 2) **Als LXC-Container auf Proxmox VE**, für isolierte und ressourcenschonende Bereitstellung. Die Anleitung ist für Lernende mit Grundkenntnissen in Linux, Docker und Bash geeignet und baut auf vorherigen Projekten (z. B. `03_elk_stack_logging_module.md`, auf. Es nutzt eine Ubuntu/Debian-VM auf einem Proxmox VE-Server (IP `192.168.30.101`) in einer HomeLab mit TrueNAS (`192.168.30.100`) für Backups und OPNsense (`192.168.30.1`) für Netzwerkmanagement. Die Installation verwendet die Open-Source-Version (Elastic Stack 8.15.0) und integriert Apache-Logs als Beispiel.
+Der **ELK Stack** (Elasticsearch, Logstash, Kibana) ist ein Open-Source-Framework für die zentralisierte Verarbeitung, Speicherung und Visualisierung von Log-Daten. Diese Anleitung beschreibt zwei Installationsmethoden für eine HomeLab-Umgebung: 1) **Nativ via APT auf Debian 12 (Bookworm)**, für eine stabile, integrierte Installation auf einer VM, und 2) **Als LXC-Container auf Proxmox VE**, für isolierte und ressourcenschonende Bereitstellung. Die Anleitung ist für Lernende mit Grundkenntnissen in Linux, Docker und Bash geeignet und baut auf vorherigen Projekten (z. B. `03_elk_stack_logging_module.md`, auf. Es nutzt eine Ubuntu/Debian-VM auf einem Proxmox VE-Server (IP `192.168.30.101`) in einer HomeLab mit TrueNAS (`192.168.30.100`) für Backups und OPNsense (`192.168.30.1`) für Netzwerkmanagement. Die Installation verwendet die Open-Source-Version (Elastic Stack 8.17.0) und integriert Apache-Logs als Beispiel.
 
 **Voraussetzungen**:
 - Proxmox VE-Server (z. B. Version 8.x) mit einer Ubuntu 22.04 oder Debian 12 VM (ID 101, IP `192.168.30.101`).
@@ -100,7 +100,7 @@ Der **ELK Stack** (Elasticsearch, Logstash, Kibana) ist ein Open-Source-Framewor
        ```json
        {
          "name": "...",
-         "version": { "number": "8.15.0" }
+         "version": { "number": "8.17.0" }
        }
        ```
 
@@ -277,8 +277,8 @@ Der **ELK Stack** (Elasticsearch, Logstash, Kibana) ist ein Open-Source-Framewor
 1. **Filebeat statt Logstash**:
    - Installiere Filebeat:
      ```bash
-     wget https://artifacts.elastic.co/downloads/beats/filebeat/filebeat-8.15.0-amd64.deb
-     sudo dpkg -i filebeat-8.15.0-amd64.deb
+     wget https://artifacts.elastic.co/downloads/beats/filebeat/filebeat-8.17.0-amd64.deb
+     sudo dpkg -i filebeat-8.17.0-amd64.deb
      ```
    - Konfiguriere `/etc/filebeat/filebeat.yml`:
      ```yaml

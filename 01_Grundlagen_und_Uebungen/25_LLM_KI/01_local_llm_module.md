@@ -2,12 +2,12 @@
 
 ## Einführung
 
-**Large Language Models (LLMs)** wie Code Llama oder Llama 3.1 können lokal auf einer HomeLab-VM betrieben werden, um Aufgaben wie Programmierunterstützung, Dokumentenanalyse und kreative Textgenerierung zu ermöglichen. Dieses Lernprojekt nutzt **Ollama**, eine Open-Source-Plattform für lokale LLMs, und **Llama 3.1 (8B)**, ein effizientes Modell für CPUs. Es ist für Lernende mit Grundkenntnissen in Linux, Python und Docker geeignet und läuft auf einer lokalen VM (Proxmox VE) in einer HomeLab-Umgebung mit TrueNAS (`192.168.30.100`) für Backups und OPNsense (`192.168.30.1`) für Netzwerkmanagement. Das Projekt umfasst drei Übungen: Einrichtung eines Programmier-Assistenten mit Code Llama, Implementierung eines Chatbots für Dokumentenanalyse (PDFs) und Erstellung eines Tools für kreative Textgenerierung (z. B. E-Mails). Es integriert die HomeLab-Infrastruktur und vermeidet Cloud-Abhängigkeiten, um Datenschutz zu gewährleisten.
+**Large Language Models (LLMs)** wie Code Llama oder Llama 3.2 können lokal auf einer HomeLab-VM betrieben werden, um Aufgaben wie Programmierunterstützung, Dokumentenanalyse und kreative Textgenerierung zu ermöglichen. Dieses Lernprojekt nutzt **Ollama**, eine Open-Source-Plattform für lokale LLMs, und **Llama 3.2 (3B)**, ein effizientes Modell für CPUs. Es ist für Lernende mit Grundkenntnissen in Linux, Python und Docker geeignet und läuft auf einer lokalen VM (Proxmox VE) in einer HomeLab-Umgebung mit TrueNAS (`192.168.30.100`) für Backups und OPNsense (`192.168.30.1`) für Netzwerkmanagement. Das Projekt umfasst drei Übungen: Einrichtung eines Programmier-Assistenten mit Code Llama, Implementierung eines Chatbots für Dokumentenanalyse (PDFs) und Erstellung eines Tools für kreative Textgenerierung (z. B. E-Mails). Es integriert die HomeLab-Infrastruktur und vermeidet Cloud-Abhängigkeiten, um Datenschutz zu gewährleisten.
 
 **Voraussetzungen**:
 - Proxmox VE-Server (z. B. Version 8.x) in der HomeLab, erreichbar unter `192.168.30.10`.
 - Ubuntu 22.04 VM auf Proxmox (z. B. ID 101, IP `192.168.30.101`), wie in `terraform_ansible_local_module.md`.
-- Hardware: Mindestens 8 GB RAM, 4 CPU-Kerne, 20 GB freier Speicher (für Llama 3.1 8B).
+- Hardware: Mindestens 8 GB RAM, 4 CPU-Kerne, 20 GB freier Speicher (für Llama 3.2 8B).
 - Grundkenntnisse in Linux (z. B. `bash`, `nano`), Python und Docker.
 - HomeLab mit TrueNAS (`192.168.30.100`) für Backups und OPNsense (`192.168.30.1`) für Netzwerkmanagement.
 - SSH-Schlüsselpaar (z. B. `~/.ssh/id_rsa.pub` und `~/.ssh/id_rsa`).
@@ -21,6 +21,8 @@
 - Integration mit HomeLab für Backups und Netzwerkmanagement.
 
 **Hinweis**: Das Projekt ist lokal und kostenlos, nutzt Open-Source-Tools und schützt die Privatsphäre, da keine Daten an externe Dienste gesendet werden.
+
+> ℹ️ **Modellversionen**: Diese Anleitung verwendet Llama 3.2 (3B) und Code Llama. Neuere Modelle wie **Llama 3.3** oder **Llama 3.2:8b** bieten bessere Qualität bei ausreichend RAM. Verfügbare Modelle mit `ollama list` prüfen oder unter [ollama.com/library](https://ollama.com/library) stöbern.
 
 **Quellen**:
 - Ollama-Dokumentation: https://ollama.com
@@ -140,13 +142,13 @@
 
 **Ziel**: Implementieren eines Chatbots, der lokale PDFs analysiert und Fragen beantwortet.
 
-**Aufgabe**: Installiere Llama 3.1, lade ein Beispiel-PDF und erstelle ein Python-Skript für die Dokumentenanalyse.
+**Aufgabe**: Installiere Llama 3.2, lade ein Beispiel-PDF und erstelle ein Python-Skript für die Dokumentenanalyse.
 
-1. **Llama 3.1 installieren**:
+1. **Llama 3.2 installieren**:
    ```bash
-   ollama pull llama3.1:8b
+   ollama pull llama3.2:3b
    ```
-   - **Hinweis**: Llama 3.1 8B benötigt ~5 GB Speicher. Prüfe Ressourcen mit `free -h` und `df -h`.
+   - **Hinweis**: Llama 3.2 8B benötigt ~5 GB Speicher. Prüfe Ressourcen mit `free -h` und `df -h`.
 
 2. **Abhängigkeiten für PDF-Verarbeitung installieren**:
    ```bash
@@ -187,7 +189,7 @@
          url = "http://localhost:11434/api/generate"
          full_prompt = f"Dokument: {document_text}\nFrage: {prompt}"
          payload = {
-             "model": "llama3.1:8b",
+             "model": "llama3.2:3b",
              "prompt": full_prompt,
              "stream": False
          }
@@ -206,7 +208,7 @@
      ```
    - **Erklärung**:
      - `PyPDF2`: Extrahiert Text aus dem PDF.
-     - `query_document`: Sendet den PDF-Text und eine Frage an Llama 3.1 via Ollama-API.
+     - `query_document`: Sendet den PDF-Text und eine Frage an Llama 3.2 via Ollama-API.
 
 5. **Skript ausführen**:
    ```bash
@@ -217,13 +219,13 @@
      Lokale LLMs sind datenschutzfreundlich und können offline betrieben werden.
      ```
 
-**Erkenntnis**: Llama 3.1 ermöglicht lokale Dokumentenanalyse, indem es PDF-Inhalte verarbeitet und Fragen dazu beantwortet. Dies ist ideal für Forschung oder Wissensverwaltung ohne Cloud-Abhängigkeit.[](https://www.golan.ai/de/ai-news/entfesseln-sie-die-private-ki-kraft-auf-ihrem-pc-lokale-chatbot-einrichtung-einfach-gemacht-8AOAARhf1ds)
+**Erkenntnis**: Llama 3.2 ermöglicht lokale Dokumentenanalyse, indem es PDF-Inhalte verarbeitet und Fragen dazu beantwortet. Dies ist ideal für Forschung oder Wissensverwaltung ohne Cloud-Abhängigkeit.[](https://www.golan.ai/de/ai-news/entfesseln-sie-die-private-ki-kraft-auf-ihrem-pc-lokale-chatbot-einrichtung-einfach-gemacht-8AOAARhf1ds)
 
 ### Übung 3: Kreative Textgenerierung
 
 **Ziel**: Erstellen eines Tools für kreative Textgenerierung (z. B. E-Mails).
 
-**Aufgabe**: Nutze Llama 3.1, um ein Python-Skript zu erstellen, das E-Mails oder Blog-Posts generiert.
+**Aufgabe**: Nutze Llama 3.2, um ein Python-Skript zu erstellen, das E-Mails oder Blog-Posts generiert.
 
 1. **Python-Skript für Textgenerierung erstellen**:
    ```bash
@@ -237,7 +239,7 @@
      def generate_text(prompt):
          url = "http://localhost:11434/api/generate"
          payload = {
-             "model": "llama3.1:8b",
+             "model": "llama3.2:3b",
              "prompt": prompt,
              "stream": False
          }
@@ -253,7 +255,7 @@
          print(result)
      ```
    - **Erklärung**:
-     - Sendet einen Prompt an Llama 3.1, um kreativen Text (z. B. E-Mail) zu generieren.
+     - Sendet einen Prompt an Llama 3.2, um kreativen Text (z. B. E-Mail) zu generieren.
 
 2. **Skript ausführen**:
    ```bash
@@ -285,7 +287,7 @@
    ```
    - Bearbeite den Text für den tatsächlichen Gebrauch.
 
-**Erkenntnis**: Llama 3.1 eignet sich hervorragend für kreative Textgenerierung, wie E-Mails oder Blog-Posts, ohne dass Daten an externe Dienste gesendet werden.[](https://www.golan.ai/de/ai-news/entfesseln-sie-die-private-ki-kraft-auf-ihrem-pc-lokale-chatbot-einrichtung-einfach-gemacht-8AOAARhf1ds)
+**Erkenntnis**: Llama 3.2 eignet sich hervorragend für kreative Textgenerierung, wie E-Mails oder Blog-Posts, ohne dass Daten an externe Dienste gesendet werden.[](https://www.golan.ai/de/ai-news/entfesseln-sie-die-private-ki-kraft-auf-ihrem-pc-lokale-chatbot-einrichtung-einfach-gemacht-8AOAARhf1ds)
 
 ### Schritt 4: Integration mit HomeLab
 1. **Konfigurationen auf TrueNAS sichern**:
@@ -382,7 +384,7 @@
        def generate_text(prompt):
            url = "http://localhost:11434/api/generate"
            payload = {
-               "model": "llama3.1:8b",
+               "model": "llama3.2:3b",
                "prompt": prompt,
                "stream": False
            }
@@ -447,7 +449,7 @@
 ## Empfehlungen für Schüler
 
 - **Setup**:
-  - **Ollama**: Llama 3.1 (8B), Code Llama (7B).
+  - **Ollama**: Llama 3.2 (3B), Code Llama (7B).
   - **Workloads**: Codegenerierung, Dokumentenanalyse, Textgenerierung.
   - **HomeLab**: Backups auf TrueNAS (`/mnt/tank/backups/llm`).
 - **Integration**:

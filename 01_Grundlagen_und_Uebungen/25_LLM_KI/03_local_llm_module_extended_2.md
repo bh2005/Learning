@@ -2,10 +2,10 @@
 
 ## Einführung
 
-Diese zusätzliche Übung erweitert das Lernprojekt `02_local_llm_module_extended.md`, das lokale Large Language Models (LLMs) wie **Llama 3.1 (8B)** mit **Ollama** auf einer Ubuntu-VM (Proxmox VE, IP `192.168.30.101`) in einer HomeLab-Umgebung nutzt. Die Übung ist für Lernende mit Grundkenntnissen in Linux, Python und Docker geeignet und integriert die HomeLab-Infrastruktur mit Proxmox VE, TrueNAS (`192.168.30.100`) für Backups und OPNsense (`192.168.30.1`) für Netzwerkmanagement. Sie konzentriert sich auf den Aufbau einer einfachen **künstlichen Intelligenz (KI)**, die ein lokales Frage-Antwort-System basierend auf einem benutzerdefinierten Datensatz (z. B. Textdokumente) erstellt. Dabei wird **Ollama** verwendet, um Llama 3.1 mit einem benutzerdefinierten Kontext zu "trainieren" (simuliertes Fine-Tuning durch Kontext-Einbettung). Die Übung umfasst die Erstellung eines Datensatzes, die Entwicklung eines Frage-Antwort-Skripts und die Integration in die HomeLab. Das Projekt bleibt lokal, kostenlos und datenschutzfreundlich.
+Diese zusätzliche Übung erweitert das Lernprojekt `02_local_llm_module_extended.md`, das lokale Large Language Models (LLMs) wie **Llama 3.2 (3B)** mit **Ollama** auf einer Ubuntu-VM (Proxmox VE, IP `192.168.30.101`) in einer HomeLab-Umgebung nutzt. Die Übung ist für Lernende mit Grundkenntnissen in Linux, Python und Docker geeignet und integriert die HomeLab-Infrastruktur mit Proxmox VE, TrueNAS (`192.168.30.100`) für Backups und OPNsense (`192.168.30.1`) für Netzwerkmanagement. Sie konzentriert sich auf den Aufbau einer einfachen **künstlichen Intelligenz (KI)**, die ein lokales Frage-Antwort-System basierend auf einem benutzerdefinierten Datensatz (z. B. Textdokumente) erstellt. Dabei wird **Ollama** verwendet, um Llama 3.2 mit einem benutzerdefinierten Kontext zu "trainieren" (simuliertes Fine-Tuning durch Kontext-Einbettung). Die Übung umfasst die Erstellung eines Datensatzes, die Entwicklung eines Frage-Antwort-Skripts und die Integration in die HomeLab. Das Projekt bleibt lokal, kostenlos und datenschutzfreundlich.
 
 **Voraussetzungen** (wie in `02_local_llm_module_extended.md`):
-- Ubuntu 22.04 VM auf Proxmox (ID 101, IP `192.168.30.101`), eingerichtet mit Ollama und Llama 3.1 (8B).
+- Ubuntu 22.04 VM auf Proxmox (ID 101, IP `192.168.30.101`), eingerichtet mit Ollama und Llama 3.2 (3B).
 - Hardware: Mindestens 8 GB RAM, 4 CPU-Kerne, 20 GB freier Speicher.
 - Docker, Python und `sentence-transformers` installiert:
   ```bash
@@ -15,17 +15,17 @@ Diese zusätzliche Übung erweitert das Lernprojekt `02_local_llm_module_extende
 - HomeLab mit TrueNAS (`192.168.30.100`) und OPNsense (`192.168.30.1`).
 - SSH-Schlüsselpaar (z. B. `~/.ssh/id_rsa.pub`, `~/.ssh/id_rsa`).
 - Projektverzeichnis: `~/llm-project` auf der VM.
-- Ollama mit Llama 3.1 (8B):
+- Ollama mit Llama 3.2 (3B):
   ```bash
-  ollama pull llama3.1:8b
+  ollama pull llama3.2:3b
   ```
 
 **Ziele**:
 - Aufbau einer einfachen KI für ein Frage-Antwort-System basierend auf einem lokalen Datensatz.
-- Nutzung von Llama 3.1 mit benutzerdefiniertem Kontext für kontextbezogene Antworten.
+- Nutzung von Llama 3.2 mit benutzerdefiniertem Kontext für kontextbezogene Antworten.
 - Integration mit der HomeLab für Backups und Netzwerkmanagement.
 
-**Hinweis**: Da echtes Fine-Tuning von Llama 3.1 ressourcenintensiv ist, simulieren wir es durch Kontext-Einbettung mit einem benutzerdefinierten Datensatz. Das Projekt bleibt lokal und datenschutzfreundlich.
+**Hinweis**: Da echtes Fine-Tuning von Llama 3.2 ressourcenintensiv ist, simulieren wir es durch Kontext-Einbettung mit einem benutzerdefinierten Datensatz. Das Projekt bleibt lokal und datenschutzfreundlich.
 
 **Quellen**:
 - Ollama-Dokumentation: https://ollama.com
@@ -35,7 +35,7 @@ Diese zusätzliche Übung erweitert das Lernprojekt `02_local_llm_module_extende
 
 ## Übung 7: Aufbau einer lokalen KI für ein Frage-Antwort-System
 
-**Ziel**: Erstellen einer KI, die Fragen basierend auf einem benutzerdefinierten Datensatz (Textdokumente) beantwortet, mit Llama 3.1 und Sentence-Transformers.
+**Ziel**: Erstellen einer KI, die Fragen basierend auf einem benutzerdefinierten Datensatz (Textdokumente) beantwortet, mit Llama 3.2 und Sentence-Transformers.
 
 **Aufgabe**: Erstelle einen benutzerdefinierten Datensatz, entwickle ein Python-Skript für ein Frage-Antwort-System und integriere es in die HomeLab.
 
@@ -91,7 +91,7 @@ Diese zusätzliche Übung erweitert das Lernprojekt `02_local_llm_module_extende
            url = "http://localhost:11434/api/generate"
            full_prompt = f"Kontext: {context}\n\nFrage: {prompt}\nAntwort im Stil einer präzisen, professionellen Dokumentation."
            payload = {
-               "model": "llama3.1:8b",
+               "model": "llama3.2:3b",
                "prompt": full_prompt,
                "stream": False
            }
@@ -119,7 +119,7 @@ Diese zusätzliche Übung erweitert das Lernprojekt `02_local_llm_module_extende
      - **Erklärung**:
        - `load_dataset`: Lädt Textdokumente aus dem `dataset`-Verzeichnis.
        - `semantic_search`: Findet das relevanteste Dokument mit Sentence-Transformers.
-       - `query_llm`: Stellt die Frage an Llama 3.1 mit dem Kontext des besten Dokuments.
+       - `query_llm`: Stellt die Frage an Llama 3.2 mit dem Kontext des besten Dokuments.
        - Interaktive CLI für Fragen und Antworten.
 
 3. **Skript ausführen**:
@@ -141,7 +141,7 @@ Diese zusätzliche Übung erweitert das Lernprojekt `02_local_llm_module_extende
      python3 qa_system.py | tee -a qa_log.txt
      ```
 
-**Erkenntnis**: Durch Kombination von Sentence-Transformers für semantische Suche und Llama 3.1 für kontextbezogene Antworten kann eine einfache KI für ein lokales Frage-Antwort-System aufgebaut werden, die auf einem benutzerdefinierten Datensatz basiert.
+**Erkenntnis**: Durch Kombination von Sentence-Transformers für semantische Suche und Llama 3.2 für kontextbezogene Antworten kann eine einfache KI für ein lokales Frage-Antwort-System aufgebaut werden, die auf einem benutzerdefinierten Datensatz basiert.
 
 ### Integration mit HomeLab
 1. **Backups auf TrueNAS**:
@@ -217,7 +217,7 @@ Diese zusätzliche Übung erweitert das Lernprojekt `02_local_llm_module_extende
        def query_llm(prompt, context):
            url = "http://localhost:11434/api/generate"
            full_prompt = f"Kontext: {context}\n\nFrage: {prompt}\nAntwort im Stil einer präzisen, professionellen Dokumentation."
-           payload = {"model": "llama3.1:8b", "prompt": full_prompt, "stream": False}
+           payload = {"model": "llama3.2:3b", "prompt": full_prompt, "stream": False}
            response = requests.post(url, json=payload)
            return json.loads(response.text)["response"] if response.status_code == 200 else f"Fehler: {response.status_code}"
 
@@ -284,7 +284,7 @@ Diese zusätzliche Übung erweitert das Lernprojekt `02_local_llm_module_extende
 
 ## Empfehlungen für Schüler
 
-- **Setup**: Ollama mit Llama 3.1, Ubuntu-VM, TrueNAS-Backups.
+- **Setup**: Ollama mit Llama 3.2, Ubuntu-VM, TrueNAS-Backups.
 - **Workload**: Frage-Antwort-System basierend auf benutzerdefiniertem Datensatz.
 - **Integration**: Proxmox (VM), TrueNAS (Backups), OPNsense (Netzwerk).
 - **Beispiel**: Fragen zur HomeLab-Dokumentation (Proxmox, TrueNAS, OPNsense).
