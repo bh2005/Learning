@@ -82,8 +82,8 @@ Die **Kombination von ELK Stack** (Elasticsearch, Logstash, Kibana) mit **Checkm
 2. **ELK für Checkmk-Metriken konfigurieren**:
    - Installiere Metricbeat:
      ```bash
-     wget https://artifacts.elastic.co/downloads/beats/metricbeat/metricbeat-8.15.0-amd64.deb
-     sudo dpkg -i metricbeat-8.15.0-amd64.deb
+     wget https://artifacts.elastic.co/downloads/beats/metricbeat/metricbeat-8.17.0-amd64.deb
+     sudo dpkg -i metricbeat-8.17.0-amd64.deb
      ```
    - Konfiguriere `/etc/metricbeat/metricbeat.yml`:
      ```bash

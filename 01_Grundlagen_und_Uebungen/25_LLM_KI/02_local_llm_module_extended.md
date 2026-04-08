@@ -2,10 +2,10 @@
 
 ## Einführung
 
-Diese zusätzlichen Übungen erweitern das Lernprojekt `01_local_llm_module.md`, das lokale Large Language Models (LLMs) wie **Llama 3.1 (8B)** und **Code Llama (7B)** mit **Ollama** auf einer Ubuntu-VM (Proxmox VE, IP `192.168.30.101`) in einer HomeLab-Umgebung nutzt. Die Übungen sind für Lernende mit Grundkenntnissen in Linux, Python und Docker geeignet und integrieren die HomeLab-Infrastruktur mit Proxmox VE, TrueNAS (`192.168.30.100`) für Backups und OPNsense (`192.168.30.1`) für Netzwerkmanagement. Sie umfassen drei fortgeschrittene Anwendungen: einen interaktiven Programmier-Assistenten mit Code-Vervollständigung, ein lokales Wissensmanagementsystem mit Dokumentensuche und die Automatisierung von Textgenerierungsaufgaben mit einem Scheduler. Das Projekt bleibt lokal, kostenlos und datenschutzfreundlich, da keine Cloud-Dienste genutzt werden.
+Diese zusätzlichen Übungen erweitern das Lernprojekt `01_local_llm_module.md`, das lokale Large Language Models (LLMs) wie **Llama 3.2 (3B)** und **Code Llama (7B)** mit **Ollama** auf einer Ubuntu-VM (Proxmox VE, IP `192.168.30.101`) in einer HomeLab-Umgebung nutzt. Die Übungen sind für Lernende mit Grundkenntnissen in Linux, Python und Docker geeignet und integrieren die HomeLab-Infrastruktur mit Proxmox VE, TrueNAS (`192.168.30.100`) für Backups und OPNsense (`192.168.30.1`) für Netzwerkmanagement. Sie umfassen drei fortgeschrittene Anwendungen: einen interaktiven Programmier-Assistenten mit Code-Vervollständigung, ein lokales Wissensmanagementsystem mit Dokumentensuche und die Automatisierung von Textgenerierungsaufgaben mit einem Scheduler. Das Projekt bleibt lokal, kostenlos und datenschutzfreundlich, da keine Cloud-Dienste genutzt werden.
 
 **Voraussetzungen** (wie in `01_local_llm_module.md`):
-- Ubuntu 22.04 VM auf Proxmox (ID 101, IP `192.168.30.101`), eingerichtet mit Ollama, Llama 3.1 (8B) und Code Llama (7B).
+- Ubuntu 22.04 VM auf Proxmox (ID 101, IP `192.168.30.101`), eingerichtet mit Ollama, Llama 3.2 (3B) und Code Llama (7B).
 - Hardware: Mindestens 8 GB RAM, 4 CPU-Kerne, 20 GB freier Speicher.
 - Docker, Python, PyPDF2 und sentence-transformers installiert:
   ```bash
@@ -139,7 +139,7 @@ Diese zusätzlichen Übungen erweitern das Lernprojekt `01_local_llm_module.md`,
 
 **Ziel**: Implementieren eines Wissensmanagementsystems, das Dokumente (PDFs) durchsucht und Fragen beantwortet.
 
-**Aufgabe**: Erstelle ein Python-Skript, das mehrere PDFs indexiert, semantische Suche mit Sentence-Transformers durchführt und Fragen mit Llama 3.1 beantwortet.
+**Aufgabe**: Erstelle ein Python-Skript, das mehrere PDFs indexiert, semantische Suche mit Sentence-Transformers durchführt und Fragen mit Llama 3.2 beantwortet.
 
 1. **Abhängigkeiten prüfen**:
    - Stelle sicher, dass `sentence-transformers` und `PyPDF2` installiert sind:
@@ -195,7 +195,7 @@ Diese zusätzlichen Übungen erweitern das Lernprojekt `01_local_llm_module.md`,
          url = "http://localhost:11434/api/generate"
          full_prompt = f"Dokument: {document_text}\nFrage: {prompt}"
          payload = {
-             "model": "llama3.1:8b",
+             "model": "llama3.2:3b",
              "prompt": full_prompt,
              "stream": False
          }
@@ -222,7 +222,7 @@ Diese zusätzlichen Übungen erweitern das Lernprojekt `01_local_llm_module.md`,
    - **Erklärung**:
      - `extract_text_from_pdfs`: Extrahiert Text aus allen PDFs in einem Verzeichnis.
      - `semantic_search`: Findet das relevanteste Dokument mit Sentence-Transformers.
-     - `query_document`: Beantwortet Fragen basierend auf dem besten Dokument mit Llama 3.1.
+     - `query_document`: Beantwortet Fragen basierend auf dem besten Dokument mit Llama 3.2.
 
 4. **Skript ausführen**:
    ```bash
@@ -236,7 +236,7 @@ Diese zusätzlichen Übungen erweitern das Lernprojekt `01_local_llm_module.md`,
      Lokale LLMs sind datenschutzfreundlich, da sie keine Daten an externe Server senden.
      ```
 
-**Erkenntnis**: Die Kombination von Sentence-Transformers für semantische Suche und Llama 3.1 für Frage-Antwort ermöglicht ein lokales Wissensmanagementsystem, ideal für Forschung oder Unternehmensdokumente.
+**Erkenntnis**: Die Kombination von Sentence-Transformers für semantische Suche und Llama 3.2 für Frage-Antwort ermöglicht ein lokales Wissensmanagementsystem, ideal für Forschung oder Unternehmensdokumente.
 
 ### Übung 6: Automatisierte Textgenerierung mit Scheduler
 
@@ -258,7 +258,7 @@ Diese zusätzlichen Übungen erweitern das Lernprojekt `01_local_llm_module.md`,
      def generate_email(prompt):
          url = "http://localhost:11434/api/generate"
          payload = {
-             "model": "llama3.1:8b",
+             "model": "llama3.2:3b",
              "prompt": prompt,
              "stream": False
          }
@@ -317,7 +317,7 @@ Diese zusätzlichen Übungen erweitern das Lernprojekt `01_local_llm_module.md`,
        [Dein Name]
        ```
 
-**Erkenntnis**: Llama 3.1 kann automatisierte Textgenerierungsaufgaben mit `cron` unterstützen, was für wiederkehrende Aufgaben wie Berichte oder E-Mails nützlich ist.
+**Erkenntnis**: Llama 3.2 kann automatisierte Textgenerierungsaufgaben mit `cron` unterstützen, was für wiederkehrende Aufgaben wie Berichte oder E-Mails nützlich ist.
 
 ### Schritt 4: Integration mit HomeLab
 1. **Backups auf TrueNAS**:
@@ -419,7 +419,7 @@ Diese zusätzlichen Übungen erweitern das Lernprojekt `01_local_llm_module.md`,
 
 ## Empfehlungen für Schüler
 
-- **Setup**: Ollama mit Llama 3.1 und Code Llama, Ubuntu-VM, TrueNAS-Backups.
+- **Setup**: Ollama mit Llama 3.2 und Code Llama, Ubuntu-VM, TrueNAS-Backups.
 - **Workloads**: Interaktive Code-Vervollständigung, Dokumentensuche, automatisierte E-Mails.
 - **Integration**: Proxmox (VM), TrueNAS (Backups), OPNsense (Netzwerk).
 - **Beispiel**: Debugging eines Python-Skripts, Suche in PDFs, tägliche Berichte.

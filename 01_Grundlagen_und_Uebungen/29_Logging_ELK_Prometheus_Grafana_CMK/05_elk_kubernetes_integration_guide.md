@@ -161,8 +161,8 @@ Die **Integration von ELK Stack** (Elasticsearch, Logstash, Kibana) mit **Kubern
 
 1. **Filebeat installieren**:
    ```bash
-   wget https://artifacts.elastic.co/downloads/beats/filebeat/filebeat-8.15.0-amd64.deb
-   sudo dpkg -i filebeat-8.15.0-amd64.deb
+   wget https://artifacts.elastic.co/downloads/beats/filebeat/filebeat-8.17.0-amd64.deb
+   sudo dpkg -i filebeat-8.17.0-amd64.deb
    ```
 
 2. **Filebeat für Kubernetes konfigurieren**:
@@ -287,8 +287,8 @@ Die **Integration von ELK Stack** (Elasticsearch, Logstash, Kibana) mit **Kubern
 1. **Metricbeat für Metriken**:
    - Installiere Metricbeat:
      ```bash
-     wget https://artifacts.elastic.co/downloads/beats/metricbeat/metricbeat-8.15.0-amd64.deb
-     sudo dpkg -i metricbeat-8.15.0-amd64.deb
+     wget https://artifacts.elastic.co/downloads/beats/metricbeat/metricbeat-8.17.0-amd64.deb
+     sudo dpkg -i metricbeat-8.17.0-amd64.deb
      ```
    - Konfiguriere `/etc/metricbeat/metricbeat.yml`:
      ```yaml
