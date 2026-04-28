@@ -70,30 +70,26 @@
 Datei: `/etc/chrony/chrony.conf`
 
 ```conf
-# Primäre Quelle
+# Primäre Quelle (Zentrales RZ)
 server ntp-appliance.haupt.dc iburst prefer
 
-# Peer zwischen den beiden NTP-VMs
-peer ntp01.remote.dc iburst
+# Nur die ANDERE NTP-VM als Peer
 peer ntp02.remote.dc iburst
 
-# Lokale Fallback-Funktion (wichtig für Backup-Rolle)
+# Falls Internetzugang vorhanden, als sekundäre Sicherheit (optional)
+# pool de.pool.ntp.org iburst
+
+# Lokale Fallback-Funktion
 local stratum 9
 manual
 
 # Zugriff erlauben
-allow 10.20.30.0/24          # Remote-DC Subnetz anpassen
+allow 10.20.30.0/24
 
-# Allgemeine Einstellungen
+# Optimierungen
 driftfile /var/lib/chrony/drift
 makestep 1.0 3
 rtcsync
-logdir /var/log/chrony
-dumponexit
-dumpdir /var/lib/chrony
-
-# Für bessere VM-Performance
-noselect 127.127.1.0
 ```
 
 ## 5. Detaillierte Schritt-für-Schritt Installationsanleitung
@@ -191,7 +187,7 @@ iptables-save > /etc/iptables/rules.v4
 - Zeit-Offset
 - Erreichbarkeit beider NTP-Server
 
-Empfohlene Tools: Zabbix, Prometheus/Grafana, CheckMK
+Empfohlene Tools: CheckMK, Prometheus/Grafana
 
 ## 9. Vorteile dieser Lösung
 
