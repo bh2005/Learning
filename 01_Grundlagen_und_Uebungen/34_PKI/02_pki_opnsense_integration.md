@@ -1,7 +1,7 @@
 # Praxisorientierte Anleitung: Integration der PKI in OPNsense für IPsec und Erstellung von Client-Zertifikaten
 
 ## Einführung
-Diese Anleitung integriert die PKI aus `pki_setup_guide.md` (Artifact ID: `1c042e3b-cdbc-4654-8db3-50ec9fc91d9c`) in OPNsense, um ein zertifikatbasiertes IPsec-Site-to-Site-VPN zwischen zwei Standorten (`fw1.homelab.local`, `fw2.homelab.local`) und ein IPsec-Remote-Access-VPN für Clients einzurichten. Die PKI umfasst eine Root CA und Intermediate CA auf einer Debian VM (`192.168.30.123`). Wir erstellen Client-Zertifikate für Remote-Benutzer und sichern die Konfiguration auf TrueNAS.
+Diese Anleitung integriert die PKI aus [01_pki_setup_guide.md](01_pki_setup_guide.md) in OPNsense, um ein zertifikatbasiertes IPsec-Site-to-Site-VPN zwischen zwei Standorten (`fw1.homelab.local`, `fw2.homelab.local`) und ein IPsec-Remote-Access-VPN für Clients einzurichten. Die PKI umfasst eine Root CA und Intermediate CA auf einer Debian VM (`192.168.30.123`). Wir erstellen Client-Zertifikate für Remote-Benutzer und sichern die Konfiguration auf TrueNAS.
 
 ## Netzwerkkonfiguration
 - **PKI-Server**: `pki.homelab.local` (`192.168.30.123`)

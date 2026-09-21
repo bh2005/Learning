@@ -14,7 +14,7 @@ Eine **Certificate Revocation List (CRL)** ist eine Liste von Zertifikaten, die 
   - **Verfügbarkeit**: CRLs sollten z. B. über HTTP bereitgestellt werden.
   - **Integrität**: Signierte CRLs verhindern Manipulation.
 - **Warum CRL in OPNsense?**:
-  - Unterstützt zertifikatbasierte IPsec-VPNs (siehe `pki_opnsense_integration.md`).
+  - Unterstützt zertifikatbasierte IPsec-VPNs (siehe [02_pki_opnsense_integration.md](02_pki_opnsense_integration.md)).
   - Ermöglicht dynamische Zertifikatsprüfung für Remote-Clients.
 
 ## Vorbereitung
@@ -136,7 +136,7 @@ Eine **Certificate Revocation List (CRL)** ist eine Liste von Zertifikaten, die 
      ```bash
      openssl ca -config openssl.cnf -extensions usr_cert -days 375 -notext -md sha256 -in csr/client2.homelab.local.csr.pem -out certs/client2.homelab.local.cert.pem
      ```
-   - Übertrage und teste mit `client2.homelab.local` (wie in `pki_opnsense_integration.md`).
+   - Übertrage und teste mit `client2.homelab.local` (wie in [02_pki_opnsense_integration.md](02_pki_opnsense_integration.md)).
 
 **Reflexion**: Wie beeinflusst die CRL die VPN-Sicherheit? Überlege, wie regelmäßige CRL-Updates verwaltet werden können.
 
