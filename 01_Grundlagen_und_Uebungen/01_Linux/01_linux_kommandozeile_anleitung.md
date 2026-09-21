@@ -19,7 +19,8 @@ Hier sind die wichtigsten Linux-Befehle, die wir in dieser Anleitung behandeln:
 2. **Datei- und Verzeichnisverwaltung**:
    - `mkdir`: Erstellt ein neues Verzeichnis.
    - `touch`: Erstellt eine neue leere Datei.
-   - `rm`: Löscht Dateien oder Verzeichnisse.
+   - `rm`: Löscht Dateien.
+   - `rmdir`: löscht Verzeichnisse.
    - `cp`: Kopiert Dateien oder Verzeichnisse.
    - `mv`: Verschiebt oder benennt Dateien/Verzeichnisse.
    - `chmod`: Ändert die Berechtigungen von Dateien oder Verzeichnissen.
