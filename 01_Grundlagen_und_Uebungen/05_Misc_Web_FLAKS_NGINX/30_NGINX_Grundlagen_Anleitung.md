@@ -4,7 +4,7 @@
 NGINX ist ein leistungsstarker, vielseitiger Webserver, der für seine Geschwindigkeit und Effizienz bekannt ist. Diese Anleitung konzentriert sich auf die Schwerpunkte **Installation und Konfiguration von NGINX**, **Verwaltung von Webseiten** und **Grundlegende Sicherheitsmaßnahmen**, um statische Inhalte bereitzustellen und einfache Server-Setups zu erstellen. Durch praktische Übungen lernst du, NGINX auf einem Debian-System zu installieren, zu konfigurieren und zu verwalten, um einen funktionsfähigen Webserver zu betreiben.
 
 **Voraussetzungen**:
-- Ein Debian-basiertes System (z. B. Debian 12 oder Ubuntu 22.04).
+- Ein Debian-basiertes System (z. B. Debian 13 oder Ubuntu 24.04).
 - Ein Terminal (z. B. über `Ctrl + T` oder ein Terminal-Programm wie `bash`).
 - Administratorrechte (`sudo`) für Installation und Konfiguration.
 - Internetzugang für die Installation von Paketen.

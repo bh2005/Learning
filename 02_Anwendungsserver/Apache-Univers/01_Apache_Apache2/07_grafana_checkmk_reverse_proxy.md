@@ -31,9 +31,9 @@ Hier sind die wichtigsten Konzepte und Befehle, die wir behandeln:
 1. **Schritt 1**: Installiere Grafana und starte den Dienst.
    ```bash
    sudo apt update
-   sudo apt install -y apt-transport-https software-properties-common
-   wget -q -O - https://packages.grafana.com/gpg.key | sudo apt-key add -
-   echo "deb https://packages.grafana.com/oss/deb stable main" | sudo tee /etc/apt/sources.list.d/grafana.list
+   sudo apt install -y apt-transport-https software-properties-common wget gpg
+   wget -q -O - https://packages.grafana.com/gpg.key | sudo gpg --dearmor -o /usr/share/keyrings/grafana-archive-keyring.gpg
+   echo "deb [signed-by=/usr/share/keyrings/grafana-archive-keyring.gpg] https://packages.grafana.com/oss/deb stable main" | sudo tee /etc/apt/sources.list.d/grafana.list
    sudo apt update
    sudo apt install -y grafana
    sudo systemctl start grafana-server
