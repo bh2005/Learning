@@ -12,7 +12,7 @@ Checkmk ist eine führende Open-Source- und Enterprise-Software für IT-Monitori
 - Sichere Testumgebung (z. B. `/opt/checkmk` oder eine virtuelle Maschine).
 - Ein Webbrowser (z. B. Chrome, Firefox) für die Checkmk-Weboberfläche.
 
-**Hinweis**: Diese Anleitung verwendet die **Checkmk Raw Edition** (Open Source), da sie kostenlos ist und für Lernzwecke ideal ist. Die Enterprise Edition bietet zusätzliche Features wie verteiltes Monitoring und Agent Bakery, die hier optional erwähnt werden.[](https://de.wikipedia.org/wiki/Checkmk)[](https://en.wikipedia.org/wiki/Checkmk)
+**Hinweis**: Diese Anleitung verwendet die **Checkmk Raw Edition** (Open Source), da sie kostenlos ist und für Lernzwecke ideal ist. Die kostenpflichtige Edition bietet zusätzliche Features wie verteiltes Monitoring und Agent Bakery, die hier optional erwähnt werden. Checkmk hat seine Editionen ab Version 2.5 umbenannt: Die frühere "Enterprise Edition (CEE)" heißt jetzt **Checkmk Pro**, die frühere "Cloud Edition (CCE)" und "Managed Services Edition (CME)" heißen jetzt gemeinsam **Checkmk Ultimate** (bzw. **Ultimate MT** für Multi-Tenant-Setups). Die freie Raw Edition bleibt unverändert.[](https://de.wikipedia.org/wiki/Checkmk)[](https://en.wikipedia.org/wiki/Checkmk)
 
 ## Grundlegende Begriffe und Befehle
 Hier sind die wichtigsten Konzepte und Befehle für Checkmk:
@@ -46,14 +46,14 @@ Hier sind die wichtigsten Konzepte und Befehle für Checkmk:
    sudo apt install -y wget
    ```
 
-2. **Schritt 2**: Lade die Checkmk Raw Edition herunter (ersetze `2.4.0` durch die aktuelle Version, siehe https://checkmk.com/download):
+2. **Schritt 2**: Ermittle die aktuelle Version auf https://checkmk.com/download und lade das passende Paket herunter (Platzhalter `<VERSION>`, z. B. `2.5.0p1`, und `<CODENAME>` für deine Distribution, z. B. `jammy` oder `bookworm`):
    ```bash
-   wget https://download.checkmk.com/checkmk/2.4.0/check-mk-raw-2.4.0_0.focal_amd64.deb
+   wget https://download.checkmk.com/checkmk/<VERSION>/check-mk-raw-<VERSION>_0.<CODENAME>_amd64.deb
    ```
 
 3. **Schritt 3**: Installiere Checkmk:
    ```bash
-   sudo apt install -y ./check-mk-raw-2.4.0_0.focal_amd64.deb
+   sudo apt install -y ./check-mk-raw-<VERSION>_0.<CODENAME>_amd64.deb
    ```
 
 4. **Schritt 4**: Erstelle eine Checkmk-Site (z. B. `mysite`):
@@ -76,8 +76,8 @@ Hier sind die wichtigsten Konzepte und Befehle für Checkmk:
    ```bash
    ssh user@remote-host
    sudo apt update
-   wget https://download.checkmk.com/checkmk/2.4.0/check-mk-agent_2.4.0p10-1_all.deb
-   sudo apt install -y ./check-mk-agent_2.4.0p10-1_all.deb
+   wget https://download.checkmk.com/checkmk/<VERSION>/check-mk-agent_<VERSION>-1_all.deb
+   sudo apt install -y ./check-mk-agent_<VERSION>-1_all.deb
    ```
    Prüfe, ob der Agent läuft:
    ```bash

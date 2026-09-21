@@ -11,7 +11,7 @@ Die **Open Monitoring Distribution (OMD)** ist ein Framework, das Checkmk und se
 - Sichere Testumgebung (z. B. `/opt/omd/sites/` oder eine virtuelle Maschine).
 - Ein Webbrowser (z. B. Chrome, Firefox) für die Checkmk-Weboberfläche.
 
-**Hinweis**: Diese Anleitung setzt voraus, dass Checkmk installiert ist. Falls nicht, lade und installiere die Raw Edition (z. B. `sudo apt install ./check-mk-raw-2.4.0_0.focal_amd64.deb`).
+**Hinweis**: Diese Anleitung setzt voraus, dass Checkmk installiert ist. Falls nicht, lade und installiere die Raw Edition (siehe vorherige Anleitung bzw. https://checkmk.com/download für die aktuelle Version).
 
 ## Grundlegende Befehle
 Hier sind die wichtigsten `omd`-Befehle und Konzepte für Checkmk:
