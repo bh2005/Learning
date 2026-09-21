@@ -211,20 +211,8 @@ Ein **Certificate Signing Request (CSR)** ist eine Datei, die einen öffentliche
     ssh root@192.168.30.100 ls /mnt/tank/backups/pki/
     ```
 - **Erweiterungen**:
-  - Füge Subject Alternative Names (SANs) zum CSR hinzu:
-    ```bash
-    nano /tmp/san.cnf
-    ```
-    ```ini
-    [req]
-    req_extensions = v3_req
-    [v3_req]
-    subjectAltName = DNS:webserver.homelab.local,DNS:www.webserver.homelab.local
-    ```
-    ```bash
-    openssl req -config openssl.cnf -key private/webserver.homelab.local.key.pem -new -sha256 -out csr/webserver.homelab.local.csr.pem -extensions v3_req -config /tmp/san.cnf
-    ```
-  - Integriere das Zertifikat in OPNsense für IPsec oder OpenVPN.
+  - Für ein Zertifikat mit mehreren Hostnamen/IPs (Subject Alternative Names) siehe die eigene Anleitung [06_san_certificate_creation_guide.md](06_san_certificate_creation_guide.md) – SANs korrekt einzurichten braucht eine eigene Konfigurationsdatei und ein paar Stolpersteine beim Signieren, die dort im Detail behandelt werden.
+  - Integriere das Zertifikat in OPNsense für IPsec oder OpenVPN (siehe [05_certificate_opnsense_integration.md](05_certificate_opnsense_integration.md)).
 
 ## Fazit
 Du hast einen CSR für `webserver.homelab.local` erstellt, ihn mit der Intermediate CA signiert, das Zertifikat in einem Nginx-Webserver getestet und Backups automatisiert. Das Zertifikat kann in Diensten wie OPNsense oder anderen HomeLab-Anwendungen verwendet werden. Wiederhole die Übungen, um weitere Zertifikate zu erstellen, oder erweitere die PKI um SANs oder CRLs.

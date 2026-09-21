@@ -1,7 +1,7 @@
 # Praxisorientierte Anleitung: Integration eines Zertifikats in OPNsense für IPsec und HTTPS
 
 ## Einführung
-Diese Anleitung integriert das Zertifikat `webserver.homelab.local`, erstellt in `csr_and_certificate_creation_guide.md` (Artifact ID: `3621be19-f3cb-4d30-9cae-00d57b3a3f35`), in OPNsense (`fw1.homelab.local`, `192.168.30.1`) für ein zertifikatbasiertes IPsec-Site-to-Site-VPN mit einer zweiten Firewall (`fw2.homelab.local`, `192.168.40.1`) und zur Absicherung der OPNsense-Weboberfläche (HTTPS). Die PKI-Dateien (`webserver.homelab.local.cert.pem`, `webserver.homelab.local.key.pem`, `ca-chain.cert.pem`) befinden sich auf dem PKI-Server (`192.168.30.123`). Backups werden auf TrueNAS gesichert.
+Diese Anleitung integriert das Zertifikat `webserver.homelab.local`, erstellt in [04_csr_and_certificate_creation_guide.md](04_csr_and_certificate_creation_guide.md), in OPNsense (`fw1.homelab.local`, `192.168.30.1`) für ein zertifikatbasiertes IPsec-Site-to-Site-VPN mit einer zweiten Firewall (`fw2.homelab.local`, `192.168.40.1`) und zur Absicherung der OPNsense-Weboberfläche (HTTPS). Die PKI-Dateien (`webserver.homelab.local.cert.pem`, `webserver.homelab.local.key.pem`, `ca-chain.cert.pem`) befinden sich auf dem PKI-Server (`192.168.30.123`). Backups werden auf TrueNAS gesichert.
 
 ## Netzwerkkonfiguration
 - **PKI-Server**: `pki.homelab.local` (`192.168.30.123`)
@@ -229,7 +229,7 @@ Diese Anleitung integriert das Zertifikat `webserver.homelab.local`, erstellt in
     ```bash
     chmod 600 /tmp/*.key.pem
     ```
-  - Nutze die CRL aus `pki_crl_setup_guide.md` (Artifact ID: `f2c23f7d-1b16-4a54-a863-8942edf5610f`):
+  - Nutze die CRL aus [03_pki_crl_setup_guide.md](03_pki_crl_setup_guide.md):
     ```bash
     scp /root/ca/export/intermediate.crl.pem root@192.168.30.1:/tmp/
     ```
@@ -244,7 +244,7 @@ Diese Anleitung integriert das Zertifikat `webserver.homelab.local`, erstellt in
     ssh root@192.168.30.100 ls /mnt/tank/backups/vpn/
     ```
 - **Erweiterungen**:
-  - Füge SANs zum Zertifikat hinzu (siehe `csr_and_certificate_creation_guide.md`).
+  - Füge SANs zum Zertifikat hinzu (siehe [06_san_certificate_creation_guide.md](06_san_certificate_creation_guide.md)).
   - Integriere das Zertifikat in andere Dienste (z. B. OpenVPN).
 
 ## Fazit

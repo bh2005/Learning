@@ -105,6 +105,13 @@ Ein **Subject Alternative Name (SAN)-Zertifikat** ist ein X.509-Zertifikat, das 
      extendedKeyUsage = serverAuth
      subjectAltName = @alt_names
      ```
+   - **Wichtig**: `@alt_names` verweist auf eine Sektion `[ alt_names ]`, die zwar bereits in `san.cnf` existiert, aber beim Signieren gleich mit `openssl.cnf` (nicht `san.cnf`) gearbeitet wird. Füge deshalb dieselbe Sektion auch in `openssl.cnf` hinzu, sonst schlägt das Signieren mit einem Fehler wie `variable lookup failed for alt_names::DNS.1` fehl:
+     ```ini
+     [ alt_names ]
+     DNS.1 = webserver.homelab.local
+     DNS.2 = www.webserver.homelab.local
+     IP.1 = 192.168.1.100
+     ```
    - Speichere (Ctrl+O, Enter) und beende (Ctrl+X).
 
 2. **Signiere den CSR**:
@@ -232,8 +239,8 @@ Ein **Subject Alternative Name (SAN)-Zertifikat** ist ein X.509-Zertifikat, das 
     ssh root@192.168.30.100 ls /mnt/tank/backups/pki/
     ```
 - **Erweiterungen**:
-  - Integriere das SAN-Zertifikat in OPNsense für IPsec oder HTTPS (siehe `certificate_opnsense_integration.md`, Artifact ID: `8fe33303-8ea0-4bc1-b4f6-1f7a887e7f29`).
-  - Nutze die CRL aus `pki_crl_setup_guide.md` (Artifact ID: `f2c23f7d-1b16-4a54-a863-8942edf5610f`) für Widerrufe.
+  - Integriere das SAN-Zertifikat in OPNsense für IPsec oder HTTPS (siehe [05_certificate_opnsense_integration.md](05_certificate_opnsense_integration.md)).
+  - Nutze die CRL aus [03_pki_crl_setup_guide.md](03_pki_crl_setup_guide.md) für Widerrufe.
 
 ## Fazit
 Du hast ein SAN-Zertifikat für `webserver.homelab.local` mit zusätzlichen DNS-Namen und IPs erstellt, es mit der Intermediate CA signiert, in einem Nginx-Webserver getestet und Backups automatisiert. Das Zertifikat ist flexibel für Dienste wie OPNsense oder Webserver einsetzbar. Wiederhole die Übungen, um weitere SAN-Zertifikate zu erstellen, oder erweitere die PKI um weitere Funktionen.

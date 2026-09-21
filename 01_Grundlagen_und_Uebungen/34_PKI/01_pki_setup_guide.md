@@ -9,7 +9,7 @@ Eine **Public Key Infrastructure (PKI)** ist ein System zur Erstellung, Verwaltu
 - **Certificate Revocation List (CRL)**: Liste widerrufener Zertifikate.
 
 ### Einsatzmöglichkeiten
-- **VPNs**: Zertifikat-basierte Authentifizierung (z. B. IPsec, wie in `advanced_ipsec_multisite_vpn_guide.md`, Artifact ID: `d82e2c86-1a15-4e21-ba30-81dab2189bb8`).
+- **VPNs**: Zertifikat-basierte Authentifizierung (z. B. IPsec, siehe [33_VPN/03_advanced_ipsec_multisite_vpn_guide.md](../33_VPN/03_advanced_ipsec_multisite_vpn_guide.md)).
 - **Webserver**: HTTPS-Zertifikate.
 - **E-Mail**: S/MIME-Verschlüsselung.
 - **HomeLab**: Sichere Kommunikation zwischen Diensten (z. B. OPNsense, Proxmox).

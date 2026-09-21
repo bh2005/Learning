@@ -31,8 +31,8 @@ Praxisorientierte Lern- und Übungsanleitungen zu IT-Infrastruktur, Automatisier
 | [29_Logging_ELK_Prometheus_Grafana_CMK](29_Logging_ELK_Prometheus_Grafana_CMK/) | Erweitertes Monitoring/Logging (ELK, Prometheus, Grafana, Checkmk) | |
 | [30_Wolken](30_Wolken/) | Cloud Computing (GCP) | |
 | [31_SIEM](31_SIEM/) | SIEM mit ELK Stack und Checkmk | |
-| [33_VPN](33_VPN/) | VPN | 🚧 leer – bestehende VPN-Grundlagen liegen aktuell unter [34_PKI](34_PKI/) |
-| [34_PKI](34_PKI/) | PKI (Zertifikatsverwaltung) und VPN-Grundlagen (IPsec, Site-to-Site) | |
+| [33_VPN](33_VPN/) | VPN-Grundlagen (HomeLab, Site-to-Site, IPsec Multi-Site) | |
+| [34_PKI](34_PKI/) | Eigene PKI mit OpenSSL: Root/Intermediate CA, CRL, OPNsense-Integration, SAN-Zertifikate ([Übersicht](34_PKI/README.md)) | |
 | [35_ZeroTrust](35_ZeroTrust/) | Zero Trust für Netzwerksicherheit | |
 | [36_ExtendAnalytics_Visu](36_ExtendAnalytics_Visu/) | Distributed Tracing mit GitOps | |
 | [37_Network_visu](37_Network_visu/) | Netzwerkkarten aus CDP/LLDP-Daten | |
