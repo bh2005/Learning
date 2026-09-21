@@ -4,7 +4,7 @@
 Diese erweiterte Anleitung baut auf der grundlegenden Version auf und vertieft die Nutzung von Hugo für die Erstellung statischer Webseiten. Sie integriert GitHub Actions für Continuous Integration/Continuous Deployment (CI/CD), um Änderungen automatisch zu bauen und bereitzustellen. Die Schwerpunkte sind **erweiterte Hugo-Konfiguration**, **Integration mit Git und Webserver** sowie **CI/CD mit GitHub Actions**, um einen automatisierten Workflow für Webentwicklung zu schaffen. Du lernst, detaillierte Hugo-Features anzuwenden, den Server zu konfigurieren und Deployments zu automatisieren.
 
 Voraussetzungen:
-- Ein Debian-basiertes System (z. B. Debian 12 oder Ubuntu 22.04).
+- Ein Debian-basiertes System (z. B. Debian 13 oder Ubuntu 24.04).
 - Ein Terminal (z. B. über `Ctrl + T` oder ein Terminal-Programm wie `bash`).
 - Administratorrechte (`sudo`) für Installation und Konfiguration.
 - Internetzugang für Paketinstallationen und GitHub.

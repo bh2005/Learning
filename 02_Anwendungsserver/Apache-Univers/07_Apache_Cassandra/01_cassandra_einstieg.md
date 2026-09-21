@@ -38,16 +38,13 @@ Hier sind die wichtigsten Konzepte und Befehle, die wir behandeln:
    java -version
    ```
 2. **Schritt 2**: Füge das Cassandra-Repository hinzu und installiere Cassandra.
+   Lege zunächst den GPG-Schlüssel als Keyring-Datei ab (ersetzt das veraltete `apt-key add`):
    ```bash
-   sudo nano /etc/apt/sources.list.d/cassandra.sources.list
+   curl https://downloads.apache.org/cassandra/KEYS | sudo gpg --dearmor -o /usr/share/keyrings/cassandra-archive-keyring.gpg
    ```
-   Füge folgende Zeile hinzu:
-   ```
-   deb https://debian.cassandra.apache.org 40x main
-   ```
-   Füge den GPG-Schlüssel hinzu:
+   Trage die Repository-Zeile mit Verweis auf diesen Keyring ein (Versionsreihe, z. B. `40x` für 4.0.x oder `41x` für 4.1.x, anhand der aktuell benötigten Cassandra-Version auf https://cassandra.apache.org/_/download.html prüfen):
    ```bash
-   curl https://downloads.apache.org/cassandra/KEYS | sudo apt-key add -
+   echo "deb [signed-by=/usr/share/keyrings/cassandra-archive-keyring.gpg] https://debian.cassandra.apache.org 41x main" | sudo tee /etc/apt/sources.list.d/cassandra.sources.list
    ```
    Installiere Cassandra:
    ```bash

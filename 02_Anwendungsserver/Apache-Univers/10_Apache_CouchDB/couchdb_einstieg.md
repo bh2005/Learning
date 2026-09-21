@@ -34,12 +34,13 @@ Hier sind die wichtigsten Konzepte und Befehle, die wir behandeln:
 1. **Schritt 1**: Füge das CouchDB-Repository hinzu und installiere CouchDB.
    ```bash
    sudo apt update
-   sudo apt install -y curl
-   echo "deb https://apache.bintray.com/couchdb-deb bullseye main" | sudo tee /etc/apt/sources.list.d/couchdb.list
-   curl -L https://couchdb.apache.org/repo/keys.asc | sudo apt-key add -
+   sudo apt install -y curl gnupg
+   curl -L https://couchdb.apache.org/repo/keys.asc | sudo gpg --dearmor -o /usr/share/keyrings/couchdb-archive-keyring.gpg
+   echo "deb [signed-by=/usr/share/keyrings/couchdb-archive-keyring.gpg] https://apache.jfrog.io/artifactory/couchdb-deb/ $(lsb_release -cs) main" | sudo tee /etc/apt/sources.list.d/couchdb.list
    sudo apt update
    sudo apt install -y couchdb
    ```
+   **Hinweis**: Das frühere Repository unter `apache.bintray.com` existiert nicht mehr (Bintray wurde 2021 abgeschaltet); aktuell wird das Debian-Repository unter `apache.jfrog.io` gehostet. Ebenso ist `apt-key add` veraltet – moderne Debian/Ubuntu-Versionen erwarten Schlüssel als Keyring-Datei mit `signed-by` in der Repository-Zeile.
    Während der Installation:
    - Wähle **single-node** (Einzelknoten) statt Cluster.
    - Setze einen Admin-Benutzer (z. B. Benutzername: `admin`, Passwort: `password`).
